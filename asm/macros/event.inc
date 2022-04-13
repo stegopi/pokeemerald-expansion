@@ -828,10 +828,10 @@
 	.endm
 
 	@ Sets the movement type (MOVEMENT_TYPE_*) for an object's template.
-	.macro setobjectmovementtype localId:req, movementType:req
+	.macro setobjectmovementtype word:req, byte:req
 	.byte 0x65
-	.2byte \localId
-	.byte \movementType
+	.2byte \word
+	.byte \byte
 	.endm
 
 	@ If a standard message box (or its text) is being drawn on-screen, this command blocks script execution until the
@@ -1451,48 +1451,48 @@
 	.endm
 
 	@ Equivalent to goto using the relative address set by setvaddress.
-	.macro vgoto destination:req
+	.macro vgoto pointer:req
 	.byte 0xb9
-	.4byte \destination
+	.4byte \pointer
 	.endm
 
 	@ Equivalent to call using the relative address set by setvaddress.
-	.macro vcall destination:req
+	.macro vcall pointer:req
 	.byte 0xba
-	.4byte \destination
+	.4byte \pointer
 	.endm
 
 	@ Equivalent to goto_if using the relative address set by setvaddress.
-	.macro vgoto_if condition:req, destination:req
+	.macro vgoto_if byte:req, pointer:req
 	.byte 0xbb
-	.byte \condition
-	.4byte \destination
+	.byte \byte
+	.4byte \pointer
 	.endm
 
 	@ Equivalent to call_if using the relative address set by setvaddress.
-	.macro vcall_if condition:req, destination:req
+	.macro vcall_if byte:req, pointer:req
 	.byte 0xbc
-	.byte \condition
-	.4byte \destination
+	.byte \byte
+	.4byte \pointer
 	.endm
 
 	@ Equivalent to message using the relative address set by setvaddress.
-	.macro vmessage text:req
+	.macro vmessage pointer:req
 	.byte 0xbd
-	.4byte \text
+	.4byte \pointer
 	.endm
 
 	@ Expands the given text at the pointer (- the relative address set by setvaddress) into gStringVar4
-	.macro vbuffermessage text:req
+	.macro vbuffermessage ptr:req
 	.byte 0xbe
-	.4byte \text
+	.4byte \ptr
 	.endm
 
 	@ Equivalent to bufferstring using the relative address set by setvaddress.
-	.macro vbufferstring stringVarIndex:req, text:req
+	.macro vbufferstring stringVarIndex:req, pointer:req
 	.byte 0xbf
 	stringvar \stringVarIndex
-	.4byte \text
+	.4byte \pointer
 	.endm
 
 	@ Create a window showing how many Coins the player has.
@@ -1549,9 +1549,9 @@
 	.endm
 
 	@ Used only in FireRed/LeafGreen, does nothing in Emerald.
-	.macro loadhelp text:req
+	.macro loadhelp pointer:req
 	.byte 0xc8
-	.4byte \text
+	.4byte \pointer
 	.endm
 
 	@ Used only in FireRed/LeafGreen, does nothing in Emerald.
