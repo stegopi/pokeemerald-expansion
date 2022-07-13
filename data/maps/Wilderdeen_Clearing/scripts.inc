@@ -1,2 +1,2 @@
-NewMap1_MapScripts::
+Wilderdeen_Clearing_MapScripts::
 	.byte 0
