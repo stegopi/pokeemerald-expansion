@@ -4440,6 +4440,26 @@
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/NewMap3/border.bin",
       "blockdata_filepath": "data/layouts/NewMap3/map.bin"
+    },
+    {
+      "id": "LAYOUT_THE_DEN",
+      "name": "The_Den_Layout",
+      "width": 19,
+      "height": 19,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_RusturfTunnel",
+      "border_filepath": "data/layouts/The_Den/border.bin",
+      "blockdata_filepath": "data/layouts/The_Den/map.bin"
+    },
+    {
+      "id": "LAYOUT_TILESET_SHIT",
+      "name": "tileset_shit_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Tundra",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/tileset_shit/border.bin",
+      "blockdata_filepath": "data/layouts/tileset_shit/map.bin"
     }
   ]
 }

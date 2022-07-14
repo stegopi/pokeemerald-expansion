@@ -557,3 +557,11 @@ gMetatiles_UnionRoom::
 	.align 1
 gMetatileAttributes_UnionRoom::
 	.incbin "data/tilesets/secondary/union_room/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_Tundra::
+	.incbin "data/tilesets/primary/tundra/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Tundra::
+	.incbin "data/tilesets/primary/tundra/metatile_attributes.bin"

@@ -11491,6 +11491,289 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_NEW_MAP3",
+          "base_label": "gNewMap30",
+          "land_mons": {
+            "encounter_rate": 11,
+            "mons": [
+              {
+                "min_level": 25,
+                "max_level": 50,
+                "species": "SPECIES_GOLBAT"
+              },
+              {
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_GRAVELER"
+              },
+              {
+                "min_level": 45,
+                "max_level": 50,
+                "species": "SPECIES_MAGMAR"
+              },
+              {
+                "min_level": 45,
+                "max_level": 55,
+                "species": "SPECIES_SALAZZLE"
+              },
+              {
+                "min_level": 45,
+                "max_level": 50,
+                "species": "SPECIES_MAGCARGO"
+              },
+              {
+                "min_level": 40,
+                "max_level": 50,
+                "species": "SPECIES_TORKOAL"
+              },
+              {
+                "min_level": 35,
+                "max_level": 55,
+                "species": "SPECIES_CENTISKORCH"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_MAROWAK_ALOLAN"
+              },
+              {
+                "min_level": 50,
+                "max_level": 60,
+                "species": "SPECIES_CAMERUPT"
+              },
+              {
+                "min_level": 45,
+                "max_level": 55,
+                "species": "SPECIES_TURTONATOR"
+              },
+              {
+                "min_level": 50,
+                "max_level": 60,
+                "species": "SPECIES_TYPHLOSION"
+              },
+              {
+                "min_level": 40,
+                "max_level": 55,
+                "species": "SPECIES_COALOSSAL"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_NEW_MAP2",
+          "base_label": "gNewMap20",
+          "land_mons": {
+            "encounter_rate": 11,
+            "mons": [
+              {
+                "min_level": 45,
+                "max_level": 50,
+                "species": "SPECIES_LUNATONE"
+              },
+              {
+                "min_level": 45,
+                "max_level": 50,
+                "species": "SPECIES_SOLROCK"
+              },
+              {
+                "min_level": 25,
+                "max_level": 55,
+                "species": "SPECIES_GOLBAT"
+              },
+              {
+                "min_level": 30,
+                "max_level": 55,
+                "species": "SPECIES_DEINO"
+              },
+              {
+                "min_level": 30,
+                "max_level": 55,
+                "species": "SPECIES_GOOMY"
+              },
+              {
+                "min_level": 30,
+                "max_level": 55,
+                "species": "SPECIES_TYRUNT"
+              },
+              {
+                "min_level": 25,
+                "max_level": 45,
+                "species": "SPECIES_NOIBAT"
+              },
+              {
+                "min_level": 30,
+                "max_level": 50,
+                "species": "SPECIES_HAUNTER"
+              },
+              {
+                "min_level": 40,
+                "max_level": 55,
+                "species": "SPECIES_GABITE"
+              },
+              {
+                "min_level": 40,
+                "max_level": 65,
+                "species": "SPECIES_HAXORUS"
+              },
+              {
+                "min_level": 40,
+                "max_level": 60,
+                "species": "SPECIES_SHELGON"
+              },
+              {
+                "min_level": 40,
+                "max_level": 60,
+                "species": "SPECIES_DRAGONAIR"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 30,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 30,
+                "species": "SPECIES_HORSEA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 45,
+                "species": "SPECIES_SKRELP"
+              },
+              {
+                "min_level": 40,
+                "max_level": 60,
+                "species": "SPECIES_GYARADOS"
+              },
+              {
+                "min_level": 40,
+                "max_level": 60,
+                "species": "SPECIES_KINGDRA"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 40,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 35,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 35,
+                "species": "SPECIES_HORSEA"
+              },
+              {
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 20,
+                "max_level": 50,
+                "species": "SPECIES_GYARADOS"
+              },
+              {
+                "min_level": 20,
+                "max_level": 50,
+                "species": "SPECIES_DRAGALGE"
+              },
+              {
+                "min_level": 30,
+                "max_level": 60,
+                "species": "SPECIES_GYARADOS"
+              },
+              {
+                "min_level": 30,
+                "max_level": 60,
+                "species": "SPECIES_WAILMER"
+              },
+              {
+                "min_level": 30,
+                "max_level": 60,
+                "species": "SPECIES_WHISCASH"
+              },
+              {
+                "min_level": 30,
+                "max_level": 60,
+                "species": "SPECIES_DRAGALGE"
+              },
+              {
+                "min_level": 30,
+                "max_level": 60,
+                "species": "SPECIES_DRAGONAIR"
+              }
+            ]
+          }
         }
       ]
     },
