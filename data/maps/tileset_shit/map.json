@@ -5,8 +5,8 @@
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_NONE",
+  "weather": "WEATHER_SNOW",
+  "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": false,
@@ -17,7 +17,20 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 39,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_TILESET_SHIT",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 38,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_TILESET_SHIT",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
 

@@ -4454,8 +4454,8 @@
     {
       "id": "LAYOUT_TILESET_SHIT",
       "name": "tileset_shit_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 40,
+      "height": 40,
       "primary_tileset": "gTileset_Tundra",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/tileset_shit/border.bin",
