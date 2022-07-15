@@ -30,6 +30,20 @@
       "elevation": 0,
       "dest_map": "MAP_TILESET_SHIT",
       "dest_warp_id": 0
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_KASAAN",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_KASAAN",
+      "dest_warp_id": 1
     }
   ],
   "coord_events": [

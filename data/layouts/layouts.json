@@ -4460,6 +4460,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/tileset_shit/border.bin",
       "blockdata_filepath": "data/layouts/tileset_shit/map.bin"
+    },
+    {
+      "id": "LAYOUT_KASAAN",
+      "name": "Kasaan_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_Tundra",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Kasaan/border.bin",
+      "blockdata_filepath": "data/layouts/Kasaan/map.bin"
     }
   ]
 }
