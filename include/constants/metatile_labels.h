@@ -785,6 +785,10 @@
 #define METATILE_TrickHousePuzzle_RedDoorV_Retracted          0x24A
 #define METATILE_TrickHousePuzzle_Stairs_Down                 0x20B
 
+// gTileset_Tundra
+#define METATILE_Tundra_Door_Littleroot  0x142
+#define METATILE_Tundra_Door_PokeCenter  0x119
+
 // gTileset_Underwater
 #define METATILE_Underwater_FloorShadow  0x228
 #define METATILE_Underwater_RockWall     0x21E

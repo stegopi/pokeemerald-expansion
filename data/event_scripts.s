@@ -1068,3 +1068,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/tileset_shit/scripts.inc"
 
 	.include "data/maps/Kasaan/scripts.inc"
+
+	.include "data/maps/Kasaan_Gym/scripts.inc"
+
+	.include "data/maps/Kasaan_Gym2/scripts.inc"
+
+	.include "data/maps/Kasaan_PokeCenter/scripts.inc"

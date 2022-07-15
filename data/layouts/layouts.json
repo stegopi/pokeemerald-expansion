@@ -4470,6 +4470,36 @@
       "secondary_tileset": "gTileset_Tundra_2",
       "border_filepath": "data/layouts/Kasaan/border.bin",
       "blockdata_filepath": "data/layouts/Kasaan/map.bin"
+    },
+    {
+      "id": "LAYOUT_KASAAN_GYM",
+      "name": "Kasaan_Gym_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_Tundra",
+      "secondary_tileset": "gTileset_Tundra_2",
+      "border_filepath": "data/layouts/Kasaan_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/Kasaan_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_KASAAN_GYM2",
+      "name": "Kasaan_Gym2_Layout",
+      "width": 35,
+      "height": 35,
+      "primary_tileset": "gTileset_Tundra",
+      "secondary_tileset": "gTileset_Tundra_2",
+      "border_filepath": "data/layouts/Kasaan_Gym2/border.bin",
+      "blockdata_filepath": "data/layouts/Kasaan_Gym2/map.bin"
+    },
+    {
+      "id": "LAYOUT_KASAAN_POKE_CENTER",
+      "name": "Kasaan_PokeCenter_Layout",
+      "width": 15,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/Kasaan_PokeCenter/border.bin",
+      "blockdata_filepath": "data/layouts/Kasaan_PokeCenter/map.bin"
     }
   ]
 }
