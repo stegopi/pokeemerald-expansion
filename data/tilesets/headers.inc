@@ -841,3 +841,14 @@ gTileset_Tundra::
 	.4byte gMetatiles_Tundra
 	.4byte gMetatileAttributes_Tundra
 	.4byte NULL
+
+	.align 2
+gTileset_Tundra_2::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Tundra_2
+	.4byte gTilesetPalettes_Tundra_2
+	.4byte gMetatiles_Tundra_2
+	.4byte gMetatileAttributes_Tundra_2
+	.4byte NULL

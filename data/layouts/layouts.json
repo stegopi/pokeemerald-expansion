@@ -4457,7 +4457,7 @@
       "width": 40,
       "height": 40,
       "primary_tileset": "gTileset_Tundra",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Tundra_2",
       "border_filepath": "data/layouts/tileset_shit/border.bin",
       "blockdata_filepath": "data/layouts/tileset_shit/map.bin"
     },
@@ -4467,7 +4467,7 @@
       "width": 40,
       "height": 40,
       "primary_tileset": "gTileset_Tundra",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Tundra_2",
       "border_filepath": "data/layouts/Kasaan/border.bin",
       "blockdata_filepath": "data/layouts/Kasaan/map.bin"
     }

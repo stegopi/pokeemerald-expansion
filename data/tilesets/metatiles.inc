@@ -565,3 +565,10 @@ gMetatiles_Tundra::
 	.align 1
 gMetatileAttributes_Tundra::
 	.incbin "data/tilesets/primary/tundra/metatile_attributes.bin"
+	.align 1
+gMetatiles_Tundra_2::
+	.incbin "data/tilesets/secondary/tundra_2/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Tundra_2::
+	.incbin "data/tilesets/secondary/tundra_2/metatile_attributes.bin"
