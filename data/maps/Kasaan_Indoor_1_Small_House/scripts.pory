@@ -2,14 +2,15 @@ mapscripts Kasaan_Indoor_1_Small_House_MapScripts {}
 
 script Kasaan_SmallHouseWindow {
 	lock
-	msgbox(format("You look out the window... The playground is a fiasco. You see red liquid flowing, shouting, and children holding axes."))
+	msgbox(format("You look out the window... The playground is a fiasco. You see what seems like blood flowing, children shouting, their sadistic giggles, and axes being wielded. "))
 	release
 	end
 }
-script HouseOwner_Husband {
+script SmallHouseOwner_Husband {
 	lock
 	faceplayer
-	msgbox(format("*Sigh*\n"))
+	msgbox(format("Living in Kasaan is a quiet and normal life. Huh? You're wondering about the kids and the axes? That's completely normal. At least my son says so. "))
 	release
 	end
 }
+script HouseOw
