@@ -47,3 +47,17 @@ script Holey_Logs {
     release
     end
 }
+
+script Kasaan_Playground_Sign {
+	lock
+    msgbox(format("The famous playground of Traf."))
+    release
+    end
+}
+
+script Kasaan_Gym_Sign {
+	lock
+    msgbox(format("Gym"))
+    release
+    end
+}
