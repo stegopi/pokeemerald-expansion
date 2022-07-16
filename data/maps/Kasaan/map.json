@@ -50,6 +50,45 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Logs_Tripping"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Slide_Ice_Trees_Axes"
+    },
+    {
+      "type": "sign",
+      "x": 33,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Axes_Trees"
+    },
+    {
+      "type": "sign",
+      "x": 21,
+      "y": 31,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Sus_Mas_Tree"
+    },
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 31,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Holey_Logs"
+    }
   ]
 }
