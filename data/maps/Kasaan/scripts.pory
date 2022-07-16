@@ -1,6 +1,7 @@
-Kasaan_MapScripts{
+mapscripts Kasaan_MapScripts {
 	
 }
+
 script Slide_Ice_Trees_Axes {
 	lock
     msgbox(format("Falling down always feels better when you land on the ice with a hatchet in your head.\pThere seems to be bloodstains on the handles of the axes."))
