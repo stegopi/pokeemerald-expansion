@@ -1076,3 +1076,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Kasaan_PokeCenter/scripts.inc"
 
 	.include "data/maps/NewMap1/scripts.inc"
+
+	.include "data/maps/Indoor_1_Small_House/scripts.inc"

@@ -599,9 +599,10 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
 // gMapGroup_IndoorKasaan
-#define MAP_KASAAN_GYM         (0 | (34 << 8))
-#define MAP_KASAAN_GYM2        (1 | (34 << 8))
-#define MAP_KASAAN_POKE_CENTER (2 | (34 << 8))
+#define MAP_KASAAN_GYM                  (0 | (34 << 8))
+#define MAP_KASAAN_GYM2                 (1 | (34 << 8))
+#define MAP_KASAAN_POKE_CENTER          (2 | (34 << 8))
+#define MAP_KASAAN_INDOOR_1_SMALL_HOUSE (3 | (34 << 8))
 
 #define MAP_GROUPS_COUNT 35
 

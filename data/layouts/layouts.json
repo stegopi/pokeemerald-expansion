@@ -4510,6 +4510,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/NewMap1/border.bin",
       "blockdata_filepath": "data/layouts/NewMap1/map.bin"
+    },
+    {
+      "id": "LAYOUT_KASAAN_INDOOR_1_SMALL_HOUSE",
+      "name": "Kasaan_Indoor_1_Small_House_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Kasaan_Indoor_1_Small_House/border.bin",
+      "blockdata_filepath": "data/layouts/Kasaan_Indoor_1_Small_House/map.bin"
     }
   ]
 }

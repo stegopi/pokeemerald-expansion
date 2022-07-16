@@ -1,0 +1,15 @@
+mapscripts Kasaan_Indoor_1_Small_House_MapScripts {}
+
+script Kasaan_SmallHouseWindow {
+	lock
+	msgbox(format("You look out the window... The playground is a fiasco. You see red liquid flowing, shouting, and children holding axes."))
+	release
+	end
+}
+script HouseOwner_Husband {
+	lock
+	faceplayer
+	msgbox(format("*Sigh*\n"))
+	release
+	end
+}
