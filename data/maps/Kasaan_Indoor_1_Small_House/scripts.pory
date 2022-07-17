@@ -2,7 +2,7 @@ mapscripts Kasaan_Indoor_1_Small_House_MapScripts {}
 
 script Kasaan_SmallHouseWindow {
 	lock
-	msgbox(format("You look out the window... The playground is a fiasco. You see what seems like {COLOR RED}blood {COLOR DARK_GRAY}flowing, children shouting, their sadistic giggles, and axes being wielded. "))
+	msgbox(format("You look out the window... The playground is a fiasco. You see what seems like blood flowing, children shouting, their sadistic giggles, and axes being wielded. "))
 	release
 	end
 }
@@ -13,10 +13,10 @@ script SmallHouseOwner_Husband {
 	release
 	end
 }
-script SmallHouseOwner_Husband {
+script SmallHouseOwner_Wife {
 	lock
 	faceplayer
-	msgbox(format("It doesn't seem strange, does it? Our son hasn't come back from the playground for days. Of course, when they don't come back, we just get more babies. (Sigh)"))
+	msgbox(format("It doesn't seem strange, does it? Our son hasn't come back from the playground for days. Of course, when they don't come back, we just get more. Sigh"))
 	release
 	end
 }

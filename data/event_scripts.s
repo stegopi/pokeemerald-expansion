@@ -1077,6 +1077,6 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/NewMap1/scripts.inc"
 
-	.include "data/maps/Indoor_1_Small_House/scripts.inc"
+	.include "data/maps/Kasaan_Indoor_1_Small_House/scripts.inc"
 
 	.include "data/maps/Kasaan_Gym3/scripts.inc"
