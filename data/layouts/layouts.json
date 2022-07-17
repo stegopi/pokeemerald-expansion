@@ -4520,6 +4520,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/Kasaan_Indoor_1_Small_House/border.bin",
       "blockdata_filepath": "data/layouts/Kasaan_Indoor_1_Small_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_KASAAN_GYM3",
+      "name": "Kasaan_Gym3_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_Tundra",
+      "secondary_tileset": "gTileset_Tundra_2",
+      "border_filepath": "data/layouts/Kasaan_Gym3/border.bin",
+      "blockdata_filepath": "data/layouts/Kasaan_Gym3/map.bin"
     }
   ]
 }

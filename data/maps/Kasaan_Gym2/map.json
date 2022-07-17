@@ -17,7 +17,20 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 6,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_KASAAN_GYM",
+      "dest_warp_id": 2
+    },
+    {
+      "x": 16,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_KASAAN_GYM3",
+      "dest_warp_id": 1
+    }
   ],
   "coord_events": [
 

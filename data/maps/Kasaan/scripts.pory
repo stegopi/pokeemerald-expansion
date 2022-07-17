@@ -4,7 +4,7 @@ mapscripts Kasaan_MapScripts {
 
 script Slide_Ice_Trees_Axes {
 	lock
-    msgbox(format("Falling down always feels better when you land on the ice with a hatchet in your head.\pThere seems to be bloodstains on the handles of the axes."))
+    msgbox(format("Falling down always feels better when you land on the ice with a hatchet in your head.\p{COLOR RED}There seems to be bloodstains on the handles of the axes."))
     release
     end
 }
@@ -108,6 +108,19 @@ script Playground_King {
     else {
         msgbox(format("FUCK YOU BITCH!"))
     }
+    release
+    end
+}
+
+script Oofer {
+    lock
+    msgbox("Uhh. Oof.")
+    release
+    end
+}
+script Yippee {
+    lock
+    msgbox("Yippee! ...\nThe guy up there? He's the playground king! He's really nice.")
     release
     end
 }

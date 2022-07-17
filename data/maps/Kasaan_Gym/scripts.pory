@@ -2,3 +2,7 @@ raw `
 Kasaan_Gym_MapScripts::
 	.byte 0
 `
+script Logs {
+	msgbox(format("Looks like they're low on budget."), 0x4)
+	end
+}
