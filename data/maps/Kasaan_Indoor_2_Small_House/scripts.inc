@@ -30,7 +30,7 @@ Old_Man_With_GSlowpoke_8:
 	msgbox Old_Man_With_GSlowpoke_Text_1
 	setvar 0x8003, 1
 	hidemonpic
-	givemon SPECIES_SLOWPOKE_GALARIAN, 14, ITEM_KINGS_ROCK
+	givemon SPECIES_SLOWPOKE_GALARIAN, 25, ITEM_KINGS_ROCK
 	fadescreen 1
 	fadescreen 0
 	setflag FLAG_UNUSED_0x020
