@@ -3,14 +3,19 @@ script Old_Man_With_GSlowpoke {
 	lock
 	faceplayer
 	if (flag(FLAG_UNUSED_0x020)==false) {
-		countpokemon
+		getpartysize
 		if (var(VAR_RESULT)<6) {
 			msgbox(format("You see, I have a bit of a problem. Are you willing to help me?"), MSGBOX_YESNO)
 			if (var(VAR_RESULT)==1) {
+				showmonpic(SPECIES_SLOWPOKE_GALARIAN, 10 3)
 				msgbox(format("Thank you. See, I have this Galarian Slowpoke that's been with me for years and years. I've grown in this corrupt city just as long. But nowadays, my Slowpoke can't get fresh air. I'll give it to you, and you'll take it along with your journeys."))
 				setvar(0x8003, 1)
-				givepokemon(SPECIES_SLOWPOKE_GALARIAN, 14, ITEM_KINGS_ROCK)
+				hidemonpic
+				givemon(SPECIES_SLOWPOKE_GALARIAN, 14, ITEM_KINGS_ROCK)
+				fadescreen(1)
+				fadescreen(0)
 				setflag(FLAG_UNUSED_0x020)
+
 			}
 			else {
 				msgbox(format("Come back whenever you want."))
