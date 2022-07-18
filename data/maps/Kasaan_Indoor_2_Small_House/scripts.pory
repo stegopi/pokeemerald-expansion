@@ -11,7 +11,7 @@ script Old_Man_With_GSlowpoke {
 				msgbox(format("Thank you. See, I have this Galarian Slowpoke that's been with me for years and years. I've grown in this corrupt city just as long. But nowadays, my Slowpoke can't get fresh air. I'll give it to you, and you'll take it along with your journeys."))
 				setvar(0x8003, 1)
 				hidemonpic
-				givemon(SPECIES_SLOWPOKE_GALARIAN, 14, ITEM_KINGS_ROCK)
+				givemon(SPECIES_SLOWPOKE_GALARIAN, 25, ITEM_KINGS_ROCK)
 				fadescreen(1)
 				fadescreen(0)
 				setflag(FLAG_UNUSED_0x020)
