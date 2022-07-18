@@ -3187,6 +3187,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     u32 personality;
     u32 value;
     u16 checksum;
+    u32 shinyValue;
 
     ZeroBoxMonData(boxMon);
 
@@ -3195,39 +3196,35 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     else
         personality = Random32();
 
-    // Determine original trainer ID
-    if (otIdType == OT_ID_RANDOM_NO_SHINY)
+    //Determine original trainer ID
+    if (otIdType == OT_ID_RANDOM_NO_SHINY) //Pokemon cannot be shiny
     {
-        u32 shinyValue;
         do
         {
-            // Choose random OT IDs until one that results in a non-shiny Pokémon
             value = Random32();
-            shinyValue = GET_SHINY_VALUE(value, personality);
+            shinyValue = HIHALF(value) ^ LOHALF(value) ^ HIHALF(personality) ^ LOHALF(personality);
         } while (shinyValue < SHINY_ODDS);
     }
-    else if (otIdType == OT_ID_PRESET)
+    else if (otIdType == OT_ID_PRESET) //Pokemon has a preset OT ID
     {
         value = fixedOtId;
     }
-    else // Player is the OT
+    else //Player is the OT
     {
         value = gSaveBlock2Ptr->playerTrainerId[0]
               | (gSaveBlock2Ptr->playerTrainerId[1] << 8)
               | (gSaveBlock2Ptr->playerTrainerId[2] << 16)
               | (gSaveBlock2Ptr->playerTrainerId[3] << 24);
-        
-        if (CheckBagHasItem(ITEM_SHINY_CHARM, 1))
+    }
+
+    if (gSpecialVar_0x8003 > 0)
+    {
+        do
         {
-            u32 shinyValue;
-            u32 rolls = 0;
-            do
-            {
-                personality = Random32();
-                shinyValue = HIHALF(value) ^ LOHALF(value) ^ HIHALF(personality) ^ LOHALF(personality);
-                rolls++;
-            } while (shinyValue >= SHINY_ODDS && rolls < I_SHINY_CHARM_REROLLS);
-        }
+            personality = Random32();
+            shinyValue = HIHALF(value) ^ LOHALF(value) ^ HIHALF(personality) ^ LOHALF(personality);
+        } while (shinyValue >= SHINY_ODDS);
+        gSpecialVar_0x8003--;
     }
 
     SetBoxMonData(boxMon, MON_DATA_PERSONALITY, &personality);
@@ -3251,7 +3248,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     SetBoxMonData(boxMon, MON_DATA_POKEBALL, &value);
     SetBoxMonData(boxMon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
 
-    if (fixedIV < USE_RANDOM_IVS)
+    if (fixedIV < 32)
     {
         SetBoxMonData(boxMon, MON_DATA_HP_IV, &fixedIV);
         SetBoxMonData(boxMon, MON_DATA_ATK_IV, &fixedIV);
@@ -3265,20 +3262,20 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
         u32 iv;
         value = Random();
 
-        iv = value & MAX_IV_MASK;
+        iv = value & 0x1F;
         SetBoxMonData(boxMon, MON_DATA_HP_IV, &iv);
-        iv = (value & (MAX_IV_MASK << 5)) >> 5;
+        iv = (value & 0x3E0) >> 5;
         SetBoxMonData(boxMon, MON_DATA_ATK_IV, &iv);
-        iv = (value & (MAX_IV_MASK << 10)) >> 10;
+        iv = (value & 0x7C00) >> 10;
         SetBoxMonData(boxMon, MON_DATA_DEF_IV, &iv);
 
         value = Random();
 
-        iv = value & MAX_IV_MASK;
+        iv = value & 0x1F;
         SetBoxMonData(boxMon, MON_DATA_SPEED_IV, &iv);
-        iv = (value & (MAX_IV_MASK << 5)) >> 5;
+        iv = (value & 0x3E0) >> 5;
         SetBoxMonData(boxMon, MON_DATA_SPATK_IV, &iv);
-        iv = (value & (MAX_IV_MASK << 10)) >> 10;
+        iv = (value & 0x7C00) >> 10;
         SetBoxMonData(boxMon, MON_DATA_SPDEF_IV, &iv);
     }
 
