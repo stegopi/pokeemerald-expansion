@@ -198,6 +198,7 @@ static const u8 sMapName_MarineCave[] = _("MARINE CAVE");
 static const u8 sMapName_TerraCave[] = _("TERRA CAVE");
 static const u8 sMapName_DesertUnderpass[] = _("DESERT UNDERPASS");
 static const u8 sMapName_TrainerHill[] = _("TRAINER HILL");
+static const u8 sMapName_Kasaan[] = _("KASAAN");
 
 const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_ABANDONED_SHIP]             = {6, 14, 1, 1, sMapName_AbandonedShip},
@@ -247,6 +248,7 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_JAGGED_PASS2]               = {7, 2, 1, 1, sMapName_JaggedPass},
     [MAPSEC_KANTO_SAFARI_ZONE]          = {0, 0, 1, 1, sMapName_KantoSafariZone},
     [MAPSEC_KANTO_VICTORY_ROAD]         = {0, 0, 1, 1, sMapName_KantoVictoryRoad},
+    [MAPSEC_KASAAN]                     = {2, 2, 1, 1, sMapName_Kasaan},
     [MAPSEC_KINDLE_ROAD]                = {0, 0, 1, 1, sMapName_KindleRoad},
     [MAPSEC_LAVARIDGE_TOWN]             = {5, 3, 1, 1, sMapName_LavaridgeTown},
     [MAPSEC_LAVENDER_TOWN]              = {0, 0, 1, 1, sMapName_LavenderTown},
