@@ -153,7 +153,7 @@ Playground_King_Text_0:
 	.string "Gonna rip and hack and whack until your\l"
 	.string "body's left in tatters!\l"
 	.string "(girl!)\p"
-	.string "Imma hunt you like a dog\l"
+	.string "Imma hunt you like a dog\n"
 	.string "(slay!)\l"
 	.string "Gonna fill your brain with fog\l"
 	.string "(make him pay!)\l"

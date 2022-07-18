@@ -604,6 +604,7 @@
 #define MAP_KASAAN_POKE_CENTER          (2 | (34 << 8))
 #define MAP_KASAAN_INDOOR_1_SMALL_HOUSE (3 | (34 << 8))
 #define MAP_KASAAN_GYM3                 (4 | (34 << 8))
+#define MAP_KASAAN_INDOOR_2_SMALL_HOUSE (5 | (34 << 8))
 
 #define MAP_GROUPS_COUNT 35
 

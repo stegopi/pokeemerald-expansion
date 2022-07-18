@@ -4530,6 +4530,16 @@
       "secondary_tileset": "gTileset_Tundra_2",
       "border_filepath": "data/layouts/Kasaan_Gym3/border.bin",
       "blockdata_filepath": "data/layouts/Kasaan_Gym3/map.bin"
+    },
+    {
+      "id": "LAYOUT_KASAAN_INDOOR_2_SMALL_HOUSE",
+      "name": "Kasaan_Indoor_2_Small_House_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Kasaan_Indoor_2_Small_House/border.bin",
+      "blockdata_filepath": "data/layouts/Kasaan_Indoor_2_Small_House/map.bin"
     }
   ]
 }

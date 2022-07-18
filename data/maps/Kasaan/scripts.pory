@@ -54,7 +54,7 @@ script Kasaan_Gym_Sign {
 script Playground_King {
 	lock
 	faceplayer
-	msgbox(format("Playground King: Hey, yo, you wanna hear my rap? No? I don't care.\pThree...\pTwo...\pOne and:\pI got ice in my veins\ngonna run you over like a train\lImma make you feel every milimeter of this pain!\pGonna make you dive for cover\n(yeah!)\lGonna slice through you like butter\l(uh huh)\lGonna rip and hack and whack until your body's left in tatters!\l(girl!)\pImma hunt you like a dog\n(slay!)\lGonna fill your brain with fog\l(make him pay!)\lGonna make you slither back to your rock like you're stuck in a goddamn bog\l(sheesh!)\pThey say I'm really fat\l(how could they?)\lBut that's a load of crap\l(that's right!)\lI can still beat you hack you slice you whack you just like that\l(you tell him!)\pI'm the Playground King, bitch\l(don't you know?)\lGonna torture you, watch you twitch\l(make him squeal!)\lGonna beat your fucking ass so hard you go home in stitches\l(hot damn!)\pThat's right I'm cold-blooded\l(like the snow!)\lBy the way you smell really fetid\l(oh the smell!)\lDon't walk away thinkin I'm just a kid cuz I am so much more \l(yeah!) \pDid you like my rap?"), MSGBOX_YESNO)
+	msgbox(format("Playground King: Hey, yo, you wanna hear my rap? No? I don't care.\pThree...\pTwo...\pOne and:\pI got ice in my veins\ngonna run you over like a train\lImma make you feel every milimeter of this pain!\pGonna make you dive for cover\n(yeah!)\lGonna slice through you like butter\l(uh huh)\lGonna rip and hack and whack until your body's left in tatters!\l(girl!)\pImma hunt you like a dog\n(slay!)\lGonna fill your brain with fog\l(make him pay!)\lGonna make you slither back to your rock like you're stuck in a goddamn bog\l(sheesh!)\pThey say I'm really fat\n(how could they?)\lBut that's a load of crap\l(that's right!)\lI can still beat you hack you slice you whack you just like that\l(you tell him!)\pI'm the Playground King, bitch\n(don't you know?)\lGonna torture you, watch you twitch\l(make him squeal!)\lGonna beat your fucking ass so hard you go home in stitches\l(hot damn!)\pThat's right I'm cold-blooded\n(like the snow!)\lBy the way you smell really fetid\l(oh the smell!)\lDon't walk away thinkin I'm just a kid cuz I am so much more \l(yeah!) \pDid you like my rap?"), MSGBOX_YESNO)
 	if (var(VAR_RESULT)==1){
 	    msgbox(format("LETZZZ GOOOOOOO! You're a kul kid ya know?"))
 	    giveitem(ITEM_ORAN_BERRY)
@@ -75,7 +75,7 @@ script Oofer {
 }
 script Yippee {
 	lock
-	msgbox("Yippee! ...\nThe guy up there? He's the playground king! He's really nice.")
+	msgbox(format("Yippee! ...\nThe guy up there? He's the playground king! He's really nice."))
 	release
 	end
 }
