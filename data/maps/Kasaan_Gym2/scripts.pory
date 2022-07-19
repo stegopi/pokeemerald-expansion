@@ -2,3 +2,6 @@ raw `
 Kasaan_Gym2_MapScripts::
 	.byte 0
 `
+script Youngster {
+	msgbox(format("Shorts are extremely easy to wear, and they fit this weather perfectly! How come you're not wearing them?"))
+}
