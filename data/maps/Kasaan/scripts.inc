@@ -2,37 +2,37 @@ Kasaan_MapScripts::
 	.byte 0
 
 
-Slide_Ice_Trees_Axes::
+Kasaan_Slide_Ice_Trees_Axes::
 	lock
-	msgbox Slide_Ice_Trees_Axes_Text_0
+	msgbox Kasaan_Slide_Ice_Trees_Axes_Text_0
 	release
 	end
 
 
-Logs_Tripping::
+Kasaan_Logs_Tripping::
 	lock
-	msgbox Logs_Tripping_Text_0
+	msgbox Kasaan_Logs_Tripping_Text_0
 	release
 	end
 
 
-Axes_Trees::
+Kasaan_Axes_Trees::
 	lock
-	msgbox Axes_Trees_Text_0
+	msgbox Kasaan_Axes_Trees_Text_0
 	release
 	end
 
 
-Sus_Mas_Tree::
+Kasaan_Sus_Mas_Tree::
 	lock
-	msgbox Sus_Mas_Tree_Text_0
+	msgbox Kasaan_Sus_Mas_Tree_Text_0
 	release
 	end
 
 
-Holey_Logs::
+Kasaan_Holey_Logs::
 	lock
-	msgbox Holey_Logs_Text_0
+	msgbox Kasaan_Holey_Logs_Text_0
 	release
 	end
 
@@ -51,51 +51,51 @@ Kasaan_Gym_Sign::
 	end
 
 
-Playground_King::
+Kasaan_Playground_King::
 	lock
 	faceplayer
-	msgbox Playground_King_Text_0, MSGBOX_YESNO
+	msgbox Kasaan_Playground_King_Text_0, MSGBOX_YESNO
 	compare VAR_RESULT, 1
-	goto_if_eq Playground_King_2
-	msgbox Playground_King_Text_3
-Playground_King_1:
+	goto_if_eq Kasaan_Playground_King_2
+	msgbox Kasaan_Playground_King_Text_3
+Kasaan_Playground_King_1:
 	release
 	end
 
-Playground_King_2:
-	msgbox Playground_King_Text_1
+Kasaan_Playground_King_2:
+	msgbox Kasaan_Playground_King_Text_1
 	giveitem ITEM_ORAN_BERRY
-	msgbox Playground_King_Text_2
-	goto Playground_King_1
+	msgbox Kasaan_Playground_King_Text_2
+	goto Kasaan_Playground_King_1
 
 
-Oofer::
+Kasaan_Oofer::
 	lock
-	msgbox Oofer_Text_0
+	msgbox Kasaan_Oofer_Text_0
 	release
 	end
 
 
-Yippee::
+Kasaan_Yippee::
 	lock
-	msgbox Yippee_Text_0
+	msgbox Kasaan_Yippee_Text_0
 	release
 	end
 
 
-Slide_Ice_Trees_Axes_Text_0:
+Kasaan_Slide_Ice_Trees_Axes_Text_0:
 	.string "Falling down always feels better when\n"
 	.string "you land on the ice with a hatchet in\l"
 	.string "your head.\p"
 	.string "{COLOR RED}There seems to be bloodstains on the\n"
 	.string "handles of the axes.$"
 
-Logs_Tripping_Text_0:
+Kasaan_Logs_Tripping_Text_0:
 	.string "Logs for kids to trip over. Credited for\n"
 	.string "handing out concussions to more than\l"
 	.string "69 children.$"
 
-Axes_Trees_Text_0:
+Kasaan_Axes_Trees_Text_0:
 	.string "A fun and safe place for children to\n"
 	.string "play!\p"
 	.string "Huh?\n"
@@ -104,7 +104,7 @@ Axes_Trees_Text_0:
 	.string "have absolutely NO idea what you are\l"
 	.string "talking about.$"
 
-Sus_Mas_Tree_Text_0:
+Kasaan_Sus_Mas_Tree_Text_0:
 	.string "This is the sus-mas tree. Every\n"
 	.string "Thursday, we:\p"
 	.string "- Kiss the tree\n"
@@ -116,7 +116,7 @@ Sus_Mas_Tree_Text_0:
 	.string "For more details, please visit\n"
 	.string "theannoyingsite.com.$"
 
-Holey_Logs_Text_0:
+Kasaan_Holey_Logs_Text_0:
 	.string "These are the Holey logs. That's\n"
 	.string "because they have holes. Plus, they're\l"
 	.string "holy. Every Tuesday, we:\p"
@@ -136,7 +136,7 @@ Kasaan_Playground_Sign_Text_0:
 Kasaan_Gym_Sign_Text_0:
 	.string "Gym$"
 
-Playground_King_Text_0:
+Kasaan_Playground_King_Text_0:
 	.string "Playground King: Hey, yo, you wanna\n"
 	.string "hear my rap? No? I don't care.\p"
 	.string "Three...\p"
@@ -183,20 +183,20 @@ Playground_King_Text_0:
 	.string "(yeah!)\p"
 	.string "Did you like my rap?$"
 
-Playground_King_Text_1:
+Kasaan_Playground_King_Text_1:
 	.string "LETZZZ GOOOOOOO! You're a kul kid ya\n"
 	.string "know?$"
 
-Playground_King_Text_2:
+Kasaan_Playground_King_Text_2:
 	.string "Listen to my rap again for more!$"
 
-Playground_King_Text_3:
+Kasaan_Playground_King_Text_3:
 	.string "FUCK YOU BITCH!$"
 
-Oofer_Text_0:
+Kasaan_Oofer_Text_0:
 	.string "Uhh. Oof.$"
 
-Yippee_Text_0:
+Kasaan_Yippee_Text_0:
 	.string "Yippee! ...\n"
 	.string "The guy up there? He's the playground\l"
 	.string "king! He's really nice.$"

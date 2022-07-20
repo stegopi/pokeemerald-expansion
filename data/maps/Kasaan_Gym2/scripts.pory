@@ -4,7 +4,7 @@ Kasaan_Gym2_MapScripts::
 `
 script KasaanGymYoungster {
     if (flag(0x021)==false) {
-        trainerbattle(TRAINER_SAWYER_1, format("Shorts are extremely easy to wear, and they fit this weather perfectly! How come you're not wearing them?"), "Brrr.")
+        trainerbattle_single(TRAINER_SAWYER_1, format("Shorts are extremely easy to wear, and they fit this weather perfectly! How come you're not wearing them?"), "Brrr.")
         setflag(0x021)
         msgbox(KasaanGymYoungsterClose, MSGBOX_AUTOCLOSE)
 
