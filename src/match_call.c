@@ -163,7 +163,7 @@ static void PopulateBattleFrontierStreak(int, u8 *);
 
 static const struct MatchCallTrainerTextInfo sMatchCallTrainers[] =
 {
-    {
+    /*{
         .trainerId = TRAINER_ROSE_1,
         .unused = 0,
         .battleTopicTextIds = BATTLE_TEXT_IDS(8),
@@ -740,7 +740,7 @@ static const struct MatchCallTrainerTextInfo sMatchCallTrainers[] =
         .battleFrontierRecordStreakTextIndex = 9,
         .sameRouteMatchCallTextId = TEXT_ID(REQ_TOPIC_SAME_ROUTE, 9),
         .differentRouteMatchCallTextId = TEXT_ID(REQ_TOPIC_DIFF_ROUTE, 9),
-    },
+    },*/
 };
 
 static const struct MatchCallText sMatchCallWildBattleTexts[] =

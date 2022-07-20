@@ -6,14 +6,14 @@ script Kasaan_SmallHouseWindow {
 	release
 	end
 }
-script SmallHouseOwner_Husband {
+script Kasaan_SmallHouseOwner_Husband {
 	lock
 	faceplayer
 	msgbox(format("Living in Kasaan is a quiet and normal life. Huh? You're wondering about the kids and the axes? That's completely normal. At least my son says so. "))
 	release
 	end
 }
-script SmallHouseOwner_Wife {
+script Kasaan_SmallHouseOwner_Wife {
 	lock
 	faceplayer
 	msgbox(format("It doesn't seem strange, does it? Our son hasn't come back from the playground for days. Of course, when they don't come back, we just get more. Sigh"))

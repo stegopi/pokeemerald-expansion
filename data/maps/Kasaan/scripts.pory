@@ -2,35 +2,35 @@ mapscripts Kasaan_MapScripts {
 	
 }
 
-script Slide_Ice_Trees_Axes {
+script Kasaan_Slide_Ice_Trees_Axes {
 	lock
 	msgbox(format("Falling down always feels better when you land on the ice with a hatchet in your head.\p{COLOR RED}There seems to be bloodstains on the handles of the axes."))
 	release
 	end
 }
 
-script Logs_Tripping {
+script Kasaan_Logs_Tripping {
 	lock
 	msgbox(format("Logs for kids to trip over. Credited for handing out concussions to more than 69 children."))
 	release
 	end
 }
 
-script Axes_Trees {
+script Kasaan_Axes_Trees {
 	lock
 	msgbox(format("A fun and safe place for children to play! \pHuh?\nYou're asking what that lump under the snow is? The one with a bit of red? I have absolutely NO idea what you are talking about."))
 	release
 	end
 }
 
-script Sus_Mas_Tree {
+script Kasaan_Sus_Mas_Tree {
 	lock
 	msgbox(format("This is the sus-mas tree. Every Thursday, we:\p- Kiss the tree\n- play Among Us under the tree\l- Praise the tree\l- Hug the tree\l- Don't chop the tree down\l- Don't light the tree on fire\pFor more details, please visit theannoyingsite.com."))
 	release
 	end
 }
 
-script Holey_Logs {
+script Kasaan_Holey_Logs {
 	lock
 	msgbox(format("These are the Holey logs. That's because they have holes. Plus, they're holy. Every Tuesday, we:\p- Kiss the logs\n- Hug the logs\l- Add more logs when the children break them\l- Praise the logs\l- Thank the logs for everything, even if you are a bum\pFor more details on activities, visit theannoyingsite.com."))
 	release
@@ -51,7 +51,7 @@ script Kasaan_Gym_Sign {
 	end
 }
 
-script Playground_King {
+script Kasaan_Playground_King {
 	lock
 	faceplayer
 	msgbox(format("Playground King: Hey, yo, you wanna hear my rap? No? I don't care.\pThree...\pTwo...\pOne and:\pI got ice in my veins\ngonna run you over like a train\lImma make you feel every milimeter of this pain!\pGonna make you dive for cover\n(yeah!)\lGonna slice through you like butter\l(uh huh)\lGonna rip and hack and whack until your body's left in tatters!\l(girl!)\pImma hunt you like a dog\n(slay!)\lGonna fill your brain with fog\l(make him pay!)\lGonna make you slither back to your rock like you're stuck in a goddamn bog\l(sheesh!)\pThey say I'm really fat\n(how could they?)\lBut that's a load of crap\l(that's right!)\lI can still beat you hack you slice you whack you just like that\l(you tell him!)\pI'm the Playground King, bitch\n(don't you know?)\lGonna torture you, watch you twitch\l(make him squeal!)\lGonna beat your fucking ass so hard you go home in stitches\l(hot damn!)\pThat's right I'm cold-blooded\n(like the snow!)\lBy the way you smell really fetid\l(oh the smell!)\lDon't walk away thinkin I'm just a kid cuz I am so much more \l(yeah!) \pDid you like my rap?"), MSGBOX_YESNO)
@@ -67,13 +67,13 @@ script Playground_King {
 	end
 }
 
-script Oofer {
+script Kasaan_Oofer {
 	lock
 	msgbox("Uhh. Oof.")
 	release
 	end
 }
-script Yippee {
+script Kasaan_Yippee {
 	lock
 	msgbox(format("Yippee! ...\nThe guy up there? He's the playground king! He's really nice."))
 	release

@@ -2,6 +2,16 @@ raw `
 Kasaan_Gym2_MapScripts::
 	.byte 0
 `
-script Youngster {
-	msgbox(format("Shorts are extremely easy to wear, and they fit this weather perfectly! How come you're not wearing them?"))
+script KasaanGymYoungster {
+    if (flag(0x021)==false) {
+        trainerbattle(TRAINER_SAWYER_1, format("Shorts are extremely easy to wear, and they fit this weather perfectly! How come you're not wearing them?"), "Brrr.")
+        setflag(0x021)
+        msgbox(KasaanGymYoungsterClose, MSGBOX_AUTOCLOSE)
+
+    }
+    else {
+    	msgbox(KasaanGymYoungsterClose, MSGBOX_AUTOCLOSE)
+    }
 }
+
+text KasaanGymYoungsterClose {format("It's cold? I dunno what you mean!")}

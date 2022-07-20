@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Playground_King",
+      "script": "Kasaan_Playground_King",
       "flag": "0"
     },
     {
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Oofer",
+      "script": "Kasaan_Oofer",
       "flag": "0"
     },
     {
@@ -50,7 +50,20 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Yippee",
+      "script": "Kasaan_Yippee",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 0,
+      "y": 25,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_PC",
       "flag": "0"
     }
   ],
@@ -108,7 +121,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Logs_Tripping"
+      "script": ""
     },
     {
       "type": "sign",
@@ -116,7 +129,7 @@
       "y": 2,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Slide_Ice_Trees_Axes"
+      "script": "Kasaan_Slide_Ice_Trees_Axes"
     },
     {
       "type": "sign",
@@ -124,7 +137,7 @@
       "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Axes_Trees"
+      "script": "Kasaan_Axes_Trees"
     },
     {
       "type": "sign",
@@ -132,7 +145,7 @@
       "y": 31,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Sus_Mas_Tree"
+      "script": "Kasaan_Sus_Mas_Tree"
     },
     {
       "type": "sign",
@@ -140,7 +153,7 @@
       "y": 31,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "Holey_Logs"
+      "script": "Kasaan_Holey_Logs"
     },
     {
       "type": "sign",

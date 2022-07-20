@@ -1,5 +1,5 @@
 mapscripts Kasaan_Indoor_2_Small_House_MapScripts {}
-script Old_Man_With_GSlowpoke {
+script Kasaan_Old_Man_With_GSlowpoke {
 	lock
 	faceplayer
 	if (flag(FLAG_UNUSED_0x020)==false) {
@@ -33,7 +33,7 @@ script Old_Man_With_GSlowpoke {
 	end
 }
 
-script OldLadywithLegend {
+script Kasaan_OldLadywithLegend {
 	lock
 	faceplayer
 	msgbox(format("Have you noticed the IQ difference from here and other cities? Well the legend goes as so: Once a mad scientist used this weird pencil eraser and erased all the text from the books of the city. After many years, people became dumber and dumber. We came from another city with our books, and we tried to give the people them to read. They thought we were a load of rubbish and exiled us to this small house. Sigh."))
