@@ -4540,6 +4540,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/Kasaan_Indoor_2_Small_House/border.bin",
       "blockdata_filepath": "data/layouts/Kasaan_Indoor_2_Small_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_KASAAN_POKE_CENTER2",
+      "name": "Kasaan_PokeCenter2_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/Kasaan_PokeCenter2/border.bin",
+      "blockdata_filepath": "data/layouts/Kasaan_PokeCenter2/map.bin"
     }
   ]
 }

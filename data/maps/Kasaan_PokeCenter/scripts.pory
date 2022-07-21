@@ -1,4 +1,5 @@
 raw `
+.set LOCALID_NURSE, 1
 Kasaan_PokeCenter_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Kasaan_PokeCenter_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
@@ -6,17 +7,15 @@ Kasaan_PokeCenter_MapScripts::
 
 Kasaan_PokeCenter_OnTransition:
 	setrespawn HEAL_LOCATION_KASAAN
-	call Common_EventScript_UpdateBrineyLocation
 	end
 
-Kasaan_PokeCenter_EventScript_Nurse::
+Kasaan_PokemonCenter_EventScript_Nurse::
 	setvar VAR_0x800B, LOCALID_NURSE
 	call Common_EventScript_PkmnCenterNurse
 	waitmessage
 	waitbuttonpress
 	release
 	end
-
 `
 script Kasaan_Blocked_Escalator {
 	lock
