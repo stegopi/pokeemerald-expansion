@@ -3,15 +3,12 @@ Kasaan_Gym2_MapScripts::
 	.byte 0
 `
 script KasaanGymYoungster {
-    if (flag(0x021)==false) {
-        trainerbattle_single(TRAINER_SAWYER_1, format("Shorts are extremely easy to wear, and they fit this weather perfectly! How come you're not wearing them?"), "Brrr.")
-        setflag(0x021)
-        msgbox(KasaanGymYoungsterClose, MSGBOX_AUTOCLOSE)
-
-    }
-    else {
-    	msgbox(KasaanGymYoungsterClose, MSGBOX_AUTOCLOSE)
-    }
+    trainerbattle_single(TRAINER_SAWYER_1, format("Shorts are extremely easy to wear, and they fit this weather perfectly! How come you're not wearing them?"), "Brrr.")
+    msgbox(format("It's cold? I dunno what you mean!"), MSGBOX_AUTOCLOSE)
+    end
 }
-
-text KasaanGymYoungsterClose {format("It's cold? I dunno what you mean!")}
+script KasaanGymSchoolKid {
+    trainerbattle_single(TRAINER_GABRIELLE_1, format("Crucio! Avada Kedavra! Imperio!"), "You're mean.")
+    msgbox(format("Levicorpus!"), MSGBOX_AUTOCLOSE)
+    end
+}

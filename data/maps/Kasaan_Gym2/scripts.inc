@@ -2,15 +2,15 @@ Kasaan_Gym2_MapScripts::
 	.byte 0
 
 KasaanGymYoungster::
-	goto_if_unset 0x021, KasaanGymYoungster_1
-	msgbox KasaanGymYoungsterClose, MSGBOX_AUTOCLOSE
-	return
-
-KasaanGymYoungster_1:
 	trainerbattle_single TRAINER_SAWYER_1, KasaanGymYoungster_Text_0, KasaanGymYoungster_Text_1
-	setflag 0x021
-	msgbox KasaanGymYoungsterClose, MSGBOX_AUTOCLOSE
-	return
+	msgbox KasaanGymYoungster_Text_2, MSGBOX_AUTOCLOSE
+	end
+
+
+KasaanGymSchoolKid::
+	trainerbattle_single TRAINER_GABRIELLE_1, KasaanGymSchoolKid_Text_0, KasaanGymSchoolKid_Text_1
+	msgbox KasaanGymSchoolKid_Text_2, MSGBOX_AUTOCLOSE
+	end
 
 
 KasaanGymYoungster_Text_0:
@@ -21,5 +21,14 @@ KasaanGymYoungster_Text_0:
 KasaanGymYoungster_Text_1:
 	.string "Brrr.$"
 
-KasaanGymYoungsterClose::
+KasaanGymYoungster_Text_2:
 	.string "It's cold? I dunno what you mean!$"
+
+KasaanGymSchoolKid_Text_0:
+	.string "Crucio! Avada Kedavra! Imperio!$"
+
+KasaanGymSchoolKid_Text_1:
+	.string "You're mean.$"
+
+KasaanGymSchoolKid_Text_2:
+	.string "Levicorpus!$"
