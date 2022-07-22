@@ -17,9 +17,9 @@ Kasaan_PokemonCenter_EventScript_Nurse::
 	release
 	end
 `
-script Kasaan_Blocked_Escalator {
+script Kasaan_Center_Blocked_Escalator {
 	lock
-	msgbox(format("The escalator is out of order. Looks like the top is jammed."))
+	msgbox(format("The escalator seems to be running the wrong way. Bloodstains mark the attempts of past people attempting to go up. (How can a one-lane escalator go both up and down?)"))
 	release
 	end
 }

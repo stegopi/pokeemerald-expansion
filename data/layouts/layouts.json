@@ -4504,10 +4504,10 @@
     {
       "id": "LAYOUT_NEW_MAP1",
       "name": "NewMap1_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "width": 30,
+      "height": 32,
+      "primary_tileset": "gTileset_Tundra",
+      "secondary_tileset": "gTileset_Tundra_2",
       "border_filepath": "data/layouts/NewMap1/border.bin",
       "blockdata_filepath": "data/layouts/NewMap1/map.bin"
     },
