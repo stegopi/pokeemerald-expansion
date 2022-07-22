@@ -3,6 +3,6 @@ Kasaan_Gym_MapScripts::
 	.byte 0
 `
 script KasaanGymLogs {
-	msgbox(format("Looks like they're low on budget."), 0x4)
+	msgbox(format("Looks like they're low on budget."), MSGBOX_SIGN)
 	end
 }

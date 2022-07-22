@@ -3,51 +3,37 @@ mapscripts Kasaan_MapScripts {
 }
 
 script Kasaan_Slide_Ice_Trees_Axes {
-	lock
-	msgbox(format("Falling down always feels better when you land on the ice with a hatchet in your head.\p{COLOR RED}There seems to be bloodstains on the handles of the axes."))
-	release
+	msgbox(format("Falling down always feels better when you land on the ice with a hatchet in your head.\p{COLOR RED}There seems to be bloodstains on the handles of the axes."), MSGBOX_SIGN)
 	end
 }
 
 script Kasaan_Logs_Tripping {
-	lock
-	msgbox(format("Logs for kids to trip over. Credited for handing out concussions to more than 69 children."))
-	release
+	msgbox(format("Logs for kids to trip over. Credited for handing out concussions to more than 69 children."), MSGBOX_SIGN)
 	end
 }
 
 script Kasaan_Axes_Trees {
-	lock
-	msgbox(format("A fun and safe place for children to play! \pHuh?\nYou're asking what that lump under the snow is? The one with a bit of red? I have absolutely NO idea what you are talking about."))
-	release
+	msgbox(format("A fun and safe place for children to play! \pHuh?\nYou're asking what that lump under the snow is? The one with a bit of red? I have absolutely NO idea what you are talking about."), MSGBOX_SIGN)
 	end
 }
 
 script Kasaan_Sus_Mas_Tree {
-	lock
-	msgbox(format("This is the sus-mas tree. Every Thursday, we:\p- Kiss the tree\n- play Among Us under the tree\l- Praise the tree\l- Hug the tree\l- Don't chop the tree down\l- Don't light the tree on fire\pFor more details, please visit theannoyingsite.com."))
-	release
+	msgbox(format("This is the sus-mas tree. Every Thursday, we:\p- Kiss the tree\n- play Among Us under the tree\l- Praise the tree\l- Hug the tree\l- Don't chop the tree down\l- Don't light the tree on fire\pFor more details, please visit theannoyingsite.com."), MSGBOX_SIGN)
 	end
 }
 
 script Kasaan_Holey_Logs {
-	lock
-	msgbox(format("These are the Holey logs. That's because they have holes. Plus, they're holy. Every Tuesday, we:\p- Kiss the logs\n- Hug the logs\l- Add more logs when the children break them\l- Praise the logs\l- Thank the logs for everything, even if you are a bum\pFor more details on activities, visit theannoyingsite.com."))
-	release
+	msgbox(format("These are the Holey logs. That's because they have holes. Plus, they're holy. Every Tuesday, we:\p- Kiss the logs\n- Hug the logs\l- Add more logs when the children break them\l- Praise the logs\l- Thank the logs for everything, even if you are a bum\pFor more details on activities, visit theannoyingsite.com."), MSGBOX_SIGN)
 	end
 }
 
 script Kasaan_Playground_Sign {
-	lock
-	msgbox(format("The famous playground of Traf."))
-	release
+	msgbox(format("The famous playground of Traf."), MSGBOX_SIGN)
 	end
 }
 
 script Kasaan_Gym_Sign {
-	lock
-	msgbox(format("Gym"))
-	release
+	msgbox(format("Gym"), MSGBOX_SIGN)
 	end
 }
 

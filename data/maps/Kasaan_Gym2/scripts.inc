@@ -25,10 +25,11 @@ KasaanGymYoungster_Text_2:
 	.string "It's cold? I dunno what you mean!$"
 
 KasaanGymSchoolKid_Text_0:
-	.string "Crucio! Avada Kedavra! Imperio!$"
+	.string "You dare... AVADA KEDAVRA!$"
 
 KasaanGymSchoolKid_Text_1:
-	.string "You're mean.$"
+	.string "Mistakes!$"
 
 KasaanGymSchoolKid_Text_2:
-	.string "Levicorpus!$"
+	.string "For now I'll settle for my old strength\n"
+	.string "before chasing invincibility.$"
