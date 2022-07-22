@@ -8,7 +8,7 @@ script KasaanGymYoungster {
     end
 }
 script KasaanGymSchoolKid {
-    trainerbattle_single(TRAINER_GABRIELLE_1, format("You dare... AVADA KEDAVRA!", "Mistakes!")
+    trainerbattle_single(TRAINER_GABRIELLE_1, format("You dare... AVADA KEDAVRA!"), "Mistakes!")
     msgbox(format("For now I'll settle for my old strength before chasing invincibility."), MSGBOX_AUTOCLOSE)
     end
 }

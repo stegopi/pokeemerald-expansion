@@ -16,13 +16,16 @@ Kasaan_PokemonCenter_EventScript_Nurse::
 	release
 	end
 
-Kasaan_Blocked_Escalator::
+Kasaan_Center_Blocked_Escalator::
 	lock
-	msgbox Kasaan_Blocked_Escalator_Text_0
+	msgbox Kasaan_Center_Blocked_Escalator_Text_0
 	release
 	end
 
 
-Kasaan_Blocked_Escalator_Text_0:
-	.string "The escalator is out of order. Looks\n"
-	.string "like the top is jammed.$"
+Kasaan_Center_Blocked_Escalator_Text_0:
+	.string "The escalator seems to be running the\n"
+	.string "wrong way. Bloodstains mark the\l"
+	.string "attempts of past people attempting to\l"
+	.string "go up. (How can a one-lane escalator go\l"
+	.string "both up and down?)$"
