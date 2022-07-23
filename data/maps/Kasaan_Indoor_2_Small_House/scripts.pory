@@ -10,6 +10,7 @@ script Kasaan_Old_Man_With_GSlowpoke {
 			if (var(VAR_RESULT)<6) {
 				msgbox("Thank you.")
 				hidemonpic
+				setvar(0x8003, 1)
 				givemon(SPECIES_SLOWPOKE_GALARIAN, 25, ITEM_KINGS_ROCK)
 				fadescreen(1)
 				fadescreen(0)

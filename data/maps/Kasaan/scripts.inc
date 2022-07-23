@@ -3,51 +3,37 @@ Kasaan_MapScripts::
 
 
 Kasaan_Slide_Ice_Trees_Axes::
-	lock
-	msgbox Kasaan_Slide_Ice_Trees_Axes_Text_0
-	release
+	msgbox Kasaan_Slide_Ice_Trees_Axes_Text_0, MSGBOX_SIGN
 	end
 
 
 Kasaan_Logs_Tripping::
-	lock
-	msgbox Kasaan_Logs_Tripping_Text_0
-	release
+	msgbox Kasaan_Logs_Tripping_Text_0, MSGBOX_SIGN
 	end
 
 
 Kasaan_Axes_Trees::
-	lock
-	msgbox Kasaan_Axes_Trees_Text_0
-	release
+	msgbox Kasaan_Axes_Trees_Text_0, MSGBOX_SIGN
 	end
 
 
 Kasaan_Sus_Mas_Tree::
-	lock
-	msgbox Kasaan_Sus_Mas_Tree_Text_0
-	release
+	msgbox Kasaan_Sus_Mas_Tree_Text_0, MSGBOX_SIGN
 	end
 
 
 Kasaan_Holey_Logs::
-	lock
-	msgbox Kasaan_Holey_Logs_Text_0
-	release
+	msgbox Kasaan_Holey_Logs_Text_0, MSGBOX_SIGN
 	end
 
 
 Kasaan_Playground_Sign::
-	lock
-	msgbox Kasaan_Playground_Sign_Text_0
-	release
+	msgbox Kasaan_Playground_Sign_Text_0, MSGBOX_SIGN
 	end
 
 
 Kasaan_Gym_Sign::
-	lock
-	msgbox Kasaan_Gym_Sign_Text_0
-	release
+	msgbox Kasaan_Gym_Sign_Text_0, MSGBOX_SIGN
 	end
 
 
@@ -71,6 +57,7 @@ Kasaan_Playground_King_2:
 
 Kasaan_Oofer::
 	lock
+	faceplayer
 	msgbox Kasaan_Oofer_Text_0
 	release
 	end
@@ -78,6 +65,7 @@ Kasaan_Oofer::
 
 Kasaan_Yippee::
 	lock
+	faceplayer
 	msgbox Kasaan_Yippee_Text_0
 	release
 	end
@@ -194,7 +182,7 @@ Kasaan_Playground_King_Text_3:
 	.string "FUCK YOU BITCH!$"
 
 Kasaan_Oofer_Text_0:
-	.string "Uhh. Oof.$"
+	.string "Uhh.\nOof.$"
 
 Kasaan_Yippee_Text_0:
 	.string "Yippee! ...\n"

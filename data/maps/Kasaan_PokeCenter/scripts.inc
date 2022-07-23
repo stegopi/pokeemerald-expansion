@@ -16,6 +16,16 @@ Kasaan_PokemonCenter_EventScript_Nurse::
 	release
 	end
 
+Mart_Badges::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart 0
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
 Kasaan_Center_Blocked_Escalator::
 	lock
 	msgbox Kasaan_Center_Blocked_Escalator_Text_0

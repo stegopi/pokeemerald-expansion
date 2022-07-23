@@ -29,6 +29,7 @@ Kasaan_Old_Man_With_GSlowpoke_5:
 Kasaan_Old_Man_With_GSlowpoke_8:
 	msgbox Kasaan_Old_Man_With_GSlowpoke_Text_1
 	hidemonpic
+	setvar 0x8003, 1
 	givemon SPECIES_SLOWPOKE_GALARIAN, 25, ITEM_KINGS_ROCK
 	fadescreen 1
 	fadescreen 0
