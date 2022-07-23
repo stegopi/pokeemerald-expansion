@@ -55,12 +55,14 @@ script Kasaan_Playground_King {
 
 script Kasaan_Oofer {
 	lock
-	msgbox("Uhh. Oof.")
+	faceplayer
+	msgbox("Uhh.\nOof.")
 	release
 	end
 }
 script Kasaan_Yippee {
 	lock
+	faceplayer
 	msgbox(format("Yippee! ...\nThe guy up there? He's the playground king! He's really nice."))
 	release
 	end
