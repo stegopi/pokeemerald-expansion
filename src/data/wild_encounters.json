@@ -77,18 +77,12 @@
         {
           "type": "headbutt_trees",
           "encounter_rates": [
-            20,
-            20,
+            30,
+            25,
+            15,
+            15,
             10,
-            10,
-            10,
-            10,
-            5,
-            5,
-            4,
-            4,
-            1,
-            1
+            5
           ]
         }
       ],
@@ -11814,8 +11808,8 @@
                 "species": "SPECIES_VANILLITE"
               },
               {
-                "min_level": 25,
-                "max_level": 32,
+                "min_level": 27,
+                "max_level": 28,
                 "species": "SPECIES_CUBCHOO"
               },
               {
@@ -11829,7 +11823,7 @@
                 "species": "SPECIES_SWINUB"
               },
               {
-                "min_level": 26,
+                "min_level": 31,
                 "max_level": 35,
                 "species": "SPECIES_SNEASEL"
               },
@@ -11892,36 +11886,6 @@
                 "min_level": 27,
                 "max_level": 27,
                 "species": "SPECIES_SWINUB"
-              },
-              {
-                "min_level": 26,
-                "max_level": 35,
-                "species": "SPECIES_SNEASEL"
-              },
-              {
-                "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_CRYOGONAL"
-              },
-              {
-                "min_level": 33,
-                "max_level": 33,
-                "species": "SPECIES_PILOSWINE"
-              },
-              {
-                "min_level": 32,
-                "max_level": 32,
-                "species": "SPECIES_EISCUE"
-              },
-              {
-                "min_level": 35,
-                "max_level": 35,
-                "species": "SPECIES_VANILLISH"
-              },
-              {
-                "min_level": 32,
-                "max_level": 32,
-                "species": "SPECIES_SANDSLASH_ALOLAN"
               }
             ]
           }
