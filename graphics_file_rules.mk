@@ -304,7 +304,7 @@ graphics/pokemon_jump/bg.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 63
 
 graphics/pokenav/region_map.8bpp: %.8bpp: %.png
-	$(GFX) $< $@ -num_tiles 161
+	$(GFX) $< $@ -num_tiles 164
 
 $(MISCGFXDIR)/japanese_hof.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 29
