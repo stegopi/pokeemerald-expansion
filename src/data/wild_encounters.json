@@ -75,7 +75,7 @@
           }
         },
         {
-          "type": "headbutt_trees",
+          "type": "headbutt_mons",
           "encounter_rates": [
             30,
             25,
@@ -11823,7 +11823,7 @@
                 "species": "SPECIES_SWINUB"
               },
               {
-                "min_level": 31,
+                "min_level": 30,
                 "max_level": 35,
                 "species": "SPECIES_SNEASEL"
               },
@@ -11854,38 +11854,38 @@
               }
             ]
           },
-          "headbutt_trees": {
-            "encounter_rate": 40,
+          "headbutt_mons": {
+            "encounter_rate": 50,
             "mons": [
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_SNOVER"
+                "species": "SPECIES_SNOM"
               },
               {
                 "min_level": 26,
                 "max_level": 29,
-                "species": "SPECIES_SNORUNT"
+                "species": "SPECIES_MURKROW"
               },
               {
                 "min_level": 25,
                 "max_level": 29,
-                "species": "SPECIES_VANILLITE"
+                "species": "SPECIES_PINECO"
               },
               {
                 "min_level": 25,
                 "max_level": 32,
-                "species": "SPECIES_CUBCHOO"
+                "species": "SPECIES_SNOVER"
               },
               {
                 "min_level": 27,
                 "max_level": 28,
-                "species": "SPECIES_SANDSHREW_ALOLAN"
+                "species": "SPECIES_BURMY"
               },
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_SWINUB"
+                "species": "SPECIES_FROSMOTH"
               }
             ]
           }

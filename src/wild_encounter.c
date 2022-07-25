@@ -733,13 +733,13 @@ void RockSmashWildEncounter(void)
     }
 }
 
-void HeadbuttTreeWildEncounter(void)
+void HeadbuttWildEncounter(void)
 {
     u16 headerId = GetCurrentMapWildMonHeaderId();
 
     if (headerId != HEADER_NONE)
     {
-        const struct WildPokemonInfo *wildPokemonInfo = gWildMonHeaders[headerId].HeadbuttTreesMonsInfo;
+        const struct WildPokemonInfo *wildPokemonInfo = gWildMonHeaders[headerId].headbuttMonsInfo;
 
         if (wildPokemonInfo == NULL)
         {

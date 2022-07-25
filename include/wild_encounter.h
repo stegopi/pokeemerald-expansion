@@ -24,7 +24,7 @@ struct WildPokemonHeader
     const struct WildPokemonInfo *waterMonsInfo;
     const struct WildPokemonInfo *rockSmashMonsInfo;
     const struct WildPokemonInfo *fishingMonsInfo;
-    const struct WildPokemonInfo *HeadbuttTreesMonsInfo;
+    const struct WildPokemonInfo *headbuttMonsInfo;
     
 };
 
