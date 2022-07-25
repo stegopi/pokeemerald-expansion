@@ -572,3 +572,17 @@ gMetatiles_Tundra_2::
 	.align 1
 gMetatileAttributes_Tundra_2::
 	.incbin "data/tilesets/secondary/tundra_2/metatile_attributes.bin"
+	.align 1
+gMetatiles_Volcano1::
+	.incbin "data/tilesets/primary/volcano1/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Volcano1::
+	.incbin "data/tilesets/primary/volcano1/metatile_attributes.bin"
+	.align 1
+gMetatiles_Volcano2::
+	.incbin "data/tilesets/secondary/volcano2/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Volcano2::
+	.incbin "data/tilesets/secondary/volcano2/metatile_attributes.bin"

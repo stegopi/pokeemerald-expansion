@@ -1769,3 +1769,43 @@ gTilesetPalettes_Tundra_2::
 	.align 2
 gTilesetTiles_Tundra_2::
 	.incbin "data/tilesets/secondary/tundra_2/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Volcano1::
+	.incbin "data/tilesets/primary/volcano1/palettes/00.gbapal"
+	.incbin "data/tilesets/primary/volcano1/palettes/01.gbapal"
+	.incbin "data/tilesets/primary/volcano1/palettes/02.gbapal"
+	.incbin "data/tilesets/primary/volcano1/palettes/03.gbapal"
+	.incbin "data/tilesets/primary/volcano1/palettes/04.gbapal"
+	.incbin "data/tilesets/primary/volcano1/palettes/05.gbapal"
+	.incbin "data/tilesets/primary/volcano1/palettes/06.gbapal"
+	.incbin "data/tilesets/primary/volcano1/palettes/07.gbapal"
+	.incbin "data/tilesets/primary/volcano1/palettes/08.gbapal"
+	.incbin "data/tilesets/primary/volcano1/palettes/09.gbapal"
+	.incbin "data/tilesets/primary/volcano1/palettes/10.gbapal"
+	.incbin "data/tilesets/primary/volcano1/palettes/11.gbapal"
+	.incbin "data/tilesets/primary/volcano1/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Volcano1::
+	.incbin "data/tilesets/primary/volcano1/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Volcano2::
+	.incbin "data/tilesets/secondary/volcano2/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/volcano2/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/volcano2/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/volcano2/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/volcano2/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/volcano2/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/volcano2/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/volcano2/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/volcano2/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/volcano2/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/volcano2/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/volcano2/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/volcano2/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Volcano2::
+	.incbin "data/tilesets/secondary/volcano2/tiles.4bpp.lz"

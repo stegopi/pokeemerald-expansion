@@ -852,3 +852,25 @@ gTileset_Tundra_2::
 	.4byte gMetatiles_Tundra_2
 	.4byte gMetatileAttributes_Tundra_2
 	.4byte NULL
+
+	.align 2
+gTileset_Volcano1::
+	.byte TRUE @ is compressed
+	.byte FALSE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Volcano1
+	.4byte gTilesetPalettes_Volcano1
+	.4byte gMetatiles_Volcano1
+	.4byte gMetatileAttributes_Volcano1
+	.4byte NULL
+
+	.align 2
+gTileset_Volcano2::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Volcano2
+	.4byte gTilesetPalettes_Volcano2
+	.4byte gMetatiles_Volcano2
+	.4byte gMetatileAttributes_Volcano2
+	.4byte NULL
