@@ -12,8 +12,6 @@ script Kasaan_Old_Man_With_GSlowpoke {
 				hidemonpic
 				setvar(0x8003, 1)
 				givemon(SPECIES_SLOWPOKE_GALARIAN, 25, ITEM_KINGS_ROCK)
-				fadescreen(1)
-				fadescreen(0)
 				setflag(FLAG_UNUSED_0x020)
 			}
 			else {msgbox(format("Come back without a full party."))}

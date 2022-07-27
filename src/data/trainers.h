@@ -1,3 +1,4 @@
+//Party types: NoItemDefaultMoves, NoItemCustomMoves, ItemDefaultMoves, ItemCustomMoves;
 const struct Trainer gTrainers[] = {
     [TRAINER_NONE] =
     {

@@ -71,6 +71,12 @@ Kasaan_Yippee::
 	end
 
 
+StepOnBurn::
+	special SetBurn
+	msgbox StepOnBurn_Text_0, MSGBOX_SIGN
+	return
+
+
 Kasaan_Slide_Ice_Trees_Axes_Text_0:
 	.string "Falling down always feels better when\n"
 	.string "you land on the ice with a hatchet in\l"
@@ -188,3 +194,6 @@ Kasaan_Yippee_Text_0:
 	.string "Yippee! ...\n"
 	.string "The guy up there? He's the playground\l"
 	.string "king! He's really nice.$"
+
+StepOnBurn_Text_0:
+	.string "Ouch! That's hot!$"

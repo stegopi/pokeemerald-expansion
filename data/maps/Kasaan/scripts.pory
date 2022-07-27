@@ -67,3 +67,8 @@ script Kasaan_Yippee {
 	release
 	end
 }
+
+script StepOnBurn {
+	special(SetBurn)
+	msgbox(format("Ouch! That's hot!"), MSGBOX_SIGN)
+}

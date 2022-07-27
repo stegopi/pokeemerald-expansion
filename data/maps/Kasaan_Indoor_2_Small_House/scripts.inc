@@ -30,7 +30,13 @@ Kasaan_Old_Man_With_GSlowpoke_8:
 	msgbox Kasaan_Old_Man_With_GSlowpoke_Text_1
 	hidemonpic
 	setvar 0x8003, 1
+	givemon SPECIES_LITTEN, 25, ITEM_KINGS_ROCK
 	givemon SPECIES_SLOWPOKE_GALARIAN, 25, ITEM_KINGS_ROCK
+	givemon SPECIES_TYPHLOSION, 25, ITEM_KINGS_ROCK
+	givemon SPECIES_SWINUB, 25, ITEM_KINGS_ROCK
+	givemon SPECIES_LITTEN, 25, ITEM_KINGS_ROCK
+	givemon SPECIES_TURTONATOR, 25, ITEM_KINGS_ROCK
+	givemon SPECIES_VOLCANION, 25, ITEM_KINGS_ROCK
 	fadescreen 1
 	fadescreen 0
 	setflag FLAG_UNUSED_0x020
