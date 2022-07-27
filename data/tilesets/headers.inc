@@ -874,3 +874,47 @@ gTileset_Volcano2::
 	.4byte gMetatiles_Volcano2
 	.4byte gMetatileAttributes_Volcano2
 	.4byte NULL
+
+	.align 2
+gTileset_Bamboo1::
+	.byte TRUE @ is compressed
+	.byte FALSE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Bamboo1
+	.4byte gTilesetPalettes_Bamboo1
+	.4byte gMetatiles_Bamboo1
+	.4byte gMetatileAttributes_Bamboo1
+	.4byte NULL
+
+	.align 2
+gTileset_Bamboo2::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Bamboo2
+	.4byte gTilesetPalettes_Bamboo2
+	.4byte gMetatiles_Bamboo2
+	.4byte gMetatileAttributes_Bamboo2
+	.4byte NULL
+
+	.align 2
+gTileset_Cactus1::
+	.byte TRUE @ is compressed
+	.byte FALSE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Cactus1
+	.4byte gTilesetPalettes_Cactus1
+	.4byte gMetatiles_Cactus1
+	.4byte gMetatileAttributes_Cactus1
+	.4byte NULL
+
+	.align 2
+gTileset_Cactus2::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Cactus2
+	.4byte gTilesetPalettes_Cactus2
+	.4byte gMetatiles_Cactus2
+	.4byte gMetatileAttributes_Cactus2
+	.4byte NULL
