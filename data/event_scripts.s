@@ -608,7 +608,21 @@ EventScript_MoveMrBrineyToDewford::
 	clearflag FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN
 	clearflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
 	end
+@-------
+EventScript_BurnPkm::
+	specialvar VAR_RESULT, SetBurn
+	compare VAR_RESULT, 1
+	goto_if_eq EventScript_BurnPkm_2
+	end
 
+EventScript_BurnPkm_2:
+	msgbox EventScript_BurnPkm_Text_0, MSGBOX_SIGN
+	end
+
+
+EventScript_BurnPkm_Text_0:
+	.string "Ouch! That's hot!$"
+@------
 EventScript_MoveMrBrineyToRoute109::
 	setflag FLAG_HIDE_ROUTE_104_MR_BRINEY
 	setflag FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT

@@ -67,13 +67,23 @@ script Kasaan_Yippee {
 	release
 	end
 }
-
-script StepOnBurn {
-	specialvar(VAR_RESULT, SetBurn)
-	if (var(VAR_RESULT)==1) {
-		msgbox(format("Ouch! That's hot!"), MSGBOX_SIGN)
-		end
-	}
-	end 
+script TestingFlags {
+	lock
+	faceplayer
 	
+	setflag(FLAG_BADGE01_GET)
+	setflag(FLAG_BADGE02_GET)
+	setflag(FLAG_BADGE03_GET)
+	setflag(FLAG_BADGE04_GET)
+	setflag(FLAG_BADGE05_GET)
+	setflag(FLAG_BADGE06_GET)
+	setflag(FLAG_BADGE07_GET)
+	setflag(FLAG_BADGE08_GET)
+	givemon(SPECIES_LITTEN, 25, ITEM_KINGS_ROCK)
+	givemon(SPECIES_TYPHLOSION, 25, ITEM_KINGS_ROCK)
+	givemon(SPECIES_GROUDON, 25, ITEM_KINGS_ROCK)
+	givemon(SPECIES_SWINUB, 25, ITEM_KINGS_ROCK)
+	givemon(SPECIES_HOUNDOUR, 25, ITEM_KINGS_ROCK)
+	release
+	end
 }

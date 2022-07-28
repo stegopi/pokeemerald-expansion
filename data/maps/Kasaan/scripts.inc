@@ -71,17 +71,6 @@ Kasaan_Yippee::
 	end
 
 
-StepOnBurn::
-	specialvar VAR_RESULT, SetBurn
-	compare VAR_RESULT, 1
-	goto_if_eq StepOnBurn_2
-	end
-
-StepOnBurn_2:
-	msgbox StepOnBurn_Text_0, MSGBOX_SIGN
-	end
-
-
 Kasaan_Slide_Ice_Trees_Axes_Text_0:
 	.string "Falling down always feels better when\n"
 	.string "you land on the ice with a hatchet in\l"
@@ -199,6 +188,3 @@ Kasaan_Yippee_Text_0:
 	.string "Yippee! ...\n"
 	.string "The guy up there? He's the playground\l"
 	.string "king! He's really nice.$"
-
-StepOnBurn_Text_0:
-	.string "Ouch! That's hot!$"

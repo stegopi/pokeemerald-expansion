@@ -4564,10 +4564,10 @@
     {
       "id": "LAYOUT_STTOWN",
       "name": "sttown_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 30,
+      "height": 22,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fortree",
+      "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/sttown/border.bin",
       "blockdata_filepath": "data/layouts/sttown/map.bin"
     }

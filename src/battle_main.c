@@ -1879,6 +1879,14 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                     SetMonData(&party[i], MON_DATA_HP_EV + j, &partyData[i].evs[j]);
                 }
                 CalculateMonStats(&party[i]);
+                for (j = 0; j < NUM_STATS; j++)
+                {
+                    SetMonData(&party[i], MON_DATA_HP_IV + j, &partyData[i].ivs[j]);
+                }
+                CalculateMonStats(&party[i]);
+
+                SetMonData(&party[i], MON_DATA_HIDDEN_NATURE, &nature);
+                CalculateMonStats(&party[i]);
                 break;
             }
             case F_TRAINER_PARTY_CUSTOM_MOVESET:
@@ -1902,6 +1910,14 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                     SetMonData(&party[i], MON_DATA_HP_EV + j, &partyData[i].evs[j]);
                 }
                 CalculateMonStats(&party[i]);
+                for (j = 0; j < NUM_STATS; j++)
+                {
+                    SetMonData(&party[i], MON_DATA_HP_IV + j, &partyData[i].ivs[j]);
+                }
+                CalculateMonStats(&party[i]);
+
+                SetMonData(&party[i], MON_DATA_HIDDEN_NATURE, &nature);
+                CalculateMonStats(&party[i]);
 
                 break;
             }
@@ -1922,6 +1938,14 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 {
                     SetMonData(&party[i], MON_DATA_HP_EV + j, &partyData[i].evs[j]);
                 }
+                CalculateMonStats(&party[i]);
+                for (j = 0; j < NUM_STATS; j++)
+                {
+                    SetMonData(&party[i], MON_DATA_HP_IV + j, &partyData[i].ivs[j]);
+                }
+                CalculateMonStats(&party[i]);
+
+                SetMonData(&party[i], MON_DATA_HIDDEN_NATURE, &nature);
                 CalculateMonStats(&party[i]);
                 break;
             }
@@ -1948,6 +1972,14 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 {
                     SetMonData(&party[i], MON_DATA_HP_EV + j, &partyData[i].evs[j]);
                 }
+                CalculateMonStats(&party[i]);
+                for (j = 0; j < NUM_STATS; j++)
+                {
+                    SetMonData(&party[i], MON_DATA_HP_IV + j, &partyData[i].ivs[j]);
+                }
+                CalculateMonStats(&party[i]);
+
+                SetMonData(&party[i], MON_DATA_HIDDEN_NATURE, &nature);
                 CalculateMonStats(&party[i]);
                 break;
             }
