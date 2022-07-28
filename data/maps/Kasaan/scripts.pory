@@ -72,7 +72,8 @@ script StepOnBurn {
 	specialvar(VAR_RESULT, SetBurn)
 	if (var(VAR_RESULT)==1) {
 		msgbox(format("Ouch! That's hot!"), MSGBOX_SIGN)
+		end
 	}
-
+	end 
 	
 }

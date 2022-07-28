@@ -164,7 +164,7 @@ u8 SetBurn (void)
     while (TRUE) {
         pkmncurrentspecies=GetMonData(&gPlayerParty[pkmcount], MON_DATA_SPECIES2, NULL);
         if (pkmncurrentspecies==SPECIES_EGG) {
-            if (pkmcount==6) {
+            if (pkmcount==(PARTY_SIZE)) {
                 burned=0;
                 break;
             }
@@ -178,7 +178,7 @@ u8 SetBurn (void)
                 break;
             }
             else {
-                if (pkmcount==6) {
+                if (pkmcount==(PARTY_SIZE)) {
                     burned=0;
                     break;
                 }

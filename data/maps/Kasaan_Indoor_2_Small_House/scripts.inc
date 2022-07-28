@@ -14,6 +14,7 @@ Kasaan_Old_Man_With_GSlowpoke_1:
 Kasaan_Old_Man_With_GSlowpoke_2:
 	showmonpic SPECIES_SLOWPOKE_GALARIAN, 10 3
 	msgbox Kasaan_Old_Man_With_GSlowpoke_Text_0, MSGBOX_YESNO
+	hidemonpic
 	compare VAR_RESULT, 1
 	goto_if_eq Kasaan_Old_Man_With_GSlowpoke_5
 	msgbox Kasaan_Old_Man_With_GSlowpoke_Text_3
@@ -28,14 +29,7 @@ Kasaan_Old_Man_With_GSlowpoke_5:
 
 Kasaan_Old_Man_With_GSlowpoke_8:
 	msgbox Kasaan_Old_Man_With_GSlowpoke_Text_1
-	hidemonpic
 	setvar 0x8003, 1
-	setflag FLAG_SYS_POKEMON_GET
-	givemon SPECIES_LITTEN, 25, ITEM_KINGS_ROCK
-	givemon SPECIES_SWINUB, 25, ITEM_KINGS_ROCK
-	givemon SPECIES_GROUDON, 25, ITEM_KINGS_ROCK
-	givemon SPECIES_TYPHLOSION, 25, ITEM_KINGS_ROCK
-	givemon SPECIES_HOUNDOUR, 25, ITEM_KINGS_ROCK
 	givemon SPECIES_SLOWPOKE_GALARIAN, 25, ITEM_KINGS_ROCK
 	setflag FLAG_UNUSED_0x020
 	goto Kasaan_Old_Man_With_GSlowpoke_1

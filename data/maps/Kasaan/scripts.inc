@@ -75,20 +75,11 @@ StepOnBurn::
 	specialvar VAR_RESULT, SetBurn
 	compare VAR_RESULT, 1
 	goto_if_eq StepOnBurn_2
-StepOnBurn_1:
-	setflag FLAG_BADGE01_GET
-	setflag FLAG_BADGE02_GET
-	setflag FLAG_BADGE03_GET
-	setflag FLAG_BADGE04_GET
-	setflag FLAG_BADGE05_GET
-	setflag FLAG_BADGE06_GET
-	setflag FLAG_BADGE07_GET
-	setflag FLAG_BADGE08_GET
-	return
+	end
 
 StepOnBurn_2:
 	msgbox StepOnBurn_Text_0, MSGBOX_SIGN
-	goto StepOnBurn_1
+	end
 
 
 Kasaan_Slide_Ice_Trees_Axes_Text_0:
