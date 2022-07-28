@@ -69,6 +69,10 @@ script Kasaan_Yippee {
 }
 
 script StepOnBurn {
-	special(SetBurn)
-	msgbox(format("Ouch! That's hot!"), MSGBOX_SIGN)
+	specialvar(VAR_RESULT, SetBurn)
+	if (var(VAR_RESULT)==1) {
+		msgbox(format("Ouch! That's hot!"), MSGBOX_SIGN)
+	}
+
+	
 }

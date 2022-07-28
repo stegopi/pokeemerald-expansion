@@ -155,36 +155,41 @@ void Special_BeginCyclingRoadChallenge(void)
     gBikeCollisions = 0;
     sBikeCyclingTimer = gMain.vblankCounter1;
 }
-void SetBurn (void)
+u8 SetBurn (void)
 {
-    gSpecialVar_0x8004=0;
+    u16 pkmcount=0;
+    u16 pkmncurrentspecies;
+    u8 burned=1;
+    u32 status=STATUS1_BURN;
     while (TRUE) {
-        gSpecialVar_Result=GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES2, NULL);
-        if (gSpecialVar_Result==SPECIES_EGG) {
-            if (gSpecialVar_0x8004==6) {
+        pkmncurrentspecies=GetMonData(&gPlayerParty[pkmcount], MON_DATA_SPECIES2, NULL);
+        if (pkmncurrentspecies==SPECIES_EGG) {
+            if (pkmcount==6) {
+                burned=0;
                 break;
             }
             else {
-                gSpecialVar_0x8004+=1;
+                pkmcount+=1;
             }
         }
         else {
-            if (GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_STATUS) != STATUS1_BURN && (gBaseStats[gSpecialVar_Result].type1 != TYPE_FIRE && gBaseStats[gSpecialVar_Result].type2 != TYPE_FIRE) ) {
-                u32 status = STATUS1_BURN;
-                SetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_STATUS, &status);
+            if (GetMonData(&gPlayerParty[pkmcount], MON_DATA_STATUS) != STATUS1_BURN && (gBaseStats[pkmncurrentspecies].type1 != TYPE_FIRE && gBaseStats[pkmncurrentspecies].type2 != TYPE_FIRE) ) {
+                SetMonData(&gPlayerParty[pkmcount], MON_DATA_STATUS, &status);
                 break;
             }
             else {
-                if (gSpecialVar_0x8004==6) {
+                if (pkmcount==6) {
+                    burned=0;
                     break;
                 }
                 else {
-                    gSpecialVar_0x8004+=1;
+                    pkmcount+=1;
                 }
             }
         }
 
     }
+    return burned;
     
 }
 

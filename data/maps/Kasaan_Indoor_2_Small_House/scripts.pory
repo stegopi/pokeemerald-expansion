@@ -11,6 +11,13 @@ script Kasaan_Old_Man_With_GSlowpoke {
 				msgbox("Thank you.")
 				hidemonpic
 				setvar(0x8003, 1)
+				
+				setflag(FLAG_SYS_POKEMON_GET)
+				givemon(SPECIES_LITTEN, 25, ITEM_KINGS_ROCK)
+				givemon(SPECIES_SWINUB, 25, ITEM_KINGS_ROCK)
+				givemon(SPECIES_GROUDON, 25, ITEM_KINGS_ROCK)
+				givemon(SPECIES_TYPHLOSION, 25, ITEM_KINGS_ROCK)
+				givemon(SPECIES_HOUNDOUR, 25, ITEM_KINGS_ROCK)
 				givemon(SPECIES_SLOWPOKE_GALARIAN, 25, ITEM_KINGS_ROCK)
 				setflag(FLAG_UNUSED_0x020)
 			}

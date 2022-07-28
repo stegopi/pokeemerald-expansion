@@ -71,6 +71,7 @@
 #define MAP_KASAAN              (62 | (0 << 8))
 #define MAP_NEW_MAP1            (63 | (0 << 8))
 #define MAP_TILESETTESTS        (64 | (0 << 8))
+#define MAP_STTOWN              (65 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

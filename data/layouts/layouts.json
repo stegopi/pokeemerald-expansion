@@ -4560,6 +4560,16 @@
       "secondary_tileset": "gTileset_Cactus2",
       "border_filepath": "data/layouts/Tilesettests/border.bin",
       "blockdata_filepath": "data/layouts/Tilesettests/map.bin"
+    },
+    {
+      "id": "LAYOUT_STTOWN",
+      "name": "sttown_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/sttown/border.bin",
+      "blockdata_filepath": "data/layouts/sttown/map.bin"
     }
   ]
 }
