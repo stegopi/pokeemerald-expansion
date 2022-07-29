@@ -1885,8 +1885,8 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 }
                 CalculateMonStats(&party[i]);
 
-                SetMonData(&party[i], MON_DATA_HIDDEN_NATURE, &nature);
-                CalculateMonStats(&party[i]);
+                /*SetMonData(&party[i], MON_DATA_HIDDEN_NATURE, &nature);
+                CalculateMonStats(&party[i]);*/
                 break;
             }
             case F_TRAINER_PARTY_CUSTOM_MOVESET:
@@ -1916,8 +1916,9 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 }
                 CalculateMonStats(&party[i]);
 
-                SetMonData(&party[i], MON_DATA_HIDDEN_NATURE, &nature);
+                /*SetMonData(&party[i], MON_DATA_HIDDEN_NATURE, &nature);
                 CalculateMonStats(&party[i]);
+                */
 
                 break;
             }
@@ -1945,8 +1946,8 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 }
                 CalculateMonStats(&party[i]);
 
-                SetMonData(&party[i], MON_DATA_HIDDEN_NATURE, &nature);
-                CalculateMonStats(&party[i]);
+                /*SetMonData(&party[i], MON_DATA_HIDDEN_NATURE, &nature);
+                CalculateMonStats(&party[i]);*/
                 break;
             }
             case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM:
@@ -1979,8 +1980,8 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 }
                 CalculateMonStats(&party[i]);
 
-                SetMonData(&party[i], MON_DATA_HIDDEN_NATURE, &nature);
-                CalculateMonStats(&party[i]);
+                /*SetMonData(&party[i], MON_DATA_HIDDEN_NATURE, &nature);
+                CalculateMonStats(&party[i]);*/
                 break;
             }
             }
