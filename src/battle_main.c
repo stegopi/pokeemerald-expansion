@@ -1883,6 +1883,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 {
                     SetMonData(&party[i], MON_DATA_HP_IV + j, &partyData[i].ivs[j]);
                 }
+                SetMonData(&party[i], MON_DATA_ABILITY_NUM, &partyData[i].abilityNums);
                 CalculateMonStats(&party[i]);
 
                 /*SetMonData(&party[i], MON_DATA_HIDDEN_NATURE, &nature);
@@ -1914,6 +1915,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 {
                     SetMonData(&party[i], MON_DATA_HP_IV + j, &partyData[i].ivs[j]);
                 }
+                SetMonData(&party[i], MON_DATA_ABILITY_NUM, &partyData[i].abilityNums);
                 CalculateMonStats(&party[i]);
 
                 /*SetMonData(&party[i], MON_DATA_HIDDEN_NATURE, &nature);
@@ -1944,6 +1946,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 {
                     SetMonData(&party[i], MON_DATA_HP_IV + j, &partyData[i].ivs[j]);
                 }
+                SetMonData(&party[i], MON_DATA_ABILITY_NUM, &partyData[i].abilityNums);
                 CalculateMonStats(&party[i]);
 
                 /*SetMonData(&party[i], MON_DATA_HIDDEN_NATURE, &nature);
@@ -1978,6 +1981,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 {
                     SetMonData(&party[i], MON_DATA_HP_IV + j, &partyData[i].ivs[j]);
                 }
+                SetMonData(&party[i], MON_DATA_ABILITY_NUM, &partyData[i].abilityNums);
                 CalculateMonStats(&party[i]);
 
                 /*SetMonData(&party[i], MON_DATA_HIDDEN_NATURE, &nature);

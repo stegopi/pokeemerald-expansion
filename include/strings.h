@@ -3030,4 +3030,6 @@ extern const u8 gText_ExpShareOff[];
 
 extern const u8 gText_ThrowInPremierBalls[];
 
+extern const u8 gText_MenuPC[];
+
 #endif // GUARD_STRINGS_H
