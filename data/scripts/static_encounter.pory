@@ -1,0 +1,9 @@
+script EventScript_StaticEncounter {
+	lock
+	msgbox("Gyoo!")
+	settotemboost(1, 1, 0, 1, 1, 0, 1)
+	setwildbattle(VAR_RESULT)
+	dowildbattle
+	release
+	end
+}

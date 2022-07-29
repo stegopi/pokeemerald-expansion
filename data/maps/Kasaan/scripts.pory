@@ -70,7 +70,7 @@ script Kasaan_Yippee {
 script TestingFlags {
 	lock
 	faceplayer
-	
+	setflag(FLAG_SYS_POKEMON_GET)
 	setflag(FLAG_BADGE01_GET)
 	setflag(FLAG_BADGE02_GET)
 	setflag(FLAG_BADGE03_GET)

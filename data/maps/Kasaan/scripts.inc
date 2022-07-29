@@ -71,6 +71,27 @@ Kasaan_Yippee::
 	end
 
 
+TestingFlags::
+	lock
+	faceplayer
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_BADGE01_GET
+	setflag FLAG_BADGE02_GET
+	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE08_GET
+	givemon SPECIES_LITTEN, 25, ITEM_KINGS_ROCK
+	givemon SPECIES_TYPHLOSION, 25, ITEM_KINGS_ROCK
+	givemon SPECIES_GROUDON, 25, ITEM_KINGS_ROCK
+	givemon SPECIES_SWINUB, 25, ITEM_KINGS_ROCK
+	givemon SPECIES_HOUNDOUR, 25, ITEM_KINGS_ROCK
+	release
+	end
+
+
 Kasaan_Slide_Ice_Trees_Axes_Text_0:
 	.string "Falling down always feels better when\n"
 	.string "you land on the ice with a hatchet in\l"

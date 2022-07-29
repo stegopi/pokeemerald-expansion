@@ -613,6 +613,7 @@ EventScript_BurnPkm::
 	specialvar VAR_RESULT, SetBurn
 	compare VAR_RESULT, 1
 	goto_if_eq EventScript_BurnPkm_2
+	release
 	end
 
 EventScript_BurnPkm_2:
@@ -1070,6 +1071,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+	.include "data/scripts/static_encounter.inc"
 
 	.include "data/maps/Wilderdeen_Clearing/scripts.inc"
 
