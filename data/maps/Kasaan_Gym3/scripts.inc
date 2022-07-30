@@ -5,20 +5,27 @@ Kasaan_Gym3_MapScripts::
 KasaanGymKhione::
 	lock
 	faceplayer
-	msgbox KasaanGymKhione_Text_0
-	setweather WEATHER_SNOW
-	doweather
-	settotemboost 1, 1, 0, 0, 0, 1
-	trainerbattle_double TRAINER_BRAWLY_2, Kasaan_Gym3_KhioneIntro, Kasaan_Gym3_KhioneDefeated, NO_MUSIC
-	goto_if_unset FLAG_RECEIVED_TM39, KasaanGymKhione_2
+	checktrainerflag TRAINER_BRAWLY_2
+	compare VAR_RESULT, FALSE
+	goto_if_eq KasaanGymKhione_2
 KasaanGymKhione_1:
-	msgbox KasaanGymKhione_Text_1
+	trainerbattle_double TRAINER_BRAWLY_2, Kasaan_Gym3_KhioneIntro, KasaanGymKhione_Text_1, KasaanGymKhione_Text_2, Kasaan_Gym3_KhioneDefeated
+	goto_if_unset FLAG_RECEIVED_TM39, KasaanGymKhione_5
+KasaanGymKhione_4:
+	msgbox KasaanGymKhione_Text_3
 	release
 	end
 
 KasaanGymKhione_2:
-	goto KasaanGymGiveTM
+	msgbox KasaanGymKhione_Text_0
+	setweather WEATHER_SNOW
+	doweather
+	settotemboost 1, 1, 0, 0, 0, 1
 	goto KasaanGymKhione_1
+
+KasaanGymKhione_5:
+	goto KasaanGymGiveTM
+	goto KasaanGymKhione_4
 
 
 Kasaan_Gym3_KhioneDefeated::
@@ -62,6 +69,16 @@ KasaanGymKhione_Text_0:
 	.string "started to hail!)$"
 
 KasaanGymKhione_Text_1:
+	.string "Screw You! Er, I mean Congrats! My Elsa\n"
+	.string "Snow Powers couldn't do the trick?!$"
+
+KasaanGymKhione_Text_2:
+	.string "YOU FREAKING IDIOT! I CAN'T FREAKING\n"
+	.string "BATTLE YOU WHEN YOU ONLY HAVE ONE\l"
+	.string "POKEMON! I ALWAYS KNEW HELICONIA\l"
+	.string "WASN'T FIT FOR THE JOB!$"
+
+KasaanGymKhione_Text_3:
 	.string "I'm training for revenge... WATCH YOUR\n"
 	.string "BACK, SLEEP WITH ONE EYE OPEN. BECAUSE\l"
 	.string "KHIONE'S COMING FOR YOU GLUBBO, AND\l"

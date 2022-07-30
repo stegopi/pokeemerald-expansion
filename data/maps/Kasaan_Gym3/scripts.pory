@@ -2,11 +2,15 @@ mapscripts Kasaan_Gym3_MapScripts {}
 script KasaanGymKhione {
 	lock
 	faceplayer
-	msgbox(format("Khione: Hello weirdo, I'm Khione, the gym leader of this town, and the ex-playground queen. they ousted me be cause they were jealous of my AMAZING, DISNEY PRINCESS, ELSA POWERS... I SAID, MY AMAZING, DISNEY PRINCESS, ELSA POWERS! (In the faint background, you hear the sounds of a snow machine being turned on. It started to hail!) "))
-	setweather(WEATHER_SNOW)
-	doweather
-	settotemboost(1, 1, 0, 0, 0, 1)
-	trainerbattle_double(TRAINER_BRAWLY_2, Kasaan_Gym3_KhioneIntro, format("Screw You! Er, I mean Congrats! My Elsa Snow Powers couldn't do the trick?!"), Kasaan_Gym3_KhioneDefeated, NO_MUSIC)
+	checktrainerflag(TRAINER_BRAWLY_2)
+	if (var(VAR_RESULT)==FALSE) {
+		msgbox(format("Khione: Hello weirdo, I'm Khione, the gym leader of this town, and the ex-playground queen. they ousted me be cause they were jealous of my AMAZING, DISNEY PRINCESS, ELSA POWERS... I SAID, MY AMAZING, DISNEY PRINCESS, ELSA POWERS! (In the faint background, you hear the sounds of a snow machine being turned on. It started to hail!) "))
+		setweather(WEATHER_SNOW)
+		doweather
+		settotemboost(1, 1, 0, 0, 0, 1)
+	}
+	
+	trainerbattle_double(TRAINER_BRAWLY_2, Kasaan_Gym3_KhioneIntro, format("Screw You! Er, I mean Congrats! My Elsa Snow Powers couldn't do the trick?!"), format("YOU FREAKING IDIOT! I CAN'T FREAKING BATTLE YOU WHEN YOU ONLY HAVE ONE POKEMON! I ALWAYS KNEW HELICONIA WASN'T FIT FOR THE JOB!"), Kasaan_Gym3_KhioneDefeated)
 	if (flag(FLAG_RECEIVED_TM39)==FALSE) {
 		goto(KasaanGymGiveTM)
 	}
@@ -22,7 +26,7 @@ script Kasaan_Gym3_KhioneDefeated {
 	message(format("{PLAYER} received the SNOWFLAKE BADGE from Khione."))
 	waitmessage
 	call(Common_EventScript_PlayGymBadgeFanfare)
-	msgbox(format("It also enables them to use the HM move () outside of battle. Please take this with you, too."))
+	msgbox(format("The Snowflake Badge enables the owner to use the HM move () outside of battle. Please take this with you, too."))
 	setflag(FLAG_BADGE02_GET)
 	goto(KasaanGymGiveTM)
 	release
