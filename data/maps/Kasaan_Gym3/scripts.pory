@@ -1,1 +1,42 @@
 mapscripts Kasaan_Gym3_MapScripts {}
+script KasaanGymKhione {
+	lock
+	faceplayer
+	msgbox(format("Khione: Hello weirdo, I'm Khione, the gym leader of this town, and the ex-playground queen. they ousted me be cause they were jealous of my AMAZING, DISNEY PRINCESS, ELSA POWERS... I SAID, MY AMAZING, DISNEY PRINCESS, ELSA POWERS! (In the faint background, you hear the sounds of a snow machine being turned on. It started to hail!) "))
+	setweather(WEATHER_SNOW)
+	doweather
+	settotemboost(1, 1, 0, 0, 0, 1)
+	trainerbattle_double(TRAINER_BRAWLY_2, Kasaan_Gym3_KhioneIntro, format("Screw You! Er, I mean Congrats! My Elsa Snow Powers couldn't do the trick?!"), Kasaan_Gym3_KhioneDefeated, NO_MUSIC)
+	if (flag(FLAG_RECEIVED_TM39)==FALSE) {
+		goto(KasaanGymGiveTM)
+	}
+	msgbox(format("I'm training for revenge... WATCH YOUR BACK, SLEEP WITH ONE EYE OPEN. BECAUSE KHIONE'S COMING FOR YOU GLUBBO, AND THIS TIME WITH VENGEANCE!"))
+	release
+	end
+}
+text Kasaan_Gym3_KhioneIntro {
+    format("PREPARE TO MEET THY DOOM!!!!!")
+}
+
+script Kasaan_Gym3_KhioneDefeated {
+	message(format("{PLAYER} received the SNOWFLAKE BADGE from Khione."))
+	waitmessage
+	call(Common_EventScript_PlayGymBadgeFanfare)
+	msgbox(format("It also enables them to use the HM move () outside of battle. Please take this with you, too."))
+	setflag(FLAG_BADGE02_GET)
+	goto(KasaanGymGiveTM)
+	release
+	end
+}
+script KasaanGymGiveTM {
+	setweather(WEATHER_NONE)
+	doweather
+	giveitem(ITEM_TM13_ICE_BEAM)
+	if (var(VAR_RESULT)==FALSE) {
+		goto(Common_EventScript_ShowBagIsFull)
+	}
+	setflag(FLAG_RECEIVED_TM39)
+	msgbox(format("Ice Beam is an extremely versatile move that can be used multiple times. Plus, it helps heighten my Elsa mystique. Huh? What do you mean, how I have an infinite amount of TMs to give to trainers? Dunno what you're talking about!"))
+	release
+	end
+}

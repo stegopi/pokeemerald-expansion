@@ -11986,35 +11986,30 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne5[] = {
 static const struct TrainerMonItemCustomMoves sParty_Brawly2[] = {
     {
     .iv = 255,
-    .lvl = 33,
-    .evs = {0, 0, 0, 0, 0, 0},
-    .species = SPECIES_MACHAMP,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_KARATE_CHOP, MOVE_ROCK_SLIDE, MOVE_FOCUS_PUNCH, MOVE_BULK_UP}
+    .lvl = 28,
+    .abilityNums = 2,
+    .evs = {0, 100, 0, 0, 4, 100},
+    .species = SPECIES_SANDSLASH_ALOLAN,
+    .heldItem = ITEM_SHUCA_BERRY,
+    .moves = {MOVE_ICICLE_CRASH, MOVE_IRON_HEAD, MOVE_SWORDS_DANCE, MOVE_RAPID_SPIN}
     },
     {
     .iv = 255,
-    .lvl = 33,
-    .evs = {0, 0, 0, 0, 0, 0},
-    .species = SPECIES_MEDITITE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_PSYCHIC, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_FOCUS_PUNCH}
+    .lvl = 28,
+    .evs = {0, 100, 0, 0, 4, 100},
+    .species = SPECIES_ARCTOZOLT,
+    .abilityNums = 2,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_THUNDER_PUNCH, MOVE_ICE_FANG, MOVE_PLUCK, MOVE_SUBSTITUTE}
     },
     {
     .iv = 255,
-    .lvl = 35,
-    .evs = {0, 0, 0, 0, 0, 0},
-    .species = SPECIES_HITMONTOP,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_PURSUIT, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_KICK}
-    },
-    {
-    .iv = 255,
-    .lvl = 37,
-    .evs = {0, 0, 0, 0, 0, 0},
-    .species = SPECIES_HARIYAMA,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_FAKE_OUT, MOVE_FOCUS_PUNCH, MOVE_BELLY_DRUM, MOVE_EARTHQUAKE}
+    .lvl = 25,
+    .evs = {0, 0, 0, 100, 60, 40},
+    .abilityNums = 2,
+    .species = SPECIES_FROSLASS,
+    .heldItem = ITEM_NEVER_MELT_ICE,
+    .moves = {MOVE_SHADOW_BALL, MOVE_ICE_BEAM, MOVE_DRAINING_KISS, MOVE_REST}
     }
 };
 

@@ -11860,9 +11860,8 @@
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_STEGO"
+                "species": "SPECIES_SNOM"
               },
-              
               {
                 "min_level": 26,
                 "max_level": 29,

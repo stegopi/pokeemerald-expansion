@@ -76,7 +76,6 @@ TestingFlags::
 	faceplayer
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_BADGE01_GET
-	setflag FLAG_BADGE02_GET
 	setflag FLAG_BADGE03_GET
 	setflag FLAG_BADGE04_GET
 	setflag FLAG_BADGE05_GET
@@ -149,10 +148,10 @@ Kasaan_Holey_Logs_Text_0:
 	.string "theannoyingsite.com.$"
 
 Kasaan_Playground_Sign_Text_0:
-	.string "The famous playground of Traf.$"
+	.string "The feamus pleigrownd of Traf.$"
 
 Kasaan_Gym_Sign_Text_0:
-	.string "Gym$"
+	.string "Feamus Pokimaun Gim of Kasaan$"
 
 Kasaan_Playground_King_Text_0:
 	.string "Playground King: Hey, yo, you wanna\n"
