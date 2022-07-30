@@ -3979,6 +3979,10 @@ Cry_Calyrex::
 	.incbin "sound/direct_sound_samples/cries/calyrex.bin"
 
 	.align 2
+Cry_Stego::
+	.incbin "sound/direct_sound_samples/cries/reshiram.bin"
+
+	.align 2
 Cry_VenusaurMega::
 	.incbin "sound/direct_sound_samples/cries/mega_venusaur.bin"
 

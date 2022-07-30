@@ -94,9 +94,9 @@ TestingFlags::
 	giveitem ITEM_MEGA_RING, 1
 	giveitem ITEM_ABOMASITE
 	giveitem ITEM_Z_POWER_RING
+	giveitem ITEM_MASTER_BALL
 	giveitem ITEM_FIRIUM_Z
 	giveitem ITEM_DYNAMAX_BAND
-	giveitem ITEM_EXP_CANDY_XL, 5
 	release
 	end
 

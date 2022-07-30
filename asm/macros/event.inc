@@ -1954,9 +1954,9 @@
 	setvar VAR_0x8000, \battler
 	setvar VAR_0x8001, \atk
 	setvar VAR_0x8002, \def
-	setvar VAR_0x8003, \speed
 	setvar VAR_0x8004, \spatk
 	setvar VAR_0x8005, \spdef
+	setvar VAR_0x8003, \speed
 	setvar VAR_0x8006, \acc
 	setvar VAR_0x8007, \evas
 	special SetTotemBoost

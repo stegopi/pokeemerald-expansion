@@ -929,6 +929,8 @@ const u8 *const gMonIconTable[] =
     [SPECIES_GLASTRIER] = gMonIcon_Glastrier,
     [SPECIES_SPECTRIER] = gMonIcon_Spectrier,
     [SPECIES_CALYREX] = gMonIcon_QuestionMark,//gMonIcon_Calyrex,
+
+    [SPECIES_STEGO] = gMonIcon_Stego,
     [SPECIES_VENUSAUR_MEGA] = gMonIcon_VenusaurMega,
     [SPECIES_CHARIZARD_MEGA_X] = gMonIcon_CharizardMegaX,
     [SPECIES_CHARIZARD_MEGA_Y] = gMonIcon_CharizardMegaY,
@@ -2432,6 +2434,8 @@ const u8 gMonIconPaletteIndices[] =
     [SPECIES_ZARUDE_DADA] = 1,
     [SPECIES_CALYREX_ICE_RIDER] = 0,
     [SPECIES_CALYREX_SHADOW_RIDER] = 0,
+
+    [SPECIES_STEGO] = 0,
     [SPECIES_EGG] = 1,
 };
 

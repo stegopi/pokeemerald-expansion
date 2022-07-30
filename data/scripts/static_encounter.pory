@@ -3,9 +3,10 @@ script EventScript_StaticEncounter {
 	playmoncry(VAR_RESULT, 0)
 	msgbox("Gyoo!")
 	waitmoncry
-	settotemboost(1, 1, 0, 1, 1, 0, 1)
-	setwildbattle(VAR_RESULT, 50)
+	settotemboost(0, 0, 0, 0, 1, 0, 1)
+	setwildbattle(VAR_RESULT, 40)
 	dowildbattle
+	
 	release
 	end
 }

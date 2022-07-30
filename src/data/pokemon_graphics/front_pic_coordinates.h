@@ -4499,6 +4499,11 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = MON_COORDS_SIZE(48, 64),
         .y_offset = 2,
     },
+    [SPECIES_STEGO] =
+    {
+        .size = MON_COORDS_SIZE(64, 64),
+        .y_offset = 0,
+    },
     // Megas
     [SPECIES_VENUSAUR_MEGA] =
     {

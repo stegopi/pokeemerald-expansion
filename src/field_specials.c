@@ -157,10 +157,10 @@ void Special_BeginCyclingRoadChallenge(void)
 }
 u8 SetBurn (void)
 {
-    u16 pkmcount=0;
-    u16 pkmncurrentspecies;
+    u8 pkmcount=0;
+    u8 pkmncurrentspecies;
     u8 burned=1;
-    u32 status=STATUS1_BURN;
+    u16 status=STATUS1_BURN;
     while (TRUE) {
         pkmncurrentspecies=GetMonData(&gPlayerParty[pkmcount], MON_DATA_SPECIES2, NULL);
         if (pkmncurrentspecies==SPECIES_EGG) {

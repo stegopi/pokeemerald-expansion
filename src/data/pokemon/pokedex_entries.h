@@ -10787,4 +10787,15 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+    [NATIONAL_DEX_STEGO] =
+    {
+        .categoryName = _("Stegosaurus"),
+        .height = 30,
+        .weight = 8000,
+        .description = gStegoPokedexText,
+        .pokemonScale = 260,
+        .pokemonOffset = 0,
+        .trainerScale = 520,
+        .trainerOffset = 2,
+    },
 };

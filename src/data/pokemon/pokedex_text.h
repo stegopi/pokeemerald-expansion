@@ -5348,3 +5348,9 @@ const u8 gCalyrexPokedexText[] = _(
     "providing healing and blessings. It\n"
     "reigned over the Galar region in times\n"
     "of yore.");
+
+const u8 gStegoPokedexText[] = _(
+    "Stego's scales are harder than diamonds.\n"
+    "It's weight lets it easily trample on its\n"
+    "opponents. Despite its mass, Stego can\n"
+    "move at surprisingly fast speeds.");

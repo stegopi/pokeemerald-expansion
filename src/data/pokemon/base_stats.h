@@ -25405,6 +25405,31 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
+    [SPECIES_STEGO] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = 145,
+        .baseDefense   = 120,
+        .baseSpeed     = 180,
+        .baseSpAttack  = 185,
+        .baseSpDefense = 120,
+        .type1 = TYPE_DRAGON,
+        .type2 = TYPE_STEEL,
+        .catchRate = 3,
+        .expYield = 310,
+        .evYield_SpAttack = 3,
+        .evYield_Speed = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 100,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroup1 = EGG_GROUP_UNDISCOVERED,
+        .eggGroup2 = EGG_GROUP_UNDISCOVERED,
+        .abilities = {ABILITY_ROUGH_SKIN, ABILITY_NONE},
+        .bodyColor = BODY_COLOR_GREEN,
+        .noFlip = FALSE,
+    },
+
     [SPECIES_VENUSAUR_MEGA] =
     {
         .baseHP        = 80,

@@ -312,6 +312,7 @@ static const u16 sSpeciesToHoennPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_HOENN(RAYQUAZA),
     SPECIES_TO_HOENN(JIRACHI),
     SPECIES_TO_HOENN(DEOXYS),
+    SPECIES_TO_HOENN(STEGO),
 };
 
 // Assigns all species to the National Dex Index (Summary No. for National Dex)
@@ -1215,6 +1216,7 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_NATIONAL(GLASTRIER),
     SPECIES_TO_NATIONAL(SPECTRIER),
     SPECIES_TO_NATIONAL(CALYREX),
+    SPECIES_TO_NATIONAL(STEGO),
 
     // Megas
     [SPECIES_VENUSAUR_MEGA - 1] = NATIONAL_DEX_VENUSAUR,
@@ -1804,6 +1806,7 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(RAYQUAZA),
     HOENN_TO_NATIONAL(JIRACHI),
     HOENN_TO_NATIONAL(DEOXYS),
+    HOENN_TO_NATIONAL(STEGO),
 };
 
 const struct SpindaSpot gSpindaSpotGraphics[] =
@@ -2773,6 +2776,7 @@ static const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_GLASTRIER - 1]     = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_SPECTRIER - 1]     = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_CALYREX - 1]       = ANIM_V_SQUISH_AND_BOUNCE,
+    [SPECIES_STEGO - 1]         = ANIM_GROW_VIBRATE,
 
     // Forms
     [SPECIES_ROTOM_HEAT - 1]      = ANIM_V_SQUISH_AND_BOUNCE,

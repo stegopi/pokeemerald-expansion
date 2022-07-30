@@ -1216,6 +1216,9 @@ extern const u32 gMonFrontPic_UrshifuRapidStrikeStyle[];
 extern const u32 gMonFrontPic_ZarudeDada[];
 extern const u32 gMonFrontPic_CalyrexIceRider[];
 extern const u32 gMonFrontPic_CalyrexShadowRider[];
+
+extern const u32 gMonFrontPic_Stego[];
+
 extern const u32 gMonFrontPic_Egg[];
 
 extern const u32 gMonBackPic_CircledQuestionMark[];
@@ -2131,6 +2134,9 @@ extern const u32 gMonBackPic_Regidrago[];
 extern const u32 gMonBackPic_Glastrier[];
 extern const u32 gMonBackPic_Spectrier[];
 extern const u32 gMonBackPic_Calyrex[];
+
+extern const u32 gMonBackPic_Stego[];
+
 extern const u32 gMonBackPic_VenusaurMega[];
 extern const u32 gMonBackPic_CharizardMegaX[];
 extern const u32 gMonBackPic_CharizardMegaY[];
@@ -3275,6 +3281,9 @@ extern const u32 gMonPalette_Regidrago[];
 extern const u32 gMonPalette_Glastrier[];
 extern const u32 gMonPalette_Spectrier[];
 extern const u32 gMonPalette_Calyrex[];
+
+extern const u32 gMonPalette_Stego[];
+
 extern const u32 gMonPalette_VenusaurMega[];
 extern const u32 gMonPalette_CharizardMegaX[];
 extern const u32 gMonPalette_CharizardMegaY[];
@@ -4447,6 +4456,9 @@ extern const u32 gMonShinyPalette_Regidrago[];
 extern const u32 gMonShinyPalette_Glastrier[];
 extern const u32 gMonShinyPalette_Spectrier[];
 extern const u32 gMonShinyPalette_Calyrex[];
+
+extern const u32 gMonShinyPalette_Stego[];
+
 extern const u32 gMonShinyPalette_VenusaurMega[];
 extern const u32 gMonShinyPalette_CharizardMegaX[];
 extern const u32 gMonShinyPalette_CharizardMegaY[];
@@ -5608,6 +5620,9 @@ extern const u8 gMonIcon_Regidrago[];
 extern const u8 gMonIcon_Glastrier[];
 extern const u8 gMonIcon_Spectrier[];
 //extern const u8 gMonIcon_Calyrex[];
+
+extern const u8 gMonIcon_Stego[];
+
 extern const u8 gMonIcon_VenusaurMega[];
 extern const u8 gMonIcon_CharizardMegaX[];
 extern const u8 gMonIcon_CharizardMegaY[];
@@ -6759,6 +6774,8 @@ extern const u8 gMonFootprint_Regidrago[];
 extern const u8 gMonFootprint_Glastrier[];
 extern const u8 gMonFootprint_Spectrier[];
 extern const u8 gMonFootprint_Calyrex[];
+
+extern const u8 gMonFootprint_Stego[];
 
 // trainer sprites
 extern const u32 gTrainerFrontPic_Hiker[];
