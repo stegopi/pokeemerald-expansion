@@ -2,7 +2,7 @@
   "id": "MAP_KASAAN",
   "name": "Kasaan",
   "layout": "LAYOUT_KASAAN",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_KASAAN",
   "region_map_section": "MAPSEC_KASAAN",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",

@@ -89,9 +89,9 @@ Kasaan_Gym3_KhioneDefeated_Text_0:
 	.string "BADGE from Khione.$"
 
 Kasaan_Gym3_KhioneDefeated_Text_1:
-	.string "It also enables them to use the HM move\n"
-	.string "() outside of battle. Please take this\l"
-	.string "with you, too.$"
+	.string "The Snowflake Badge enables the owner\n"
+	.string "to use the HM move () outside of battle.\l"
+	.string "Please take this with you, too.$"
 
 KasaanGymGiveTM_Text_0:
 	.string "Ice Beam is an extremely versatile move\n"
