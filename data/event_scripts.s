@@ -618,7 +618,7 @@ EventScript_BurnPkm::
 
 EventScript_BurnPkm_2:
 	msgbox EventScript_BurnPkm_Text_0, MSGBOX_AUTOCLOSE
-	waitbuttonpress
+	release
 	end
 
 

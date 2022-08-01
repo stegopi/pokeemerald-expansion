@@ -96,7 +96,7 @@
 #define FLAG_RESCUED_BIRCH                       0x52
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS           0x53
 
-#define FLAG_UNUSED_0x054                    0x54  // Unused Flag
+#define FLAG_UNUSED_0x054                    0x54  // Jump on ledges
 #define FLAG_UNUSED_0x055                    0x55  // Unused Flag
 
 #define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
@@ -182,7 +182,7 @@
 #define FLAG_CUTE_PAINTING_MADE              0xA2
 #define FLAG_SMART_PAINTING_MADE             0xA3
 #define FLAG_TOUGH_PAINTING_MADE             0xA4
-#define FLAG_RECEIVED_TM39                   0xA5
+#define FLAG_RECEIVED_TM13                   0xA5
 #define FLAG_RECEIVED_TM08                   0xA6
 #define FLAG_RECEIVED_TM34                   0xA7
 #define FLAG_RECEIVED_TM50                   0xA8

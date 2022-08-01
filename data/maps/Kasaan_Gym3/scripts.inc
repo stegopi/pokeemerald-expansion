@@ -10,7 +10,7 @@ KasaanGymKhione::
 	goto_if_eq KasaanGymKhione_2
 KasaanGymKhione_1:
 	trainerbattle_double TRAINER_BRAWLY_2, Kasaan_Gym3_KhioneIntro, KasaanGymKhione_Text_1, KasaanGymKhione_Text_2, Kasaan_Gym3_KhioneDefeated
-	goto_if_unset FLAG_RECEIVED_TM39, KasaanGymKhione_5
+	goto_if_unset FLAG_RECEIVED_TM13, KasaanGymKhione_5
 KasaanGymKhione_4:
 	msgbox KasaanGymKhione_Text_3
 	release
@@ -46,7 +46,7 @@ KasaanGymGiveTM::
 	compare VAR_RESULT, FALSE
 	goto_if_eq KasaanGymGiveTM_2
 KasaanGymGiveTM_1:
-	setflag FLAG_RECEIVED_TM39
+	setflag FLAG_RECEIVED_TM13
 	msgbox KasaanGymGiveTM_Text_0
 	release
 	end

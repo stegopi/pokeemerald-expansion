@@ -85,14 +85,15 @@ script TestingFlags {
 	givemon(SPECIES_GROUDON, 25, ITEM_RED_ORB)
 	givemon(SPECIES_ABOMASNOW, 25, ITEM_KINGS_ROCK)
 	givemon(SPECIES_HOUNDOUR, 25, ITEM_KINGS_ROCK)
-	giveitem(ITEM_POTION, 1)
-	giveitem(ITEM_POKE_BALL, 4)
-	giveitem(ITEM_MEGA_RING, 1)
-	giveitem(ITEM_ABOMASITE)
-	giveitem(ITEM_Z_POWER_RING)
-	giveitem(ITEM_MASTER_BALL)
-	giveitem(ITEM_FIRIUM_Z)
-	giveitem(ITEM_DYNAMAX_BAND)
+	additem(ITEM_POTION, 1)
+	additem(ITEM_POKE_BALL, 4)
+	additem(ITEM_MEGA_RING, 1)
+	additem(ITEM_ABOMASITE)
+	additem(ITEM_Z_POWER_RING)
+	additem(ITEM_MASTER_BALL)
+	additem(ITEM_FIRIUM_Z)
+	additem(ITEM_DYNAMAX_BAND)
+	additem(ITEM_SOOT_SACK)
 
 	release
 	end

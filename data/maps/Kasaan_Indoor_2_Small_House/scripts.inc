@@ -30,14 +30,6 @@ Kasaan_Old_Man_With_GSlowpoke_5:
 Kasaan_Old_Man_With_GSlowpoke_8:
 	msgbox Kasaan_Old_Man_With_GSlowpoke_Text_1
 	setvar 0x8003, 1
-	setflag FLAG_BADGE01_GET
-	setflag FLAG_BADGE02_GET
-	setflag FLAG_BADGE03_GET
-	setflag FLAG_BADGE04_GET
-	setflag FLAG_BADGE05_GET
-	setflag FLAG_BADGE06_GET
-	setflag FLAG_BADGE07_GET
-	setflag FLAG_BADGE08_GET
 	givemon SPECIES_SLOWPOKE_GALARIAN, 25, ITEM_KINGS_ROCK
 	setflag FLAG_UNUSED_0x020
 	goto Kasaan_Old_Man_With_GSlowpoke_1

@@ -1057,6 +1057,7 @@ const u8 gText_Profile[] = _("PROFILE");
 const u8 gText_AtTheBattlesStart[] = _("At the battle's start:");
 const u8 gText_UponWinningABattle[] = _("Upon winning a battle:");
 const u8 gText_UponLosingABattle[] = _("Upon losing a battle:");
+const u8 gText_AshQty[] = _("Ash QTY:\n{STR_VAR_1}{PAUSE_UNTIL_PRESS}");
 const u8 gText_TheBardsSong[] = _("The BARD's Song");
 const u8 gText_WhatsHipAndHappening[] = _("What's hip and happening?");
 const u8 gText_Interview[] = _("Interview");

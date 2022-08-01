@@ -2,7 +2,7 @@ Kasaan_Gym_MapScripts::
 	.byte 0
 
 KasaanGymLogs::
-	msgbox KasaanGymLogs_Text_0, 0x4
+	msgbox KasaanGymLogs_Text_0, MSGBOX_SIGN
 	end
 
 

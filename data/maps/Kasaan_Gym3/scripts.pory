@@ -11,7 +11,7 @@ script KasaanGymKhione {
 	}
 	
 	trainerbattle_double(TRAINER_BRAWLY_2, Kasaan_Gym3_KhioneIntro, format("Screw You! Er, I mean Congrats! My Elsa Snow Powers couldn't do the trick?!"), format("YOU FREAKING IDIOT! I CAN'T FREAKING BATTLE YOU WHEN YOU ONLY HAVE ONE POKEMON! I ALWAYS KNEW HELICONIA WASN'T FIT FOR THE JOB!"), Kasaan_Gym3_KhioneDefeated)
-	if (flag(FLAG_RECEIVED_TM39)==FALSE) {
+	if (flag(FLAG_RECEIVED_TM13)==FALSE) {
 		goto(KasaanGymGiveTM)
 	}
 	msgbox(format("I'm training for revenge... WATCH YOUR BACK, SLEEP WITH ONE EYE OPEN. BECAUSE KHIONE'S COMING FOR YOU GLUBBO, AND THIS TIME WITH VENGEANCE!"))
@@ -39,7 +39,7 @@ script KasaanGymGiveTM {
 	if (var(VAR_RESULT)==FALSE) {
 		goto(Common_EventScript_ShowBagIsFull)
 	}
-	setflag(FLAG_RECEIVED_TM39)
+	setflag(FLAG_RECEIVED_TM13)
 	msgbox(format("Ice Beam is an extremely versatile move that can be used multiple times. Plus, it helps heighten my Elsa mystique. Huh? What do you mean, how I have an infinite amount of TMs to give to trainers? Dunno what you're talking about!"))
 	release
 	end
