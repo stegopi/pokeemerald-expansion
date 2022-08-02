@@ -4556,7 +4556,7 @@
       "name": "Tilesettests_Layout",
       "width": 20,
       "height": 20,
-      "primary_tileset": "gTileset_Cactus1",
+      "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cactus2",
       "border_filepath": "data/layouts/Tilesettests/border.bin",
       "blockdata_filepath": "data/layouts/Tilesettests/map.bin"
@@ -4570,6 +4570,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/sttown/border.bin",
       "blockdata_filepath": "data/layouts/sttown/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE2",
+      "name": "Route2_Layout",
+      "width": 20,
+      "height": 42,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route2/border.bin",
+      "blockdata_filepath": "data/layouts/Route2/map.bin"
     }
   ]
 }

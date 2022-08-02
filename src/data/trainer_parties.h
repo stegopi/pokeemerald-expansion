@@ -7,7 +7,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Sawyer1[] = {
     },
     {
     .iv = 0,
-    .lvl = 24,
+    .lvl = 22,
     .evs = {0, 0, 0, 0, 0, 0},
     .species = SPECIES_SANDSHREW_ALOLAN,
     }
@@ -11986,7 +11986,7 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne5[] = {
 static const struct TrainerMonItemCustomMoves sParty_Brawly2[] = {
     {
     .iv = 255,
-    .lvl = 28,
+    .lvl = 25,
     .abilityNums = 2,
     .evs = {0, 100, 0, 0, 4, 100},
     .species = SPECIES_SANDSLASH_ALOLAN,
@@ -11995,7 +11995,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly2[] = {
     },
     {
     .iv = 255,
-    .lvl = 28,
+    .lvl = 25,
     .evs = {0, 100, 0, 0, 4, 100},
     .species = SPECIES_ARCTOZOLT,
     .abilityNums = 2,
@@ -12004,7 +12004,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly2[] = {
     },
     {
     .iv = 255,
-    .lvl = 25,
+    .lvl = 24,
     .evs = {0, 0, 0, 100, 60, 40},
     .abilityNums = 2,
     .species = SPECIES_FROSLASS,

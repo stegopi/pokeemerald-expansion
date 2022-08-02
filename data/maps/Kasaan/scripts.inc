@@ -96,7 +96,6 @@ TestingFlags::
 	additem ITEM_MASTER_BALL
 	additem ITEM_FIRIUM_Z
 	additem ITEM_DYNAMAX_BAND
-	setflag FLAG_OMNI_JUMP
 	additem ITEM_SOOT_SACK
 	release
 	end

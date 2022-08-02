@@ -153,6 +153,13 @@
       "elevation": 0,
       "dest_map": "MAP_KASAAN",
       "dest_warp_id": 1
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_STTOWN",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

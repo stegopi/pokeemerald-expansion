@@ -11,7 +11,7 @@ script Kasaan_Old_Man_With_GSlowpoke {
 			if (var(VAR_RESULT)<6) {
 				msgbox("Thank you.")
 				setvar(0x8003, 1)
-				givemon(SPECIES_SLOWPOKE_GALARIAN, 25, ITEM_KINGS_ROCK)
+				givemon(SPECIES_SLOWPOKE_GALARIAN, 22, ITEM_KINGS_ROCK)
 				setflag(FLAG_UNUSED_0x020)
 			}
 			else {msgbox(format("Come back without a full party."))}

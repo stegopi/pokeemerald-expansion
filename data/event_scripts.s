@@ -1105,3 +1105,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Tilesettests/scripts.inc"
 
 	.include "data/maps/sttown/scripts.inc"
+
+	.include "data/maps/Route2/scripts.inc"

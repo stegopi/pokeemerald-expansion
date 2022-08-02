@@ -21,14 +21,14 @@
       "x": 39,
       "y": 28,
       "elevation": 0,
-      "dest_map": "MAP_TILESET_SHIT",
-      "dest_warp_id": 0
+      "dest_map": "MAP_ROUTE2",
+      "dest_warp_id": 1
     },
     {
       "x": 38,
       "y": 28,
       "elevation": 0,
-      "dest_map": "MAP_TILESET_SHIT",
+      "dest_map": "MAP_ROUTE2",
       "dest_warp_id": 0
     },
     {
