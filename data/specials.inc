@@ -538,3 +538,4 @@ gSpecials::
 	def_special SetTotemBoost
 	def_special HeadbuttWildEncounter
 	def_special SetBurn
+	def_special TrySpecialOverworldEvo

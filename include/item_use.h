@@ -16,6 +16,7 @@ void ItemUseOutOfBattle_SootSack(u8);
 u16 GetAshCount(void);
 
 void ItemUseOutOfBattle_AbilityCapsule(u8);
+void ItemUseOutOfBattle_AbilityPatch(u8);
 void ItemUseOutOfBattle_ReduceEV(u8);
 void ItemUseOutOfBattle_SacredAsh(u8);
 void ItemUseOutOfBattle_PPRecovery(u8);
