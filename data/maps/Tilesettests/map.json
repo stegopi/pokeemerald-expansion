@@ -18,8 +18,8 @@
   ],
   "warp_events": [
     {
-      "x": 9,
-      "y": 10,
+      "x": 13,
+      "y": 24,
       "elevation": 0,
       "dest_map": "MAP_TILESETTESTS",
       "dest_warp_id": 0

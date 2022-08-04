@@ -607,3 +607,18 @@ gMetatiles_Cactus2::
 	.align 1
 gMetatileAttributes_Cactus2::
 	.incbin "data/tilesets/secondary/cactus2/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_Distortion::
+	.incbin "data/tilesets/primary/distortion/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Distortion::
+	.incbin "data/tilesets/primary/distortion/metatile_attributes.bin"
+	.align 1
+gMetatiles_Distortion2::
+	.incbin "data/tilesets/secondary/distortion2/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Distortion2::
+	.incbin "data/tilesets/secondary/distortion2/metatile_attributes.bin"

@@ -907,3 +907,25 @@ gTileset_Cactus2::
 	.4byte gMetatiles_Cactus2
 	.4byte gMetatileAttributes_Cactus2
 	.4byte NULL
+
+	.align 2
+gTileset_Distortion::
+	.byte TRUE @ is compressed
+	.byte FALSE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Distortion
+	.4byte gTilesetPalettes_Distortion
+	.4byte gMetatiles_Distortion
+	.4byte gMetatileAttributes_Distortion
+	.4byte NULL
+
+	.align 2
+gTileset_Distortion2::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Distortion2
+	.4byte gTilesetPalettes_Distortion2
+	.4byte gMetatiles_Distortion2
+	.4byte gMetatileAttributes_Distortion2
+	.4byte NULL

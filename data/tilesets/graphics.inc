@@ -1869,3 +1869,43 @@ gTilesetPalettes_Cactus2::
 	.align 2
 gTilesetTiles_Cactus2::
 	.incbin "data/tilesets/secondary/cactus2/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Distortion::
+	.incbin "data/tilesets/primary/distortion/palettes/00.gbapal"
+	.incbin "data/tilesets/primary/distortion/palettes/01.gbapal"
+	.incbin "data/tilesets/primary/distortion/palettes/02.gbapal"
+	.incbin "data/tilesets/primary/distortion/palettes/03.gbapal"
+	.incbin "data/tilesets/primary/distortion/palettes/04.gbapal"
+	.incbin "data/tilesets/primary/distortion/palettes/05.gbapal"
+	.incbin "data/tilesets/primary/distortion/palettes/06.gbapal"
+	.incbin "data/tilesets/primary/distortion/palettes/07.gbapal"
+	.incbin "data/tilesets/primary/distortion/palettes/08.gbapal"
+	.incbin "data/tilesets/primary/distortion/palettes/09.gbapal"
+	.incbin "data/tilesets/primary/distortion/palettes/10.gbapal"
+	.incbin "data/tilesets/primary/distortion/palettes/11.gbapal"
+	.incbin "data/tilesets/primary/distortion/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Distortion::
+	.incbin "data/tilesets/primary/distortion/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Distortion2::
+	.incbin "data/tilesets/secondary/distortion2/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/distortion2/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/distortion2/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/distortion2/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/distortion2/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/distortion2/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/distortion2/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/distortion2/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/distortion2/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/distortion2/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/distortion2/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/distortion2/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/distortion2/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Distortion2::
+	.incbin "data/tilesets/secondary/distortion2/tiles.4bpp.lz"
