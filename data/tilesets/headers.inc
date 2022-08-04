@@ -898,17 +898,6 @@ gTileset_Bamboo2::
 	.4byte NULL
 
 	.align 2
-gTileset_Cactus1::
-	.byte TRUE @ is compressed
-	.byte FALSE @ is secondary
-	.2byte 0
-	.4byte gTilesetTiles_Cactus1
-	.4byte gTilesetPalettes_Cactus1
-	.4byte gMetatiles_Cactus1
-	.4byte gMetatileAttributes_Cactus1
-	.4byte NULL
-
-	.align 2
 gTileset_Cactus2::
 	.byte TRUE @ is compressed
 	.byte TRUE @ is secondary

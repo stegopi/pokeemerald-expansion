@@ -601,13 +601,6 @@ gMetatiles_Bamboo2::
 gMetatileAttributes_Bamboo2::
 	.incbin "data/tilesets/secondary/bamboo2/metatile_attributes.bin"
 	.align 1
-gMetatiles_Cactus1::
-	.incbin "data/tilesets/primary/cactus1/metatiles.bin"
-
-	.align 1
-gMetatileAttributes_Cactus1::
-	.incbin "data/tilesets/primary/cactus1/metatile_attributes.bin"
-	.align 1
 gMetatiles_Cactus2::
 	.incbin "data/tilesets/secondary/cactus2/metatiles.bin"
 
