@@ -442,6 +442,17 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_LUGIA                   0x1121
 #define OBJ_EVENT_PAL_TAG_RS_BRENDAN              0x1122
 #define OBJ_EVENT_PAL_TAG_RS_MAY                  0x1123
+
+#define OBJ_EVENT_PAL_TAG_AZELF                   0x1124
+#define OBJ_EVENT_PAL_TAG_DIALGA                  0x1125
+#define OBJ_EVENT_PAL_TAG_GIRATINA                0x1126
+#define OBJ_EVENT_PAL_TAG_GIRATINA_O              0x1127
+#define OBJ_EVENT_PAL_TAG_GSLOWPOKE               0x1128
+#define OBJ_EVENT_PAL_TAG_MESPRIT                 0x1129
+#define OBJ_EVENT_PAL_TAG_PALKIA                  0x112A
+#define OBJ_EVENT_PAL_TAG_UXIE                    0x112B
+#define OBJ_EVENT_PAL_TAG_ZEKROM                  0x112C
+#define OBJ_EVENT_PAL_TAG_REGICE                  0x112D
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #include "data/field_effects/field_effect_object_template_pointers.h"
@@ -488,6 +499,17 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Lugia,                 OBJ_EVENT_PAL_TAG_LUGIA},
     {gObjectEventPal_RubySapphireBrendan,   OBJ_EVENT_PAL_TAG_RS_BRENDAN},
     {gObjectEventPal_RubySapphireMay,       OBJ_EVENT_PAL_TAG_RS_MAY},
+
+    {gObjectEventPal_Azelf,                 OBJ_EVENT_PAL_TAG_AZELF},
+    {gObjectEventPal_Dialga,                OBJ_EVENT_PAL_TAG_DIALGA},
+    {gObjectEventPal_Giratina,              OBJ_EVENT_PAL_TAG_GIRATINA},
+    {gObjectEventPal_Giratina_O,            OBJ_EVENT_PAL_TAG_GIRATINA_O},
+    {gObjectEventPal_GSlowpoke,             OBJ_EVENT_PAL_TAG_GSLOWPOKE},
+    {gObjectEventPal_Mesprit,               OBJ_EVENT_PAL_TAG_MESPRIT},
+    {gObjectEventPal_Palkia,                OBJ_EVENT_PAL_TAG_PALKIA},
+    {gObjectEventPal_Uxie,                  OBJ_EVENT_PAL_TAG_UXIE},
+    {gObjectEventPal_Zekrom,                OBJ_EVENT_PAL_TAG_ZEKROM},
+    {gObjectEventPal_Regice,                OBJ_EVENT_PAL_TAG_REGICE},
     {},
 };
 

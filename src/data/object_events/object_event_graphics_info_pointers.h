@@ -244,7 +244,16 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Storyteller;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giddy;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan1;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan2;
-
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Azelf;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dialga;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giratina;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giratina_O;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GSlowpoke;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mesprit;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Palkia;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Uxie;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zekrom;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Regice;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -486,6 +495,18 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LINK_RS_MAY] =              &gObjectEventGraphicsInfo_RubySapphireMay,
     [OBJ_EVENT_GFX_LUGIA] =                    &gObjectEventGraphicsInfo_Lugia,
     [OBJ_EVENT_GFX_HOOH] =                     &gObjectEventGraphicsInfo_HoOh,
+
+    [OBJ_EVENT_GFX_AZELF] =                    &gObjectEventGraphicsInfo_Azelf,
+    [OBJ_EVENT_GFX_DIALGA] =                   &gObjectEventGraphicsInfo_Dialga,
+    [OBJ_EVENT_GFX_GIRATINA] =                 &gObjectEventGraphicsInfo_Giratina,
+    [OBJ_EVENT_GFX_GIRATINA_O] =               &gObjectEventGraphicsInfo_Giratina_O,
+    [OBJ_EVENT_GFX_GSLOWPOKE] =                &gObjectEventGraphicsInfo_GSlowpoke,
+    [OBJ_EVENT_GFX_MESPRIT] =                  &gObjectEventGraphicsInfo_Mesprit,
+    [OBJ_EVENT_GFX_PALKIA] =                   &gObjectEventGraphicsInfo_Palkia,
+    [OBJ_EVENT_GFX_UXIE] =                     &gObjectEventGraphicsInfo_Uxie,
+    [OBJ_EVENT_GFX_ZEKROM] =                   &gObjectEventGraphicsInfo_Zekrom,
+    [OBJ_EVENT_GFX_REGICE] =                   &gObjectEventGraphicsInfo_Regice,
+
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
