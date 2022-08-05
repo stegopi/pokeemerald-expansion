@@ -28,7 +28,7 @@ KasaanGymSchoolKid_Text_0:
 	.string "You dare... AVADA KEDAVRA!$"
 
 KasaanGymSchoolKid_Text_1:
-	.ascii "M**istakes!\0"
+	.string "Mistakes!$"
 
 KasaanGymSchoolKid_Text_2:
 	.string "For now I'll settle for my old strength\n"

@@ -8,7 +8,8 @@ enum {
     BRIDGE_TYPE_POND_MED,
     BRIDGE_TYPE_POND_HIGH,
 };
-
+bool8 MetatileBehavior_IsLRJump(u8);
+bool8 MetatileBehavior_IsUDJump(u8);
 bool8 MetatileBehavior_IsATile(u8);
 bool8 MetatileBehavior_IsEncounterTile(u8);
 bool8 MetatileBehavior_IsJumpEast(u8);

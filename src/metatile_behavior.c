@@ -397,6 +397,22 @@ bool8 MetatileBehavior_IsOmnidirectionalJump(u8 metatileBehavior)
         return FALSE;
 }
 
+bool8 MetatileBehavior_IsLRJump(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_JUMP_LR)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsUDJump(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_JUMP_UD)
+        return TRUE;
+    else
+        return FALSE;
+}
+
 bool8 MetatileBehavior_IsWalkSouth(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_WALK_SOUTH)

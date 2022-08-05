@@ -7752,7 +7752,9 @@ u8 GetLedgeJumpDirection(s16 x, s16 y, u8 direction)
     index--;
     behavior = MapGridGetMetatileBehaviorAt(x, y);
 
-    if (ledgeBehaviorFuncs[index](behavior) == TRUE || MetatileBehavior_IsOmnidirectionalJump(behavior))
+    if (ledgeBehaviorFuncs[index](behavior) == TRUE || MetatileBehavior_IsOmnidirectionalJump(behavior) ||
+        (MetatileBehavior_IsLRJump(behavior) && ((index==2) || (index==3)) ) ||
+        (MetatileBehavior_IsUDJump(behavior) && ((index==0) || (index==1)) ) )
         return index + 1;
 
     return DIR_NONE;

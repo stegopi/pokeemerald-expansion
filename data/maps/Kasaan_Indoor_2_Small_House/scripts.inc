@@ -30,7 +30,7 @@ Kasaan_Old_Man_With_GSlowpoke_5:
 Kasaan_Old_Man_With_GSlowpoke_8:
 	msgbox Kasaan_Old_Man_With_GSlowpoke_Text_1
 	setvar 0x8003, 1
-	givemon SPECIES_SLOWPOKE_GALARIAN, 25, ITEM_KINGS_ROCK
+	givemon SPECIES_SLOWPOKE_GALARIAN, 22, ITEM_KINGS_ROCK
 	setflag FLAG_UNUSED_0x020
 	goto Kasaan_Old_Man_With_GSlowpoke_1
 
