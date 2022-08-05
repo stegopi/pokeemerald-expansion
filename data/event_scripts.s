@@ -1109,3 +1109,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route2/scripts.inc"
 
 	.include "data/maps/Route1/scripts.inc"
+
+	.include "data/maps/PineconeCity/scripts.inc"
+
+	.include "data/maps/AvalancheMountain/scripts.inc"

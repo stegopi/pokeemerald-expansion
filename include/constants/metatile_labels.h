@@ -792,6 +792,7 @@
 // gTileset_Tundra
 #define METATILE_Tundra_AshGrass         0x003
 #define METATILE_Tundra_Door_Littleroot  0x142
+#define METATILE_Tundra_Door_Oldale      0x0AC
 #define METATILE_Tundra_Door_PokeCenter  0x119
 
 // gTileset_Underwater
