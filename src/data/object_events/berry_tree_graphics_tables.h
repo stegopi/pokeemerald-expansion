@@ -772,6 +772,7 @@ const u16 *const gBerryTreePaletteTagTablePointers[] = {
     [ITEM_KEE_BERRY - FIRST_BERRY_INDEX] = gBerryTreePaletteTagTable_Pecha,
     [ITEM_MARANGA_BERRY - FIRST_BERRY_INDEX] = gBerryTreePaletteTagTable_Occa,
     [ITEM_ENIGMA_BERRY_E_READER - FIRST_BERRY_INDEX] = gBerryTreePaletteTagTable_Durin,
+
 };
 
 const u16 *const gBerryTreeObjectEventGraphicsIdTablePointers[] = {
