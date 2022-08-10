@@ -5532,6 +5532,18 @@
       "secondary_tileset": "gTileset_Tundra_2",
       "border_filepath": "data/layouts/AvalancheMountain/border.bin",
       "blockdata_filepath": "data/layouts/AvalancheMountain/map.bin"
+    },
+    {
+      "id": "LAYOUT_KASAAN_HOUSE_3",
+      "name": "Kasaan_House_3_Layout",
+      "width": 13,
+      "height": 8,
+      "border_width": 1,
+      "border_height": 1,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Kasaan_House_3/border.bin",
+      "blockdata_filepath": "data/layouts/Kasaan_House_3/map.bin"
     }
   ]
 }

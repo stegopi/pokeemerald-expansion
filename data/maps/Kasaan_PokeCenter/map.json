@@ -2,7 +2,7 @@
   "id": "MAP_KASAAN_POKE_CENTER",
   "name": "Kasaan_PokeCenter",
   "layout": "LAYOUT_KASAAN_POKE_CENTER",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_POKE_CENTER",
   "region_map_section": "MAPSEC_KASAAN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

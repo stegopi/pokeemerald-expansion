@@ -2,7 +2,7 @@
   "id": "MAP_KASAAN_GYM3",
   "name": "Kasaan_Gym3",
   "layout": "LAYOUT_KASAAN_GYM3",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_GYM",
   "region_map_section": "MAPSEC_KASAAN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

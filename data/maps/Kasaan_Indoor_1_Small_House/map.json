@@ -2,7 +2,7 @@
   "id": "MAP_KASAAN_INDOOR_1_SMALL_HOUSE",
   "name": "Kasaan_Indoor_1_Small_House",
   "layout": "LAYOUT_KASAAN_INDOOR_1_SMALL_HOUSE",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_RUSTBORO",
   "region_map_section": "MAPSEC_KASAAN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

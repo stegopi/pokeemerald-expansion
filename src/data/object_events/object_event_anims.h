@@ -801,13 +801,13 @@ static const union AnimCmd sAnim_HoOhStayStill[] =
 
 static const union AnimCmd sAnim_PkmnOWFaceSouth[] =
 {
-    ANIMCMD_FRAME(0, 16),
+    ANIMCMD_FRAME(2, 16),
     ANIMCMD_JUMP(0),
 };
 
 static const union AnimCmd sAnim_PkmnOWFaceNorth[] =
 {
-    ANIMCMD_FRAME(2, 16),
+    ANIMCMD_FRAME(0, 16),
     ANIMCMD_JUMP(0),
 };
 
@@ -825,19 +825,19 @@ static const union AnimCmd sAnim_PkmnOWFaceEast[] =
 
 static const union AnimCmd sAnim_PkmnOWGoSouth[] =
 {
-    ANIMCMD_FRAME(0, 8),
-    ANIMCMD_FRAME(0, 8),
-    ANIMCMD_FRAME(1, 8),
-    ANIMCMD_FRAME(1, 8),
+    ANIMCMD_FRAME(2, 8),
+    ANIMCMD_FRAME(2, 8),
+    ANIMCMD_FRAME(3, 8),
+    ANIMCMD_FRAME(3, 8),
     ANIMCMD_JUMP(0),
 };
 
 static const union AnimCmd sAnim_PkmnOWGoNorth[] =
 {
-    ANIMCMD_FRAME(2, 8),
-    ANIMCMD_FRAME(2, 8),
-    ANIMCMD_FRAME(3, 8),
-    ANIMCMD_FRAME(3, 8),
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_FRAME(1, 8),
+    ANIMCMD_FRAME(1, 8),
     ANIMCMD_JUMP(0),
 };
 
@@ -861,19 +861,19 @@ static const union AnimCmd sAnim_PkmnOWGoEast[] =
 
 static const union AnimCmd sAnim_PkmnOWGoFastSouth[] =
 {
-    ANIMCMD_FRAME(0, 4),
-    ANIMCMD_FRAME(0, 4),
-    ANIMCMD_FRAME(1, 4),
-    ANIMCMD_FRAME(1, 4),
+    ANIMCMD_FRAME(2, 4),
+    ANIMCMD_FRAME(2, 4),
+    ANIMCMD_FRAME(3, 4),
+    ANIMCMD_FRAME(3, 4),
     ANIMCMD_JUMP(0),
 };
 
 static const union AnimCmd sAnim_PkmnOWGoFastNorth[] =
 {
-    ANIMCMD_FRAME(2, 4),
-    ANIMCMD_FRAME(2, 4),
-    ANIMCMD_FRAME(3, 4),
-    ANIMCMD_FRAME(3, 4),
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(1, 4),
+    ANIMCMD_FRAME(1, 4),
     ANIMCMD_JUMP(0),
 };
 
@@ -897,19 +897,19 @@ static const union AnimCmd sAnim_PkmnOWGoFastEast[] =
 
 static const union AnimCmd sAnim_PkmnOWGoFasterSouth[] =
 {
-    ANIMCMD_FRAME(0, 2),
-    ANIMCMD_FRAME(0, 2),
-    ANIMCMD_FRAME(1, 2),
-    ANIMCMD_FRAME(1, 2),
+    ANIMCMD_FRAME(2, 2),
+    ANIMCMD_FRAME(2, 2),
+    ANIMCMD_FRAME(3, 2),
+    ANIMCMD_FRAME(3, 2),
     ANIMCMD_JUMP(0),
 };
 
 static const union AnimCmd sAnim_PkmnOWGoFasterNorth[] =
 {
-    ANIMCMD_FRAME(2, 2),
-    ANIMCMD_FRAME(2, 2),
-    ANIMCMD_FRAME(3, 2),
-    ANIMCMD_FRAME(3, 2),
+    ANIMCMD_FRAME(0, 2),
+    ANIMCMD_FRAME(0, 2),
+    ANIMCMD_FRAME(1, 2),
+    ANIMCMD_FRAME(1, 2),
     ANIMCMD_JUMP(0),
 };
 
@@ -933,19 +933,19 @@ static const union AnimCmd sAnim_PkmnOWGoFasterEast[] =
 
 static const union AnimCmd sAnim_PkmnOWGoFastestSouth[] =
 {
-    ANIMCMD_FRAME(0, 1),
-    ANIMCMD_FRAME(0, 1),
-    ANIMCMD_FRAME(1, 1),
-    ANIMCMD_FRAME(1, 1),
+    ANIMCMD_FRAME(2, 1),
+    ANIMCMD_FRAME(2, 1),
+    ANIMCMD_FRAME(3, 1),
+    ANIMCMD_FRAME(3, 1),
     ANIMCMD_JUMP(0),
 };
 
 static const union AnimCmd sAnim_PkmnOWGoFastestNorth[] =
 {
-    ANIMCMD_FRAME(2, 1),
-    ANIMCMD_FRAME(2, 1),
-    ANIMCMD_FRAME(3, 1),
-    ANIMCMD_FRAME(3, 1),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(1, 1),
+    ANIMCMD_FRAME(1, 1),
     ANIMCMD_JUMP(0),
 };
 
