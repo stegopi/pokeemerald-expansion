@@ -35,7 +35,8 @@
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124",
-    "gMapGroup_IndoorKasaan"
+    "gMapGroup_IndoorKasaan",
+    "gMapGroup_AvalancheMountain"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -106,8 +107,7 @@
     "sttown",
     "Route2",
     "Route1",
-    "PineconeCity",
-    "AvalancheMountain"
+    "PineconeCity"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -645,5 +645,9 @@
     "Kasaan_Indoor_2_Small_House",
     "Kasaan_PokeCenter2",
     "Kasaan_House_3"
+  ],
+  "gMapGroup_AvalancheMountain": [
+    "AvalancheMountain",
+    "AvalancheMountainA1"
   ]
 }

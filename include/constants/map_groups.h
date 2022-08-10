@@ -75,7 +75,6 @@
 #define MAP_ROUTE2              (66 | (0 << 8))
 #define MAP_ROUTE1              (67 | (0 << 8))
 #define MAP_PINECONE_CITY       (68 | (0 << 8))
-#define MAP_AVALANCHE_MOUNTAIN  (69 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -614,6 +613,10 @@
 #define MAP_KASAAN_POKE_CENTER2         (6 | (34 << 8))
 #define MAP_KASAAN_HOUSE_3              (7 | (34 << 8))
 
-#define MAP_GROUPS_COUNT 35
+// gMapGroup_AvalancheMountain
+#define MAP_AVALANCHE_MOUNTAIN    (0 | (35 << 8))
+#define MAP_AVALANCHE_MOUNTAIN_A1 (1 | (35 << 8))
+
+#define MAP_GROUPS_COUNT 36
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

@@ -1,0 +1,41 @@
+{
+  "id": "MAP_AVALANCHE_MOUNTAIN_A1",
+  "name": "AvalancheMountainA1",
+  "layout": "LAYOUT_AVALANCHE_MOUNTAIN_A1",
+  "music": "MUS_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 12,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_AVALANCHE_MOUNTAIN",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 17,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_AVALANCHE_MOUNTAIN",
+      "dest_warp_id": 1
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

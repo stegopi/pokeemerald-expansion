@@ -31,6 +31,7 @@ Kasaan_Old_Man_With_GSlowpoke_8:
 	msgbox Kasaan_Old_Man_With_GSlowpoke_Text_1
 	setvar 0x8003, 1
 	givemon SPECIES_SLOWPOKE_GALARIAN, 22, ITEM_KINGS_ROCK
+	removeobject 3
 	setflag FLAG_UNUSED_0x020
 	goto Kasaan_Old_Man_With_GSlowpoke_1
 
@@ -39,6 +40,14 @@ Kasaan_OldLadywithLegend::
 	lock
 	faceplayer
 	msgbox Kasaan_OldLadywithLegend_Text_0
+	release
+	end
+
+
+Kasaan_GSlowpoke::
+	lock
+	faceplayer
+	msgbox Kasaan_GSlowpoke_Text_0
 	release
 	end
 
@@ -72,3 +81,6 @@ Kasaan_OldLadywithLegend_Text_0:
 	.string "tried to give the people them to read.\l"
 	.string "They thought we were a load of rubbish\l"
 	.string "and exiled us to this small house. Sigh.$"
+
+Kasaan_GSlowpoke_Text_0:
+	.string "Poke...$"

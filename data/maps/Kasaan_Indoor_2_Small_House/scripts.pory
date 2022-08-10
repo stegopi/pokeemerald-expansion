@@ -12,6 +12,7 @@ script Kasaan_Old_Man_With_GSlowpoke {
 				msgbox("Thank you.")
 				setvar(0x8003, 1)
 				givemon(SPECIES_SLOWPOKE_GALARIAN, 22, ITEM_KINGS_ROCK)
+				removeobject(3)
 				setflag(FLAG_UNUSED_0x020)
 			}
 			else {msgbox(format("Come back without a full party."))}
@@ -28,6 +29,14 @@ script Kasaan_OldLadywithLegend {
 	lock
 	faceplayer
 	msgbox(format("Have you noticed the IQ difference from here and other cities? Well the legend goes as so: Once a mad scientist used this weird pencil eraser and erased all the text from the books of the city. After many years, people became dumber and dumber. We came from another city with our books, and we tried to give the people them to read. They thought we were a load of rubbish and exiled us to this small house. Sigh."))
+	release
+	end
+}
+
+script Kasaan_GSlowpoke {
+	lock
+	faceplayer
+	msgbox("Poke...")
 	release
 	end
 }

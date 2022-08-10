@@ -1115,3 +1115,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/AvalancheMountain/scripts.inc"
 
 	.include "data/maps/Kasaan_House_3/scripts.inc"
+
+	.include "data/maps/AvalancheMountainA1/scripts.inc"
