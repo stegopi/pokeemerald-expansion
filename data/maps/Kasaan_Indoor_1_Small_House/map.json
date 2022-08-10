@@ -53,8 +53,8 @@
       "x": 3,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_KASAAN_INDOOR_1_SMALL_HOUSE",
-      "dest_warp_id": 0
+      "dest_map": "MAP_KASAAN",
+      "dest_warp_id": 4
     }
   ],
   "coord_events": [
