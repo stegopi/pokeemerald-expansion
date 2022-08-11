@@ -622,3 +622,17 @@ gMetatiles_Distortion2::
 	.align 1
 gMetatileAttributes_Distortion2::
 	.incbin "data/tilesets/secondary/distortion2/metatile_attributes.bin"
+	.align 1
+gMetatiles_Speakeasy::
+	.incbin "data/tilesets/primary/speakeasy/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Speakeasy::
+	.incbin "data/tilesets/primary/speakeasy/metatile_attributes.bin"
+	.align 1
+gMetatiles_Speakeasy2::
+	.incbin "data/tilesets/secondary/speakeasy2/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Speakeasy2::
+	.incbin "data/tilesets/secondary/speakeasy2/metatile_attributes.bin"

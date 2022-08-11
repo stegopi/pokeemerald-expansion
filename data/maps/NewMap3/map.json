@@ -51,19 +51,19 @@
       "elevation": 0,
       "dest_map": "MAP_NEW_MAP3",
       "dest_warp_id": 3
+    },
+    {
+      "x": 35,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_THE_DEN",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [
 
   ],
   "bg_events": [
-    {
-      "type": "hidden_item",
-      "x": 12,
-      "y": 10,
-      "elevation": 3,
-      "item": "ITEM_MASTER_BALL",
-      "flag": "FLAG_UNUSED_0x020"
-    }
+
   ]
 }

@@ -23,6 +23,55 @@
       "elevation": 0,
       "dest_map": "MAP_NEW_MAP2",
       "dest_warp_id": 0
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_WILDERDEEN_CLEARING",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_WILDERDEEN_CLEARING",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_WILDERDEEN_CLEARING",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_WILDERDEEN_CLEARING",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 19,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_WILDERDEEN_CLEARING",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 19,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_WILDERDEEN_CLEARING",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_WILDERDEEN_CLEARING",
+      "dest_warp_id": 7
     }
   ],
   "coord_events": [

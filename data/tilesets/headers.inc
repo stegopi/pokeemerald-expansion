@@ -929,3 +929,25 @@ gTileset_Distortion2::
 	.4byte gMetatiles_Distortion2
 	.4byte gMetatileAttributes_Distortion2
 	.4byte NULL
+
+	.align 2
+gTileset_Speakeasy::
+	.byte TRUE @ is compressed
+	.byte FALSE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Speakeasy
+	.4byte gTilesetPalettes_Speakeasy
+	.4byte gMetatiles_Speakeasy
+	.4byte gMetatileAttributes_Speakeasy
+	.4byte NULL
+
+	.align 2
+gTileset_Speakeasy2::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Speakeasy2
+	.4byte gTilesetPalettes_Speakeasy2
+	.4byte gMetatiles_Speakeasy2
+	.4byte gMetatileAttributes_Speakeasy2
+	.4byte NULL

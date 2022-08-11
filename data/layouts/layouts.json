@@ -5556,6 +5556,30 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/AvalancheMountainA1/border.bin",
       "blockdata_filepath": "data/layouts/AvalancheMountainA1/map.bin"
+    },
+    {
+      "id": "LAYOUT_AVALANCHE1B",
+      "name": "Avalanche1B_Layout",
+      "width": 22,
+      "height": 26,
+      "border_width": 8,
+      "border_height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Avalanche1B/border.bin",
+      "blockdata_filepath": "data/layouts/Avalanche1B/map.bin"
+    },
+    {
+      "id": "LAYOUT_KASAAN_SPEAKEASY",
+      "name": "Kasaan_Speakeasy_Layout",
+      "width": 23,
+      "height": 25,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Speakeasy",
+      "secondary_tileset": "gTileset_Speakeasy2",
+      "border_filepath": "data/layouts/Kasaan_Speakeasy/border.bin",
+      "blockdata_filepath": "data/layouts/Kasaan_Speakeasy/map.bin"
     }
   ]
 }

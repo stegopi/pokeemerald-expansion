@@ -644,10 +644,12 @@
     "Kasaan_Gym3",
     "Kasaan_Indoor_2_Small_House",
     "Kasaan_PokeCenter2",
-    "Kasaan_House_3"
+    "Kasaan_House_3",
+    "Kasaan_Speakeasy"
   ],
   "gMapGroup_AvalancheMountain": [
     "AvalancheMountain",
-    "AvalancheMountainA1"
+    "AvalancheMountainA1",
+    "Avalanche1B"
   ]
 }
