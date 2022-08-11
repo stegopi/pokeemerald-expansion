@@ -5580,6 +5580,18 @@
       "secondary_tileset": "gTileset_Speakeasy2",
       "border_filepath": "data/layouts/Kasaan_Speakeasy/border.bin",
       "blockdata_filepath": "data/layouts/Kasaan_Speakeasy/map.bin"
+    },
+    {
+      "id": "LAYOUT_KASAAN_UNDERGROUND_TUNNEL",
+      "name": "Kasaan_Underground_Tunnel_Layout",
+      "width": 100,
+      "height": 8,
+      "border_width": 1,
+      "border_height": 1,
+      "primary_tileset": "gTileset_Speakeasy",
+      "secondary_tileset": "gTileset_Speakeasy2",
+      "border_filepath": "data/layouts/Kasaan_Underground_Tunnel/border.bin",
+      "blockdata_filepath": "data/layouts/Kasaan_Underground_Tunnel/map.bin"
     }
   ]
 }

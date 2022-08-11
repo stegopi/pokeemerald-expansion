@@ -1121,3 +1121,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Avalanche1B/scripts.inc"
 
 	.include "data/maps/Kasaan_Speakeasy/scripts.inc"
+
+	.include "data/maps/Kasaan_Underground_Tunnel/scripts.inc"

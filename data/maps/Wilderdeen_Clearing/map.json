@@ -65,13 +65,6 @@
       "elevation": 0,
       "dest_map": "MAP_WILDERDEEN_CLEARING",
       "dest_warp_id": 0
-    },
-    {
-      "x": 6,
-      "y": 4,
-      "elevation": 0,
-      "dest_map": "MAP_WILDERDEEN_CLEARING",
-      "dest_warp_id": 7
     }
   ],
   "coord_events": [
