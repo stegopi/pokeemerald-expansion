@@ -539,3 +539,4 @@ gSpecials::
 	def_special HeadbuttWildEncounter
 	def_special SetBurn
 	def_special TrySpecialOverworldEvo
+	def_special BufferUnitSystemText
