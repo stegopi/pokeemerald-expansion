@@ -18,25 +18,25 @@
   ],
   "warp_events": [
     {
-      "x": 98,
-      "y": 3,
+      "x": 97,
+      "y": 4,
       "elevation": 0,
       "dest_map": "MAP_KASAAN_UNDERGROUND_TUNNEL",
       "dest_warp_id": 0
     },
     {
-      "x": 98,
-      "y": 4,
+      "x": 97,
+      "y": 5,
       "elevation": 0,
       "dest_map": "MAP_KASAAN_UNDERGROUND_TUNNEL",
       "dest_warp_id": 1
     },
     {
       "x": 0,
-      "y": 5,
+      "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_KASAAN",
-      "dest_warp_id": 0
+      "dest_map": "MAP_KASAAN_SPEAKEASY_STORAGE",
+      "dest_warp_id": 1
     }
   ],
   "coord_events": [

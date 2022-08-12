@@ -1,0 +1,36 @@
+script EventScript_StegoTriggerNtA {
+	msgbox(format(".... It's a switch! It says DANGER written in mysterious red ink. Press it?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT)==1) {
+		msgbox(format("Who wouldn't?"))	
+		getplayerxy(VAR_TEMP_1, VAR_TEMP_2)	
+		setvar(VAR_0x8004, 1) 
+		setvar(VAR_0x8005, 1)
+		setvar(VAR_0x8006, 8)
+		setvar(VAR_0x8007, 5)
+		special(ShakeCamera)
+		fadescreen(1)
+		warpsilent(MAP_KASAAN_UNUSED_STORAGE_2, VAR_TEMP_1, VAR_TEMP_2)
+		fadescreen(0)
+	}
+	release
+	end
+}
+
+script EventScript_StegoTriggerAtN {
+	msgbox(format("... It's a switch. Looks like you already pressed it! Press it again?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT)==1) {
+		msgbox(format("Who wouldn't?"))
+		getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+		setvar(VAR_0x8004, 1) 
+		setvar(VAR_0x8005, 1)
+		setvar(VAR_0x8006, 8)
+		setvar(VAR_0x8007, 5)
+		special(ShakeCamera)
+		fadescreen(1)	
+		warpsilent(MAP_KASAAN_SPEAKEASY_STORAGE, VAR_TEMP_1, VAR_TEMP_2)
+		fadescreen(0)
+	}
+	release
+	end
+}
+

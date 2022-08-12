@@ -28,15 +28,15 @@
       "x": 5,
       "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_WILDERDEEN_CLEARING",
-      "dest_warp_id": 0
+      "dest_map": "MAP_KASAAN_UNUSED_STORAGE_2",
+      "dest_warp_id": 3
     },
     {
       "x": 6,
       "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_WILDERDEEN_CLEARING",
-      "dest_warp_id": 0
+      "dest_map": "MAP_KASAAN_UNUSED_STORAGE_2",
+      "dest_warp_id": 4
     },
     {
       "x": 0,

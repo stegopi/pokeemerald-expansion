@@ -614,6 +614,8 @@
 #define MAP_KASAAN_HOUSE_3              (7 | (34 << 8))
 #define MAP_KASAAN_SPEAKEASY            (8 | (34 << 8))
 #define MAP_KASAAN_UNDERGROUND_TUNNEL   (9 | (34 << 8))
+#define MAP_KASAAN_SPEAKEASY_STORAGE    (10 | (34 << 8))
+#define MAP_KASAAN_UNUSED_STORAGE_2     (11 | (34 << 8))
 
 // gMapGroup_AvalancheMountain
 #define MAP_AVALANCHE_MOUNTAIN    (0 | (35 << 8))

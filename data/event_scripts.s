@@ -1017,6 +1017,7 @@ Common_EventScript_LegendaryFlewAway::
 	release
 	end
 
+	.include "data/scripts/stegotrigger.inc"
 	.include "data/scripts/pc_transfer.inc"
 	.include "data/scripts/questionnaire.inc"
 	.include "data/scripts/abnormal_weather.inc"
@@ -1123,3 +1124,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Kasaan_Speakeasy/scripts.inc"
 
 	.include "data/maps/Kasaan_Underground_Tunnel/scripts.inc"
+
+	.include "data/maps/Kasaan_Speakeasy_Storage/scripts.inc"
+
+	.include "data/maps/Kasaan_Unused_Storage_2/scripts.inc"

@@ -5324,8 +5324,8 @@
       "height": 40,
       "border_width": 2,
       "border_height": 2,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
+      "primary_tileset": "gTileset_Volcano1",
+      "secondary_tileset": "gTileset_Volcano2",
       "border_filepath": "data/layouts/NewMap3/border.bin",
       "blockdata_filepath": "data/layouts/NewMap3/map.bin"
     },
@@ -5573,7 +5573,7 @@
       "id": "LAYOUT_KASAAN_SPEAKEASY",
       "name": "Kasaan_Speakeasy_Layout",
       "width": 23,
-      "height": 25,
+      "height": 23,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Speakeasy",
@@ -5592,6 +5592,30 @@
       "secondary_tileset": "gTileset_Speakeasy2",
       "border_filepath": "data/layouts/Kasaan_Underground_Tunnel/border.bin",
       "blockdata_filepath": "data/layouts/Kasaan_Underground_Tunnel/map.bin"
+    },
+    {
+      "id": "LAYOUT_KASAAN_SPEAKEASY_STORAGE",
+      "name": "Kasaan_Speakeasy_Storage_Layout",
+      "width": 40,
+      "height": 42,
+      "border_width": 1,
+      "border_height": 1,
+      "primary_tileset": "gTileset_Speakeasy",
+      "secondary_tileset": "gTileset_Speakeasy2",
+      "border_filepath": "data/layouts/Kasaan_Speakeasy_Storage/border.bin",
+      "blockdata_filepath": "data/layouts/Kasaan_Speakeasy_Storage/map.bin"
+    },
+    {
+      "id": "LAYOUT_KASAAN_UNUSED_STORAGE_2",
+      "name": "Kasaan_Unused_Storage_2_Layout",
+      "width": 40,
+      "height": 42,
+      "border_width": 1,
+      "border_height": 1,
+      "primary_tileset": "gTileset_Speakeasy",
+      "secondary_tileset": "gTileset_Speakeasy2",
+      "border_filepath": "data/layouts/Kasaan_Unused_Storage_2/border.bin",
+      "blockdata_filepath": "data/layouts/Kasaan_Unused_Storage_2/map.bin"
     }
   ]
 }
