@@ -1,3 +1,6 @@
+# Pokemon Traf
+The repository for pokemon traf, wip
+
 # pokeemerald Expansion
 
 ## What is the pokeemerald Expansion?
