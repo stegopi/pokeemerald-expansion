@@ -7,6 +7,7 @@ Kasaan_Bartender::
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 	compare VAR_TEMP_1, 5
 	goto_if_eq Kasaan_Bartender_2
+	faceplayer
 	msgbox Kasaan_Bartender_Text_2
 	setvar VAR_0x8004, 1
 	setvar VAR_0x8005, 1
@@ -14,9 +15,9 @@ Kasaan_Bartender::
 	setvar VAR_0x8007, 5
 	special ShakeCamera
 	fadescreen 1
+	msgbox Kasaan_Bartender_Text_3
 	warpsilent MAP_KASAAN, 12, 19
 	fadescreen 0
-	msgbox Kasaan_Bartender_Text_3
 Kasaan_Bartender_1:
 	release
 	end

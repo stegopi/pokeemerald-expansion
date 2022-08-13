@@ -46,6 +46,9 @@ void FreezeObjects_WaitForPlayer(void)
     CreateTask(Task_FreezePlayer, 80);
 }
 
+
+
+
 #define tPlayerFrozen data[0]
 #define tObjectFrozen data[1]
 #define tObjectId     data[2]
@@ -67,6 +70,18 @@ static void Task_FreezeSelectedObjectAndPlayer(u8 taskId)
     }
     if (task->tPlayerFrozen && task->tObjectFrozen)
         DestroyTask(taskId);
+}
+
+void ScriptFreezeTargetObjectEvent(void)
+{
+    u8 taskId;
+
+    taskId = CreateTask(Task_FreezeSelectedObjectAndPlayer, 80);
+    if (!gObjectEvents[gSelectedObjectEvent].singleMovementActive)
+    {
+        FreezeObjectEvent(&gObjectEvents[gSelectedObjectEvent]);
+        gTasks[taskId].tObjectFrozen = TRUE;
+    }
 }
 
 bool8 IsFreezeSelectedObjectAndPlayerFinished(void)
