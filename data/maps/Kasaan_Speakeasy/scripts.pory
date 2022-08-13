@@ -1,1 +1,54 @@
 mapscripts Kasaan_Speakeasy_MapScripts {}
+script Kasaan_Bartender {
+	lock
+	getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+	if (var(VAR_TEMP_1)==5) {
+		message(format("Bro, you're over-age. No alcohol for you GLUBBO."))
+		waitmessage
+		call(MartsDiffer)
+		msgbox(format("Kasaan Law states that those who drink alcohol when past age are sentenced to 69 years of prison."))
+	}
+	else {
+		faceplayer
+		msgbox(format("What - How did you get here? How dare you invade my privacy!"))
+		setvar(VAR_0x8004, 1) 
+		setvar(VAR_0x8005, 1)
+		setvar(VAR_0x8006, 8)
+		setvar(VAR_0x8007, 5)
+		special(ShakeCamera)
+		fadescreen(1)
+		msgbox(format("A red mark seems to have appeared on your buttocks. Shouldn't try that again!"))
+		warpsilent(MAP_KASAAN, 12, 19)
+		fadescreen(0)
+	}
+	release
+	end
+}
+
+script MartsDiffer {
+	if (var(VAR_TEMP_0) == 9) {
+		pokemart(Kasaan_Limited_Menu_Drinks)
+	}
+	elif (var(VAR_TEMP_0) == 7) {
+		pokemart(Kasaan_Limited_Menu_Food)
+	}
+}
+
+mart Kasaan_Limited_Menu_Drinks {
+	ITEM_LEMONADE
+	ITEM_FRESH_WATER
+	ITEM_SODA_POP
+	ITEM_BERRY_JUICE
+	ITEM_MOOMOO_MILK
+}
+
+mart Kasaan_Limited_Menu_Food {
+	ITEM_PEWTER_CRUNCHIES 
+	ITEM_RAGE_CANDY_BAR 
+	ITEM_LAVA_COOKIE 
+	ITEM_OLD_GATEAU 
+	ITEM_CASTELIACONE
+	ITEM_LUMIOSE_GALETTE
+	ITEM_SHALOUR_SABLE
+	ITEM_BIG_MALASADA
+}

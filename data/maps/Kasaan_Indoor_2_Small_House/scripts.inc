@@ -29,7 +29,7 @@ Kasaan_Old_Man_With_GSlowpoke_5:
 
 Kasaan_Old_Man_With_GSlowpoke_8:
 	msgbox Kasaan_Old_Man_With_GSlowpoke_Text_1
-	setvar 0x8003, 1
+	setflag FLAG_FORCED_SHINY
 	givemon SPECIES_SLOWPOKE_GALARIAN, 22, ITEM_KINGS_ROCK
 	removeobject 3
 	setflag FLAG_UNUSED_0x020

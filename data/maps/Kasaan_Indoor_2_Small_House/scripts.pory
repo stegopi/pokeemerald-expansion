@@ -10,7 +10,7 @@ script Kasaan_Old_Man_With_GSlowpoke {
 			getpartysize
 			if (var(VAR_RESULT)<6) {
 				msgbox("Thank you.")
-				setvar(0x8003, 1)
+				setflag(FLAG_FORCED_SHINY)
 				givemon(SPECIES_SLOWPOKE_GALARIAN, 22, ITEM_KINGS_ROCK)
 				removeobject(3)
 				setflag(FLAG_UNUSED_0x020)

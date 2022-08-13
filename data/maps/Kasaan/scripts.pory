@@ -98,3 +98,7 @@ script TestingFlags {
 	release
 	end
 }
+script Kasaan_Speakeasy_Sign {
+	msgbox(format("Kasaan Speakeasy"), MSGBOX_SIGN)
+	end
+}
