@@ -10,7 +10,7 @@ script Kasaan_Bartender {
 	}
 	else {
 		faceplayer
-		msgbox(format("What - How did you get here? How dare you invade my privacy!"))
+		msgbox(format("How did you get here?!"))
 		setvar(VAR_0x8004, 1) 
 		setvar(VAR_0x8005, 1)
 		setvar(VAR_0x8006, 8)
@@ -52,3 +52,61 @@ mart Kasaan_Limited_Menu_Food {
 	ITEM_SHALOUR_SABLE
 	ITEM_BIG_MALASADA
 }
+
+script Kasaan_PianoMan {
+	locktarget
+	faceplayer
+
+	msgbox(format("(Pauses playing) What do you want now?! I was captured by this Brendan dude and was forced to do this f!ck. Oh, it's not that kid over there who always screams at me."))
+	applymovement(3, Kasaan_PianoManBossedLookLeft)
+	waitmovement(0)
+	msgbox(format("Kid: GET ON WITH IT, WE'RE ALL WAITING!"))
+	applymovement(3, Kasaan_PianoManBossedMoveLeft)
+	waitmovement(0)
+	msgbox(format("Piano Man: (Continues playing with a fearful expression as the kid draws out a whip)"))
+	applymovement(3, Kasaan_PianoManBossedMoveRight)
+	waitmovement(0)
+	release
+	end
+}
+
+script Kasaan_PianoManBosser {
+	locktarget
+	msgbox(format("(Muttering Indistinctly): I swear that piano man, if he makes another crack, I will..."))
+	faceplayer
+	applymovement(3, Kasaan_Speakeasy_Bosser_Piano_Exclaim)
+	waitmovement(0)
+	msgbox(format("OVERAGES TALKING TO ME!? You filthy little - (face screws up in concentration as he sizes you for a fight, but decides better.)"))
+	applymovement(3, Kasaan_PianoManBossedLookRight)
+	waitmovement(0)
+	msgbox(format("(Muttering Indistinctly): First these inconsistent piano men, then pesky overages. Maybe I should have a word with the bartender."))
+	release
+	end
+}
+
+movement Kasaan_PianoManBossedLookLeft {
+	emote_exclamation_mark
+	face_left
+	step_end
+}
+movement Kasaan_Speakeasy_Bosser_Piano_Exclaim {
+	emote_exclamation_mark
+	step_end
+}
+
+movement Kasaan_PianoManBossedMoveRight {
+	face_right
+	walk_right
+	step_end
+}
+
+movement Kasaan_PianoManBossedLookRight {
+	face_right
+	step_end
+}
+
+movement Kasaan_PianoManBossedMoveLeft {
+	walk_left
+	step_end
+}
+

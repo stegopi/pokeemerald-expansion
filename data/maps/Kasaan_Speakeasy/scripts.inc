@@ -67,6 +67,58 @@ Kasaan_Limited_Menu_Food:
 	.2byte ITEM_BIG_MALASADA
 	.2byte ITEM_NONE
 
+Kasaan_PianoMan::
+	locktarget
+	faceplayer
+	msgbox Kasaan_PianoMan_Text_0
+	applymovement 3, Kasaan_PianoManBossedLookLeft
+	waitmovement 0
+	msgbox Kasaan_PianoMan_Text_1
+	applymovement 3, Kasaan_PianoManBossedMoveLeft
+	waitmovement 0
+	msgbox Kasaan_PianoMan_Text_2
+	applymovement 3, Kasaan_PianoManBossedMoveRight
+	waitmovement 0
+	release
+	end
+
+
+Kasaan_PianoManBosser::
+	locktarget
+	msgbox Kasaan_PianoManBosser_Text_0
+	faceplayer
+	applymovement 3, Kasaan_Speakeasy_Bosser_Piano_Exclaim
+	waitmovement 0
+	msgbox Kasaan_PianoManBosser_Text_1
+	applymovement 3, Kasaan_PianoManBossedLookRight
+	waitmovement 0
+	msgbox Kasaan_PianoManBosser_Text_2
+	release
+	end
+
+
+Kasaan_PianoManBossedLookLeft:
+	emote_exclamation_mark
+	face_left
+	step_end
+
+Kasaan_Speakeasy_Bosser_Piano_Exclaim:
+	emote_exclamation_mark
+	step_end
+
+Kasaan_PianoManBossedMoveRight:
+	face_right
+	walk_right
+	step_end
+
+Kasaan_PianoManBossedLookRight:
+	face_right
+	step_end
+
+Kasaan_PianoManBossedMoveLeft:
+	walk_left
+	step_end
+
 Kasaan_Bartender_Text_0:
 	.string "Bro, you're over-age. No alcohol for you\n"
 	.string "GLUBBO.$"
@@ -77,10 +129,41 @@ Kasaan_Bartender_Text_1:
 	.string "69 years of prison.$"
 
 Kasaan_Bartender_Text_2:
-	.string "What - How did you get here? How dare\n"
-	.string "you invade my privacy!$"
+	.string "How did you get here?!$"
 
 Kasaan_Bartender_Text_3:
 	.string "A red mark seems to have appeared on\n"
 	.string "your buttocks. Shouldn't try that\l"
 	.string "again!$"
+
+Kasaan_PianoMan_Text_0:
+	.string "(Pauses playing) What do you want now?!\n"
+	.string "I was captured by this Brendan dude\l"
+	.string "and was forced to do this f!ck. Oh, it's\l"
+	.string "not that kid over there who always\l"
+	.string "screams at me.$"
+
+Kasaan_PianoMan_Text_1:
+	.string "Kid: GET ON WITH IT, WE'RE ALL WAITING!$"
+
+Kasaan_PianoMan_Text_2:
+	.string "Piano Man: (Continues playing with a\n"
+	.string "fearful expression as the kid draws\l"
+	.string "out a whip)$"
+
+Kasaan_PianoManBosser_Text_0:
+	.string "(Muttering Indistinctly): I swear that\n"
+	.string "piano man, if he makes another crack, I\l"
+	.string "will...$"
+
+Kasaan_PianoManBosser_Text_1:
+	.string "OVERAGES TALKING TO ME!? You filthy\n"
+	.string "little - (face screws up in\l"
+	.string "concentration as he sizes you for a\l"
+	.string "fight, but decides better.)$"
+
+Kasaan_PianoManBosser_Text_2:
+	.string "(Muttering Indistinctly): First these\n"
+	.string "inconsistent piano men, then pesky\l"
+	.string "overages. Maybe I should have a word\l"
+	.string "with the bartender.$"

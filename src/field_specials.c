@@ -166,7 +166,6 @@ u8 SetBurn (void)
         if (pkmncurrentspecies==SPECIES_EGG) {
             if (pkmcount==(PARTY_SIZE)) {
                 return 0;
-                break;
             }
             else {
                 pkmcount+=1;
@@ -176,12 +175,10 @@ u8 SetBurn (void)
             if (GetMonData(&gPlayerParty[pkmcount], MON_DATA_STATUS) != STATUS1_BURN && (gBaseStats[pkmncurrentspecies].type1 != TYPE_FIRE && gBaseStats[pkmncurrentspecies].type2 != TYPE_FIRE) ) {
                 SetMonData(&gPlayerParty[pkmcount], MON_DATA_STATUS, &status);
                 return 1;
-                break;
             }
             else {
                 if (pkmcount==(PARTY_SIZE)) {
                     return 0;
-                    break;
                 }
                 else {
                     pkmcount+=1;
