@@ -2263,3 +2263,12 @@ const struct SpriteFrameImage sPicTable_Regice[] = {
     overworld_frame(gObjectEventPic_Regice, 4, 4, 4),
     overworld_frame(gObjectEventPic_Regice, 4, 4, 5),
 };
+
+const struct SpriteFrameImage sPicTable_GiraPortal[] = {
+    overworld_frame(gObjectEventPic_GiraPortal, 4, 4, 0),
+    overworld_frame(gObjectEventPic_GiraPortal, 4, 4, 0),
+    overworld_frame(gObjectEventPic_GiraPortal, 4, 4, 0),
+    overworld_frame(gObjectEventPic_GiraPortal, 4, 4, 0),
+    overworld_frame(gObjectEventPic_GiraPortal, 4, 4, 0),
+    overworld_frame(gObjectEventPic_GiraPortal, 4, 4, 0),
+}

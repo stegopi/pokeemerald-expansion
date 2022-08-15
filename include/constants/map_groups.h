@@ -621,6 +621,7 @@
 #define MAP_AVALANCHE_MOUNTAIN    (0 | (35 << 8))
 #define MAP_AVALANCHE_MOUNTAIN_A1 (1 | (35 << 8))
 #define MAP_AVALANCHE1B           (2 | (35 << 8))
+#define MAP_AVALANCHE_MOUNTAIN2   (3 | (35 << 8))
 
 #define MAP_GROUPS_COUNT 36
 

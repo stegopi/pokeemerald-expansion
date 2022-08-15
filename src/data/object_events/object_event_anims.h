@@ -112,6 +112,7 @@ static const union AnimCmd sAnim_QuintyPlumpGoFasterSouth[] =
     ANIMCMD_JUMP(0),
 };
 
+
 static const union AnimCmd sAnim_QuintyPlumpGoFasterNorth[] =
 {
     ANIMCMD_FRAME(4, 2),

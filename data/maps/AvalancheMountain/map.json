@@ -50,6 +50,20 @@
       "elevation": 0,
       "dest_map": "MAP_AVALANCHE1B",
       "dest_warp_id": 1
+    },
+    {
+      "x": 25,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_AVALANCHE_MOUNTAIN2",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 15,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_AVALANCHE_MOUNTAIN2",
+      "dest_warp_id": 1
     }
   ],
   "coord_events": [

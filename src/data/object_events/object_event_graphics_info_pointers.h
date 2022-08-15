@@ -254,6 +254,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Palkia;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Uxie;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zekrom;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Regice;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GiraPortal;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -506,6 +507,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_UXIE] =                     &gObjectEventGraphicsInfo_Uxie,
     [OBJ_EVENT_GFX_ZEKROM] =                   &gObjectEventGraphicsInfo_Zekrom,
     [OBJ_EVENT_GFX_REGICE] =                   &gObjectEventGraphicsInfo_Regice,
+    [OBJ_EVENT_GFX_GIRAPORTAL] =               &gObjectEventGraphicsInfo_GiraPortal,
 
 };
 

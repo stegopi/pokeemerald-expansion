@@ -5616,6 +5616,18 @@
       "secondary_tileset": "gTileset_Speakeasy2",
       "border_filepath": "data/layouts/Kasaan_Unused_Storage_2/border.bin",
       "blockdata_filepath": "data/layouts/Kasaan_Unused_Storage_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_AVALANCHE_MOUNTAIN2",
+      "name": "AvalancheMountain2_Layout",
+      "width": 44,
+      "height": 29,
+      "border_width": 4,
+      "border_height": 4,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AvalancheMountain2/border.bin",
+      "blockdata_filepath": "data/layouts/AvalancheMountain2/map.bin"
     }
   ]
 }
