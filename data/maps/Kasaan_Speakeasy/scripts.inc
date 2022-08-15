@@ -71,13 +71,11 @@ Kasaan_PianoMan::
 	locktarget
 	faceplayer
 	msgbox Kasaan_PianoMan_Text_0
-	applymovement 3, Kasaan_PianoManBossedLookLeft
+	applymovement 3, Kasaan_LookLeftExclaim
 	waitmovement 0
 	msgbox Kasaan_PianoMan_Text_1
-	applymovement 3, Kasaan_PianoManBossedMoveLeft
-	waitmovement 0
 	msgbox Kasaan_PianoMan_Text_2
-	applymovement 3, Kasaan_PianoManBossedMoveRight
+	applymovement 3, Kasaan_Speakeasy_LookRight
 	waitmovement 0
 	release
 	end
@@ -97,25 +95,20 @@ Kasaan_PianoManBosser::
 	end
 
 
-Kasaan_PianoManBossedLookLeft:
+Kasaan_LookLeftExclaim:
 	emote_exclamation_mark
 	face_left
 	step_end
 
-Kasaan_Speakeasy_Bosser_Piano_Exclaim:
+Kasaan_Speakeasy_Exclaim:
 	emote_exclamation_mark
 	step_end
 
-Kasaan_PianoManBossedMoveRight:
-	face_right
-	walk_right
-	step_end
-
-Kasaan_PianoManBossedLookRight:
+Kasaan_Speakeasy_LookRight:
 	face_right
 	step_end
 
-Kasaan_PianoManBossedMoveLeft:
+Kasaan_Speakeasy_MoveLeft:
 	walk_left
 	step_end
 
