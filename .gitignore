@@ -38,3 +38,4 @@ build/
 *.diff
 *.sym
 *.js
+porymap.project.cfg
