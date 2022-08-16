@@ -267,7 +267,7 @@ static const union AnimCmd *const sAnimTable_Arrow[] =
 
 const struct SpriteTemplate gFieldEffectObjectTemplate_Arrow = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_BRENDAN,
+    .paletteTag = FLDEFF_PAL_TAG_ARROW,
     .oam = &gObjectEventBaseOam_16x16,
     .anims = sAnimTable_Arrow,
     .images = sPicTable_Arrow,
@@ -1288,6 +1288,7 @@ const struct SpriteTemplate gFieldEffectObjectTemplate_Rayquaza = {
 
 static const struct SpritePalette sSpritePalette_Unused = {gObjectEventPal_Npc3, FLDEFF_PAL_TAG_UNKNOWN};
 
+
 static const struct SpriteFrameImage sPicTable_RockClimbBlob[] = {
     overworld_frame(gFieldEffectObjectPic_RockClimbBlob, 4, 4, 1),
     overworld_frame(gFieldEffectObjectPic_RockClimbBlob, 4, 4, 0),
@@ -1332,3 +1333,5 @@ const struct SpriteTemplate gFieldEffectObjectTemplate_RockClimbDust = {
 };
 
 const struct SpritePalette gSpritePalette_BigDust = {gFieldEffectPal_DustCloud, FLDEFF_PAL_TAG_DUST_CLOUD};
+
+const struct SpritePalette gSpritePalette_ArrowEmotionsFieldEffect = {gObjectEventPal_Brendan, FLDEFF_PAL_TAG_ARROW};

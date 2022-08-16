@@ -3,6 +3,9 @@
 
 #include "constants/wild_encounter.h"
 
+#include "constants/day_night.h"
+
+
 struct WildPokemon
 {
     u8 minLevel;
@@ -13,7 +16,7 @@ struct WildPokemon
 struct WildPokemonInfo
 {
     u8 encounterRate;
-    const struct WildPokemon *wildPokemon;
+    const struct WildPokemon *wildPokemon[TIMES_OF_DAY_COUNT];
 };
 
 struct WildPokemonHeader
