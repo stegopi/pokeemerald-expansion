@@ -28,6 +28,7 @@
 #include "start_menu.h"
 #include "task.h"
 #include "text.h"
+#include "follow_me.h"
 #include "constants/event_object_movement.h"
 #include "constants/event_objects.h"
 #include "constants/songs.h"
@@ -42,8 +43,6 @@ static void FillPalBufferWhite(void);
 static void Task_ExitDoor(u8);
 static bool32 WaitForWeatherFadeIn(void);
 static void Task_SpinEnterWarp(u8 taskId);
-static void Task_WarpAndLoadMap(u8 taskId);
-static void Task_DoDoorWarp(u8 taskId);
 static void Task_EnableScriptAfterMusicFade(u8 taskId);
 
 // data[0] is used universally by tasks in this file as a state for switches
@@ -118,7 +117,7 @@ void WarpFadeOutScreen(void)
     }
 }
 
-static void SetPlayerVisibility(bool8 visible)
+void SetPlayerVisibility(bool8 visible)
 {
     SetPlayerInvisibility(!visible);
 }
@@ -282,6 +281,9 @@ void FieldCB_DefaultWarpExit(void)
     Overworld_PlaySpecialMapMusic();
     WarpFadeInScreen();
     SetUpWarpExitTask();
+    
+    FollowMe_WarpSetEnd();
+    
     ScriptContext2_Enable();
 }
 
@@ -330,6 +332,7 @@ static void Task_ExitDoor(u8 taskId)
     switch (task->tState)
     {
     case 0:
+        HideFollower();
         SetPlayerVisibility(FALSE);
         FreezeObjectEvents();
         PlayerGetDestCoords(x, y);
@@ -359,6 +362,9 @@ static void Task_ExitDoor(u8 taskId)
     case 3:
         if (task->data[1] < 0 || gTasks[task->data[1]].isActive != TRUE)
         {
+            FollowMe_SetIndicatorToComeOutDoor();
+            FollowMe_WarpSetEnd();
+            
             UnfreezeObjectEvents();
             task->tState = 4;
         }
@@ -379,6 +385,7 @@ static void Task_ExitNonAnimDoor(u8 taskId)
     switch (task->tState)
     {
     case 0:
+        HideFollower();
         SetPlayerVisibility(FALSE);
         FreezeObjectEvents();
         PlayerGetDestCoords(x, y);
@@ -397,6 +404,9 @@ static void Task_ExitNonAnimDoor(u8 taskId)
     case 2:
         if (IsPlayerStandingStill())
         {
+            FollowMe_SetIndicatorToComeOutDoor();
+            FollowMe_WarpSetEnd();
+            
             UnfreezeObjectEvents();
             task->tState = 3;
         }
@@ -650,7 +660,7 @@ void ReturnFromLinkRoom(void)
     CreateTask(Task_ReturnToWorldFromLinkRoom, 10);
 }
 
-static void Task_WarpAndLoadMap(u8 taskId)
+void Task_WarpAndLoadMap(u8 taskId)
 {
     struct Task *task = &gTasks[taskId];
 
@@ -681,6 +691,7 @@ static void Task_WarpAndLoadMap(u8 taskId)
     }
 }
 
+/*
 static void Task_DoDoorWarp(u8 taskId)
 {
     struct Task *task = &gTasks[taskId];
@@ -733,6 +744,7 @@ static void Task_DoDoorWarp(u8 taskId)
         break;
     }
 }
+*/
 
 static void Task_DoContestHallWarp(u8 taskId)
 {
@@ -1017,6 +1029,8 @@ static void Task_SpinEnterWarp(u8 taskId)
     case 1:
         if (WaitForWeatherFadeIn() && IsPlayerSpinEntranceActive() != TRUE)
         {
+            FollowMe_WarpSetEnd();
+            
             UnfreezeObjectEvents();
             ScriptContext2_Disable();
             DestroyTask(taskId);

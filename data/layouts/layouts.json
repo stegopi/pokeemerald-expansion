@@ -5628,6 +5628,30 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/AvalancheMountain2/border.bin",
       "blockdata_filepath": "data/layouts/AvalancheMountain2/map.bin"
+    },
+    {
+      "id": "LAYOUT_AVALANCHE_MOUNTAIN_TUNNEL_ENTRANCE",
+      "name": "AvalancheMountainTunnelEntrance_Layout",
+      "width": 16,
+      "height": 16,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/AvalancheMountainTunnelEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/AvalancheMountainTunnelEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_AVALANCHE_MOUNTAIN_UNDERGROUND_PATH",
+      "name": "AvalancheMountain_Underground_Path_Layout",
+      "width": 5,
+      "height": 120,
+      "border_width": 1,
+      "border_height": 1,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/AvalancheMountain_Underground_Path/border.bin",
+      "blockdata_filepath": "data/layouts/AvalancheMountain_Underground_Path/map.bin"
     }
   ]
 }

@@ -618,10 +618,12 @@
 #define MAP_KASAAN_UNUSED_STORAGE_2     (11 | (34 << 8))
 
 // gMapGroup_AvalancheMountain
-#define MAP_AVALANCHE_MOUNTAIN    (0 | (35 << 8))
-#define MAP_AVALANCHE_MOUNTAIN_A1 (1 | (35 << 8))
-#define MAP_AVALANCHE1B           (2 | (35 << 8))
-#define MAP_AVALANCHE_MOUNTAIN2   (3 | (35 << 8))
+#define MAP_AVALANCHE_MOUNTAIN                  (0 | (35 << 8))
+#define MAP_AVALANCHE_MOUNTAIN_A1               (1 | (35 << 8))
+#define MAP_AVALANCHE1B                         (2 | (35 << 8))
+#define MAP_AVALANCHE_MOUNTAIN2                 (3 | (35 << 8))
+#define MAP_AVALANCHE_MOUNTAIN_TUNNEL_ENTRANCE  (4 | (35 << 8))
+#define MAP_AVALANCHE_MOUNTAIN_UNDERGROUND_PATH (5 | (35 << 8))
 
 #define MAP_GROUPS_COUNT 36
 

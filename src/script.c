@@ -1,4 +1,4 @@
-#include "global.h"
+ #include "global.h"
 #include "script.h"
 #include "event_data.h"
 #include "mystery_gift.h"
@@ -481,4 +481,10 @@ void ClearMsgBoxCancelableState(void)
 bool32 CanWalkAwayToCancelMsgBox(void)
 {
     return sMsgBoxIsCancelable;
+}
+u8* ReadWord(u8 index)
+{
+    struct ScriptContext *ctx = &sScriptContext1;
+    
+    return (T1_READ_PTR(&ctx->data[index]));
 }

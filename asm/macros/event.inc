@@ -1734,6 +1734,28 @@
 	.2byte \item
 	.2byte \quantity
 	.endm
+    
+    @ sets an NPC up to follow the player
+    .macro setfollower localId:req, flags:req
+    .byte 0xe4
+    .byte \localId
+    .2byte \flags
+    .endm
+    
+    @ remove the following NPC (assumes there will only ever be one)
+    .macro destroyfollower
+    .byte 0xe5
+    .endm
+    
+    @ makes the player and follower face one another
+    .macro facefollower
+    .byte 0xe6
+    .endm
+    
+    @ checks if you have a follower. returns the result to VAR_RESULT
+    .macro checkfollower
+    .byte 0xe7
+    .endm
 
 
 @ Supplementary
