@@ -11988,6 +11988,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly2[] = {
     .iv = 255,
     .lvl = 25,
     .abilityNums = 2,
+    //.nature = NATURE_JOLLY,
     .evs = {0, 100, 0, 0, 4, 100},
     .species = SPECIES_SANDSLASH_ALOLAN,
     .heldItem = ITEM_SHUCA_BERRY,
@@ -11998,6 +11999,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly2[] = {
     .lvl = 25,
     .evs = {0, 100, 0, 0, 4, 100},
     .species = SPECIES_ARCTOZOLT,
+    //.nature = NATURE_JOLLY,
     .abilityNums = 2,
     .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_THUNDER_PUNCH, MOVE_ICE_FANG, MOVE_PLUCK, MOVE_SUBSTITUTE}
@@ -12005,11 +12007,12 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly2[] = {
     {
     .iv = 255,
     .lvl = 24,
-    .evs = {0, 0, 0, 100, 60, 40},
-    .abilityNums = 2,
-    .species = SPECIES_FROSLASS,
-    .heldItem = ITEM_NEVER_MELT_ICE,
-    .moves = {MOVE_SHADOW_BALL, MOVE_ICE_BEAM, MOVE_DRAINING_KISS, MOVE_REST}
+    .evs = {20, 120, 0, 40, 8, 80},
+    .abilityNums = 1,
+    .species = SPECIES_GLALIE,
+    //.nature = NATURE_TIMID,
+    .heldItem = ITEM_GLALITITE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_FREEZE_DRY, MOVE_ICE_SHARD, MOVE_ICE_BEAM}
     }
 };
 
