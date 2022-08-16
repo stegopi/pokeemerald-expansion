@@ -232,7 +232,7 @@ struct BaseStats
             u8 noFlip : 1;
             u8 flags;
 };
-// Smogon Stats, Dunno when to use
+/*// Smogon Stats, Dunno when to use
 #include "smogon_stats.h"
 struct SmogonMoves {
     u16 move;
@@ -283,7 +283,7 @@ struct SmogonStats {
     const struct SmogonMonTeams (*teams)[6];
     const struct SmogonMonSets *sets;
     u8 movesCount, itemsCount, cacCount, teammatesCount, teamsCount, setsCount;
-};
+};*/
 
 #include "constants/battle_config.h"
 struct BattleMove
