@@ -2,7 +2,6 @@
 #include "metatile_behavior.h"
 #include "constants/metatile_behaviors.h"
 
-
 #define TILE_FLAG_HAS_ENCOUNTERS (1 << 0)
 #define TILE_FLAG_SURFABLE       (1 << 1)
 #define TILE_FLAG_UNUSED         (1 << 2) // Roughly all of the traversable metatiles. Set but never read
@@ -1522,5 +1521,10 @@ bool8 MetatileBehavior_IsRockStairs(u8 metatileBehavior)
         return TRUE;
     else
         return FALSE;
+}
+
+bool8 MetatileBehavior_IsSignpost(u8 metatileBehavior)
+{
+    return (metatileBehavior == MB_SIGNPOST);
 }
 

@@ -14,6 +14,7 @@ Kasaan_Bartender::
 	setvar VAR_0x8006, 8
 	setvar VAR_0x8007, 5
 	special ShakeCamera
+	setflag FLAG_REMOVE_WARP_FADE
 	fadescreen 1
 	msgbox Kasaan_Bartender_Text_3
 	warpsilent MAP_KASAAN, 12, 19

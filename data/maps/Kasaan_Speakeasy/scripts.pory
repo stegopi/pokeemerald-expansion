@@ -16,6 +16,7 @@ script Kasaan_Bartender {
 		setvar(VAR_0x8006, 8)
 		setvar(VAR_0x8007, 5)
 		special(ShakeCamera)
+		setflag(FLAG_REMOVE_WARP_FADE)
 		fadescreen(1)
 		msgbox(format("A red mark seems to have appeared on your buttocks. Shouldn't try that again!"))
 		warpsilent(MAP_KASAAN, 12, 19)

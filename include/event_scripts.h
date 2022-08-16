@@ -615,9 +615,11 @@ extern const u8 EventScript_TradeCenter_Chair0[];
 extern const u8 EventScript_ConfirmLeaveCableClubRoom[];
 extern const u8 EventScript_TerminateLink[];
 
+
 extern const u8 EventScript_BurnPkm[];
 extern const u8 EventScript_StaticEncounter[];
 extern const u8 EventScript_StegoTriggerNtA[];
 extern const u8 EventScript_StegoTriggerAtN[];
+extern const u8 EventScript_CancelMessageBox[];
 
 #endif // GUARD_EVENT_SCRIPTS_H
