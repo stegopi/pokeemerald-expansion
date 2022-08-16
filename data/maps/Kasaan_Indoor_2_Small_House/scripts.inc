@@ -12,7 +12,7 @@ Kasaan_Old_Man_With_GSlowpoke_1:
 	end
 
 Kasaan_Old_Man_With_GSlowpoke_2:
-	showmonpic SPECIES_SLOWPOKE_GALARIAN, 10 3
+	showmonpic SPECIES_SLOWPOKE_GALARIAN, 10, 3
 	msgbox Kasaan_Old_Man_With_GSlowpoke_Text_0, MSGBOX_YESNO
 	hidemonpic
 	compare VAR_RESULT, 1
