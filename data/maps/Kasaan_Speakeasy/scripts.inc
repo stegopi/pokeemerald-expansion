@@ -85,10 +85,10 @@ Kasaan_PianoManBosser::
 	locktarget
 	msgbox Kasaan_PianoManBosser_Text_0
 	faceplayer
-	applymovement 3, Kasaan_Speakeasy_Bosser_Piano_Exclaim
+	applymovement 3, Kasaan_Speakeasy_Exclaim
 	waitmovement 0
 	msgbox Kasaan_PianoManBosser_Text_1
-	applymovement 3, Kasaan_PianoManBossedLookRight
+	applymovement 3, Kasaan_Speakeasy_LookRight
 	waitmovement 0
 	msgbox Kasaan_PianoManBosser_Text_2
 	release
