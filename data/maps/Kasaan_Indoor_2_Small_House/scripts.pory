@@ -3,7 +3,7 @@ script Kasaan_Old_Man_With_GSlowpoke {
 	lock
 	faceplayer
 	if (flag(FLAG_UNUSED_0x020)==false) {
-		showmonpic(SPECIES_SLOWPOKE_GALARIAN, 10 3)
+		showmonpic(SPECIES_SLOWPOKE_GALARIAN, 10, 3)
 		msgbox(format("My Galarian Slowpoke hasn't had a chance to meet fresh air for ages. Can you help me take it on journeys?"), MSGBOX_YESNO)
 		hidemonpic
 		if (var(VAR_RESULT)==1) {
