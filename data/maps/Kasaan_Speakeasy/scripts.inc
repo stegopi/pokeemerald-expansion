@@ -96,6 +96,12 @@ Kasaan_PianoManBosser::
 	end
 
 
+Kasaan_Speakeasy_Test_Fonts::
+	msgbox Kasaan_Speakeasy_Test_Fonts_Text_0
+	release
+	end
+
+
 Kasaan_LookLeftExclaim:
 	emote_exclamation_mark
 	face_left
@@ -161,3 +167,6 @@ Kasaan_PianoManBosser_Text_2:
 	.string "inconsistent piano men, then pesky\l"
 	.string "overages. Maybe I should have a word\l"
 	.string "with the bartender.$"
+
+Kasaan_Speakeasy_Test_Fonts_Text_0:
+	.string "{COLOR_HIGHLIGHT_SHADOW LIGHT_BLUE WHITE GREEN} HIhfluidhuihdf {COLOR RED} Ssafsad$"

@@ -339,11 +339,11 @@ Text_WantToSurface:
 
 Text_WantToHeadbutt:
 	.string "It's a moderated sized tree.\n"
-	.string "Would you like to use HEADBUTT?$"
+	.string "Would you like to use {COLOR_HIGHLIGHT_SHADOW RED WHITE GREEN}Headbutt{COLOR_HIGHLIGHT_SHADOW DARK_GRAY WHITE LIGHT_GRAY}?$"
 
 Text_CantHeadbuttTree:
 	.string "There's a large, formidable tree.\n"
-	.string "It looks like it can be headbutted!$"
+	.string "It looks like it can be {COLOR_HIGHLIGHT_SHADOW RED WHITE GREEN}headbutt{COLOR_HIGHLIGHT_SHADOW DARK_GRAY WHITE LIGHT_GRAY}ed!$"
 
 EventScript_FailSweetScent::
 	msgbox Text_FailSweetScent, MSGBOX_SIGN

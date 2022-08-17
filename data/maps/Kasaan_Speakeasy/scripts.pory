@@ -82,7 +82,11 @@ script Kasaan_PianoManBosser {
 	release
 	end
 }
-
+script Kasaan_Speakeasy_Test_Fonts {
+	msgbox(format("{COLOR_HIGHLIGHT_SHADOW LIGHT_BLUE WHITE GREEN} HIhfluidhuihdf {COLOR RED} Ssafsad"))
+	release
+	end 
+}
 movement Kasaan_LookLeftExclaim {
 	emote_exclamation_mark
 	face_left
