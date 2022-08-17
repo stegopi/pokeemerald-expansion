@@ -78,6 +78,8 @@ Kasaan_PianoMan::
 	msgbox Kasaan_PianoMan_Text_2
 	applymovement 3, Kasaan_Speakeasy_LookRight
 	waitmovement 0
+	applymovement 21, Kasaan_Speakeasy_LookUp
+	waitmovement 0
 	release
 	end
 
@@ -98,8 +100,30 @@ Kasaan_PianoManBosser::
 
 Kasaan_Speakeasy_Test_Fonts::
 	msgbox Kasaan_Speakeasy_Test_Fonts_Text_0
+	scrollingmultichoice 0, 2, 2, 5, TRUE
+	compare VAR_RESULT, 0
+	goto_if_eq Kasaan_Speakeasy_Test_Fonts_2
+Kasaan_Speakeasy_Test_Fonts_1:
+	compare VAR_RESULT, 1
+	goto_if_eq Kasaan_Speakeasy_Test_Fonts_5
+Kasaan_Speakeasy_Test_Fonts_4:
+	compare VAR_RESULT, 0x7F
+	goto_if_eq Kasaan_Speakeasy_Test_Fonts_8
+Kasaan_Speakeasy_Test_Fonts_7:
 	release
 	end
+
+Kasaan_Speakeasy_Test_Fonts_2:
+	msgbox Kasaan_Speakeasy_Test_Fonts_Text_1
+	goto Kasaan_Speakeasy_Test_Fonts_1
+
+Kasaan_Speakeasy_Test_Fonts_5:
+	msgbox Kasaan_Speakeasy_Test_Fonts_Text_2
+	goto Kasaan_Speakeasy_Test_Fonts_4
+
+Kasaan_Speakeasy_Test_Fonts_8:
+	msgbox Kasaan_Speakeasy_Test_Fonts_Text_3
+	goto Kasaan_Speakeasy_Test_Fonts_7
 
 
 Kasaan_LookLeftExclaim:
@@ -117,6 +141,10 @@ Kasaan_Speakeasy_LookRight:
 
 Kasaan_Speakeasy_MoveLeft:
 	walk_left
+	step_end
+
+Kasaan_Speakeasy_LookUp:
+	face_up
 	step_end
 
 Kasaan_Bartender_Text_0:
@@ -138,9 +166,9 @@ Kasaan_Bartender_Text_3:
 
 Kasaan_PianoMan_Text_0:
 	.string "(Pauses playing) What do you want now?!\n"
-	.string "I was captured by this Brendan dude\l"
-	.string "and was forced to do this f!ck. Oh, it's\l"
-	.string "not that kid over there who always\l"
+	.string "I was captured by this Playground King\l"
+	.string "guy and was forced to do this fuck. Oh,\l"
+	.string "it's not that kid over there who always\l"
 	.string "screams at me.$"
 
 Kasaan_PianoMan_Text_1:
@@ -160,7 +188,7 @@ Kasaan_PianoManBosser_Text_1:
 	.string "OVERAGES TALKING TO ME!? You filthy\n"
 	.string "little - (face screws up in\l"
 	.string "concentration as he sizes you for a\l"
-	.string "fight, but decides better.)$"
+	.string "fight, but decides against it.)$"
 
 Kasaan_PianoManBosser_Text_2:
 	.string "(Muttering Indistinctly): First these\n"
@@ -170,3 +198,18 @@ Kasaan_PianoManBosser_Text_2:
 
 Kasaan_Speakeasy_Test_Fonts_Text_0:
 	.string "{COLOR_HIGHLIGHT_SHADOW LIGHT_BLUE WHITE GREEN} HIhfluidhuihdf {COLOR RED} Ssafsad$"
+
+Kasaan_Speakeasy_Test_Fonts_Text_1:
+	.string "1$"
+
+Kasaan_Speakeasy_Test_Fonts_Text_2:
+	.string "2$"
+
+Kasaan_Speakeasy_Test_Fonts_Text_3:
+	.string "I Wuv Dwugs$"
+
+Kasaan_Speakeasy_Tests_MC2::
+	.string "Fcku$"
+	.string "Shtu$"
+	.string "Daddy hoiya$"
+	.string "$"

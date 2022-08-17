@@ -58,12 +58,14 @@ script Kasaan_PianoMan {
 	locktarget
 	faceplayer
 
-	msgbox(format("(Pauses playing) What do you want now?! I was captured by this Brendan dude and was forced to do this f!ck. Oh, it's not that kid over there who always screams at me."))
+	msgbox(format("(Pauses playing) What do you want now?! I was captured by this Playground King guy and was forced to do this fuck. Oh, it's not that kid over there who always screams at me."))
 	applymovement(3, Kasaan_LookLeftExclaim)
 	waitmovement(0)
 	msgbox(format("Kid: GET ON WITH IT, WE'RE ALL WAITING!"))
 	msgbox(format("Piano Man: (Continues playing with a fearful expression as the kid draws out a whip)"))
 	applymovement(3, Kasaan_Speakeasy_LookRight)
+	waitmovement(0)
+	applymovement(21, Kasaan_Speakeasy_LookUp)
 	waitmovement(0)
 	release
 	end
@@ -75,7 +77,7 @@ script Kasaan_PianoManBosser {
 	faceplayer
 	applymovement(3, Kasaan_Speakeasy_Exclaim)
 	waitmovement(0)
-	msgbox(format("OVERAGES TALKING TO ME!? You filthy little - (face screws up in concentration as he sizes you for a fight, but decides better.)"))
+	msgbox(format("OVERAGES TALKING TO ME!? You filthy little - (face screws up in concentration as he sizes you for a fight, but decides against it.)"))
 	applymovement(3, Kasaan_Speakeasy_LookRight)
 	waitmovement(0)
 	msgbox(format("(Muttering Indistinctly): First these inconsistent piano men, then pesky overages. Maybe I should have a word with the bartender."))
@@ -84,9 +86,20 @@ script Kasaan_PianoManBosser {
 }
 script Kasaan_Speakeasy_Test_Fonts {
 	msgbox(format("{COLOR_HIGHLIGHT_SHADOW LIGHT_BLUE WHITE GREEN} HIhfluidhuihdf {COLOR RED} Ssafsad"))
+	scrollingmultichoice(0, 2, 2, 5, TRUE)
+	if (var(VAR_RESULT) == 0) {
+		msgbox("1")
+	}
+	if (var(VAR_RESULT) == 1) {
+		msgbox("2")
+	}
+	if (var(VAR_RESULT) == 0x7F) {
+		msgbox("I Wuv Dwugs")
+	}
 	release
 	end 
 }
+
 movement Kasaan_LookLeftExclaim {
 	emote_exclamation_mark
 	face_left
@@ -105,6 +118,11 @@ movement Kasaan_Speakeasy_LookRight {
 
 movement Kasaan_Speakeasy_MoveLeft {
 	walk_left
+	step_end
+}
+
+movement Kasaan_Speakeasy_LookUp {
+	face_up
 	step_end
 }
 

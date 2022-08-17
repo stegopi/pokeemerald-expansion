@@ -2056,3 +2056,14 @@
 	.macro locktarget
 	.byte 0xe3
 	.endm
+
+	@ Displays a multichoice menu that scrolls. 
+	.macro scrollingmultichoice id:req, x:req, y:req, show:req, b:req
+	setvar VAR_0x8004, \id,
+	setvar VAR_0x8005, \x,
+	setvar VAR_0x8006, \y,
+	setvar VAR_0x8007, \show,
+	setvar VAR_0x8008, \b,
+	callnative ScriptMenu_ScrollingMultichoice
+	waitstate
+	.endm
