@@ -1141,3 +1141,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/AvalancheMountainTunnelEntrance/scripts.inc"
 
 	.include "data/maps/AvalancheMountain_Underground_Path/scripts.inc"
+
+	.include "data/maps/Frost_Canyon/scripts.inc"

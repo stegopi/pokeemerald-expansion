@@ -17,7 +17,34 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 1,
+      "y": 119,
+      "elevation": 0,
+      "dest_map": "MAP_AVALANCHE_MOUNTAIN_TUNNEL_ENTRANCE",
+      "dest_warp_id": 2
+    },
+    {
+      "x": 2,
+      "y": 119,
+      "elevation": 0,
+      "dest_map": "MAP_AVALANCHE_MOUNTAIN_TUNNEL_ENTRANCE",
+      "dest_warp_id": 2
+    },
+    {
+      "x": 3,
+      "y": 119,
+      "elevation": 0,
+      "dest_map": "MAP_AVALANCHE_MOUNTAIN_TUNNEL_ENTRANCE",
+      "dest_warp_id": 2
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_FROST_CANYON",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
 

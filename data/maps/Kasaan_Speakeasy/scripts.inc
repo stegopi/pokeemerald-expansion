@@ -207,9 +207,3 @@ Kasaan_Speakeasy_Test_Fonts_Text_2:
 
 Kasaan_Speakeasy_Test_Fonts_Text_3:
 	.string "I Wuv Dwugs$"
-
-Kasaan_Speakeasy_Tests_MC2::
-	.string "Fcku$"
-	.string "Shtu$"
-	.string "Daddy hoiya$"
-	.string "$"

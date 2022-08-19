@@ -35,8 +35,8 @@
       "x": 8,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_AVALANCHE_MOUNTAIN_TUNNEL_ENTRANCE",
-      "dest_warp_id": 0
+      "dest_map": "MAP_AVALANCHE_MOUNTAIN_UNDERGROUND_PATH",
+      "dest_warp_id": 1
     }
   ],
   "coord_events": [

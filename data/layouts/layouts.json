@@ -5652,6 +5652,18 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/AvalancheMountain_Underground_Path/border.bin",
       "blockdata_filepath": "data/layouts/AvalancheMountain_Underground_Path/map.bin"
+    },
+    {
+      "id": "LAYOUT_FROST_CANYON",
+      "name": "Frost_Canyon_Layout",
+      "width": 40,
+      "height": 80,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Frost_Canyon/border.bin",
+      "blockdata_filepath": "data/layouts/Frost_Canyon/map.bin"
     }
   ]
 }
