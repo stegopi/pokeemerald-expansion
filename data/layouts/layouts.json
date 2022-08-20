@@ -5644,7 +5644,7 @@
     {
       "id": "LAYOUT_AVALANCHE_MOUNTAIN_UNDERGROUND_PATH",
       "name": "AvalancheMountain_Underground_Path_Layout",
-      "width": 5,
+      "width": 20,
       "height": 120,
       "border_width": 1,
       "border_height": 1,
