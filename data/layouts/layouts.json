@@ -5664,6 +5664,18 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/Frost_Canyon/border.bin",
       "blockdata_filepath": "data/layouts/Frost_Canyon/map.bin"
+    },
+    {
+      "id": "LAYOUT_AVALANCHE_MOUNTAIN_UGTUNNEL_EXIT",
+      "name": "AvalancheMountainUGTunnelExit_Layout",
+      "width": 12,
+      "height": 12,
+      "border_width": 1,
+      "border_height": 1,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/AvalancheMountainUGTunnelExit/border.bin",
+      "blockdata_filepath": "data/layouts/AvalancheMountainUGTunnelExit/map.bin"
     }
   ]
 }

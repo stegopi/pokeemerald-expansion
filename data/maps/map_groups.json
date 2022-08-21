@@ -657,6 +657,7 @@
     "Avalanche1B",
     "AvalancheMountain2",
     "AvalancheMountainTunnelEntrance",
-    "AvalancheMountain_Underground_Path"
+    "AvalancheMountain_Underground_Path",
+    "AvalancheMountainUGTunnelExit"
   ]
 }
