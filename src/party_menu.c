@@ -2549,12 +2549,16 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
         {
             if (GetMonData(&mons[slotId], i + MON_DATA_MOVE1) == sFieldMoves[j])
             {
+                //Add an if sFieldMoves[j] != Move thing, for hms andbefore inbattlepike
                 AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, j + MENU_FIELD_MOVES);
                 break;
             }
         }
     }
-
+    /*Add
+    if (sPartyMenuInternal->numActions < 5 && CanMonLearnTMHM(&mons[slotId], hm - ITEM_TM01)) // If Mon can learn HM02 and action list consists of < 4 moves, add FLY to action list
+        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, index + MENU_FIELD_MOVES);
+    */
     if (!InBattlePike())
     {
         if (GetMonData(&mons[1], MON_DATA_SPECIES) != SPECIES_NONE)
