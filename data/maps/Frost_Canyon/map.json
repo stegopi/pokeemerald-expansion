@@ -21,8 +21,8 @@
       "x": 19,
       "y": 78,
       "elevation": 0,
-      "dest_map": "MAP_AVALANCHE_MOUNTAIN_UNDERGROUND_PATH",
-      "dest_warp_id": 3
+      "dest_map": "MAP_AVALANCHE_MOUNTAIN_UGTUNNEL_EXIT",
+      "dest_warp_id": 2
     }
   ],
   "coord_events": [

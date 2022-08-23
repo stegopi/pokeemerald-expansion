@@ -28,14 +28,14 @@
       "x": 5,
       "y": 10,
       "elevation": 0,
-      "dest_map": "MAP_AVALANCHE_MOUNTAIN_UGTUNNEL_EXIT",
+      "dest_map": "MAP_FROST_CANYON",
       "dest_warp_id": 0
     },
     {
       "x": 6,
       "y": 10,
       "elevation": 0,
-      "dest_map": "MAP_AVALANCHE_MOUNTAIN_UGTUNNEL_EXIT",
+      "dest_map": "MAP_FROST_CANYON",
       "dest_warp_id": 0
     }
   ],
