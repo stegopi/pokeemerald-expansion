@@ -165,10 +165,10 @@ static void DisplayCannotDismountBikeMessage(u8 taskId, bool8 isUsingRegisteredK
 
 static void Task_CloseCantUseKeyItemMessage(u8 taskId)
 {
-    ClearDialogWindowAndFrame(0, 1);
+    ClearDialogWindowAndFrame(0, TRUE);
     DestroyTask(taskId);
     ScriptUnfreezeObjectEvents();
-    ScriptContext2_Disable();
+    UnlockPlayerFieldControls();
 }
 
 u8 CheckIfItemIsTMHMOrEvolutionStone(u16 itemId)
@@ -186,7 +186,7 @@ static void CB2_CheckMail(void)
 {
     struct Mail mail;
     mail.itemId = gSpecialVar_ItemId;
-    ReadMail(&mail, CB2_ReturnToBagMenuPocket, 0);
+    ReadMail(&mail, CB2_ReturnToBagMenuPocket, FALSE);
 }
 
 void ItemUseOutOfBattle_Mail(u8 taskId)
@@ -219,7 +219,7 @@ void ItemUseOutOfBattle_ExpShare(u8 taskId)
 
 void ItemUseOutOfBattle_Bike(u8 taskId)
 {
-    s16* data = gTasks[taskId].data;
+    s16 *data = gTasks[taskId].data;
     s16 coordsY;
     s16 coordsX;
     u8 behavior;
@@ -248,7 +248,7 @@ static void ItemUseOnFieldCB_Bike(u8 taskId)
     
     FollowMe_HandleBike();
     ScriptUnfreezeObjectEvents();
-    ScriptContext2_Disable();
+    UnlockPlayerFieldControls();
     DestroyTask(taskId);
 }
 
@@ -273,7 +273,7 @@ static bool32 CanFish(void)
     }
     else
     {
-        if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior) && !MapGridIsImpassableAt(x, y))
+        if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior) && MapGridGetCollisionAt(x, y) == 0)
             return TRUE;
         if (MetatileBehavior_IsBridgeOverWaterNoEdge(tileBehavior) == TRUE)
             return TRUE;
@@ -327,7 +327,7 @@ static void Task_UseItemfinder(u8 taskId)
     u8 playerDir;
     u8 playerDirToItem;
     u8 i;
-    s16* data = gTasks[taskId].data;
+    s16 *data = gTasks[taskId].data;
     if (tCounter == 0)
     {
         if (tItemfinderBeeps == 4)
@@ -361,9 +361,9 @@ static void Task_UseItemfinder(u8 taskId)
 
 static void Task_CloseItemfinderMessage(u8 taskId)
 {
-    ClearDialogWindowAndFrame(0, 1);
+    ClearDialogWindowAndFrame(0, TRUE);
     ScriptUnfreezeObjectEvents();
-    ScriptContext2_Disable();
+    UnlockPlayerFieldControls();
     DestroyTask(taskId);
 }
 
@@ -739,8 +739,8 @@ void ItemUseOutOfBattle_Berry(u8 taskId)
 static void ItemUseOnFieldCB_Berry(u8 taskId)
 {
     RemoveBagItem(gSpecialVar_ItemId, 1);
-    ScriptContext2_Enable();
-    ScriptContext1_SetupScript(BerryTree_EventScript_ItemUsePlantBerry);
+    LockPlayerFieldControls();
+    ScriptContext_SetupScript(BerryTree_EventScript_ItemUsePlantBerry);
     DestroyTask(taskId);
 }
 
@@ -764,8 +764,8 @@ void ItemUseOutOfBattle_WailmerPail(u8 taskId)
 
 static void ItemUseOnFieldCB_WailmerPailBerry(u8 taskId)
 {
-    ScriptContext2_Enable();
-    ScriptContext1_SetupScript(BerryTree_EventScript_ItemUseWailmerPail);
+    LockPlayerFieldControls();
+    ScriptContext_SetupScript(BerryTree_EventScript_ItemUseWailmerPail);
     DestroyTask(taskId);
 }
 
@@ -785,8 +785,8 @@ static bool8 TryToWaterSudowoodo(void)
 
 static void ItemUseOnFieldCB_WailmerPailSudowoodo(u8 taskId)
 {
-    ScriptContext2_Enable();
-    ScriptContext1_SetupScript(BattleFrontier_OutsideEast_EventScript_WaterSudowoodo);
+    LockPlayerFieldControls();
+    ScriptContext_SetupScript(BattleFrontier_OutsideEast_EventScript_WaterSudowoodo);
     DestroyTask(taskId);
 }
 
@@ -902,7 +902,7 @@ void ItemUseOutOfBattle_Repel(u8 taskId)
 
 static void Task_StartUseRepel(u8 taskId)
 {
-    s16* data = gTasks[taskId].data;
+    s16 *data = gTasks[taskId].data;
 
     if (++data[8] > 7)
     {

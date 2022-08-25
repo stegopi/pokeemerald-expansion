@@ -2320,6 +2320,7 @@ const u8 gChimechoPokedexText[] = _(
     "themselves using seven different and\n"
     "distinguishing cries.");
 
+#if P_NEW_POKEMON == TRUE
 const u8 gTurtwigPokedexText[] = _(
     "The shell on its back is made of soil. \n"
     "On a very healthy Turtwig, the shell \n"
@@ -5354,3 +5355,4 @@ const u8 gStegoPokedexText[] = _(
     "It's weight lets it easily trample on its\n"
     "opponents. Despite its mass, Stego can\n"
     "move at surprisingly fast speeds.");
+#endif

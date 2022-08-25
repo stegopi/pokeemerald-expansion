@@ -170,7 +170,7 @@ static void PopulateBattleFrontierStreak(int, u8 *);
 
 static const struct MatchCallTrainerTextInfo sMatchCallTrainers[] =
 {
-    /*{
+    {
         .trainerId = TRAINER_ROSE_1,
         .unused = 0,
         .battleTopicTextIds = BATTLE_TEXT_IDS(8),
@@ -747,7 +747,7 @@ static const struct MatchCallTrainerTextInfo sMatchCallTrainers[] =
         .battleFrontierRecordStreakTextIndex = 9,
         .sameRouteMatchCallTextId = TEXT_ID(REQ_TOPIC_SAME_ROUTE, 9),
         .differentRouteMatchCallTextId = TEXT_ID(REQ_TOPIC_DIFF_ROUTE, 9),
-    },*/
+    },
 };
 
 static const struct MatchCallText sMatchCallWildBattleTexts[] =
@@ -1154,9 +1154,6 @@ static u32 GetActiveMatchCallTrainerId(u32 activeMatchCallId)
 */
 bool32 TryStartMatchCall(void)
 {
-    /*if (gSaveBlock2Ptr->optionsDisableMatchCall == 1)   //tx_optionsPlus
-        return FALSE;*/
-
     if (FlagGet(FLAG_HAS_MATCH_CALL)
         && UpdateMatchCallStepCounter()
         && UpdateMatchCallMinutesCounter()
@@ -1186,7 +1183,7 @@ static void StartMatchCall(void)
 {
     if (!sMatchCallState.triggeredFromScript)
     {
-        ScriptContext2_Enable();
+        LockPlayerFieldControls();
         FreezeObjectEvents();
         PlayerFreeze();
         StopPlayerAvatar();
@@ -1374,7 +1371,7 @@ static bool32 MatchCall_EndCall(u8 taskId)
             ObjectEventClearHeldMovementIfFinished(&gObjectEvents[playerObjectId]);
             ScriptMovement_UnfreezeObjectEvents();
             UnfreezeObjectEvents();
-            ScriptContext2_Disable();
+            UnlockPlayerFieldControls();
         }
 
         return TRUE;
@@ -1800,7 +1797,22 @@ static void PopulateSpeciesFromTrainerParty(int matchCallId, u8 *destStr)
     party = gTrainers[trainerId].party;
     monId = Random() % gTrainers[trainerId].partySize;
 
-    speciesName = gSpeciesNames[party.TrainerMon[monId].species];
+    switch (gTrainers[trainerId].partyFlags)
+    {
+    case 0:
+    default:
+        speciesName = gSpeciesNames[party.NoItemDefaultMoves[monId].species];
+        break;
+    case F_TRAINER_PARTY_CUSTOM_MOVESET:
+        speciesName = gSpeciesNames[party.NoItemCustomMoves[monId].species];
+        break;
+    case F_TRAINER_PARTY_HELD_ITEM:
+        speciesName = gSpeciesNames[party.ItemDefaultMoves[monId].species];
+        break;
+    case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM:
+        speciesName = gSpeciesNames[party.ItemCustomMoves[monId].species];
+        break;
+    }
 
     StringCopy(destStr, speciesName);
 }
