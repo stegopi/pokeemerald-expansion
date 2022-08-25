@@ -9614,6 +9614,7 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM06_TOXIC)
                                             | TMHM(TM03_WATER_PULSE)),
 
+#if P_NEW_POKEMON == TRUE
     [SPECIES_TURTWIG]     = TMHM_LEARNSET(TMHM(TM45_ATTRACT)
                                             | TMHM(TM09_BULLET_SEED)
                                             | TMHM(HM01_CUT)
@@ -21171,7 +21172,7 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM25_THUNDER)
                                             | TMHM(TM24_THUNDERBOLT)
                                             | TMHM(TM06_TOXIC)),
-
+#endif
     [SPECIES_UNOWN_B]     = TMHM_LEARNSET(TMHM(TM10_HIDDEN_POWER)),
 
     [SPECIES_UNOWN_C]     = TMHM_LEARNSET(TMHM(TM10_HIDDEN_POWER)),
@@ -21337,6 +21338,7 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM06_TOXIC)
                                             | TMHM(TM03_WATER_PULSE)),
 
+#if P_NEW_POKEMON == TRUE
     [SPECIES_BURMY_SANDY_CLOAK]  = TMHM_LEARNSET(TMHM(TM10_HIDDEN_POWER)
                                             | TMHM(TM17_PROTECT)),
 
@@ -24805,4 +24807,5 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM22_SOLAR_BEAM)
                                             | TMHM(TM11_SUNNY_DAY)
                                             | TMHM(TM12_TAUNT)),
+#endif
 };
