@@ -16,6 +16,7 @@ Kasaan_Bartender::
 	special ShakeCamera
 	setflag FLAG_REMOVE_WARP_FADE
 	fadescreen 1
+	setflag FLAG_REMOVE_WARP_FADE
 	msgbox Kasaan_Bartender_Text_3
 	warpsilent MAP_KASAAN, 12, 19
 	fadescreen 0
