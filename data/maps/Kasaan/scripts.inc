@@ -98,6 +98,8 @@ TestingFlags::
 	additem ITEM_FIRIUM_Z
 	additem ITEM_DYNAMAX_BAND
 	additem ITEM_SOOT_SACK
+	giveitem ITEM_POKE_BALL, 4
+	giveitem ITEM_GREAT_BALL, 4
 	release
 	end
 
