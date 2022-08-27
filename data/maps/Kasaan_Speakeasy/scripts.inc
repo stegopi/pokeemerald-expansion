@@ -67,6 +67,8 @@ Kasaan_Limited_Menu_Food:
 	.2byte ITEM_LUMIOSE_GALETTE
 	.2byte ITEM_SHALOUR_SABLE
 	.2byte ITEM_BIG_MALASADA
+	.2byte ITEM_EXP_CANDY_XS
+	.2byte ITEM_EXP_CANDY_S
 	.2byte ITEM_NONE
 
 Kasaan_PianoMan::

@@ -53,6 +53,8 @@ mart Kasaan_Limited_Menu_Food {
 	ITEM_LUMIOSE_GALETTE
 	ITEM_SHALOUR_SABLE
 	ITEM_BIG_MALASADA
+	ITEM_EXP_CANDY_XS
+	ITEM_EXP_CANDY_S
 }
 
 script Kasaan_PianoMan {
