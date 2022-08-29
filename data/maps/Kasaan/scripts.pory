@@ -85,6 +85,7 @@ script TestingFlags {
 	givemon(SPECIES_ABOMASNOW, 25, ITEM_ABOMASITE)
 	givecustommon(SPECIES_BIBAREL, 50, ITEM_SMOKE_BALL, 2, NATURE_JOLLY, 0, 0, 252, 0, 252, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_SURF, MOVE_ROCK_CLIMB, MOVE_ROCK_SMASH, MOVE_STRENGTH)
 	givecustommon(SPECIES_BIBAREL, 50, ITEM_SMOKE_BALL, 2, NATURE_JOLLY, 0, 0, 252, 0, 252, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_WATERFALL, MOVE_CUT, MOVE_DIVE, MOVE_FLASH)
+	givemon(SPECIES_TYPHLOSION, 30)
 	additem(ITEM_POTION, 1)
 	additem(ITEM_POKE_BALL, 4)
 	additem(ITEM_MEGA_RING, 1)
@@ -96,7 +97,7 @@ script TestingFlags {
 	additem(ITEM_SOOT_SACK)
 	giveitem(ITEM_POKE_BALL, 4)
 	giveitem(ITEM_GREAT_BALL, 4)
-
+	warpsilent(MAP_STTOWN, 5, 8)
 	release
 	end
 }

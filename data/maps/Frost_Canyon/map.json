@@ -18,8 +18,8 @@
   ],
   "warp_events": [
     {
-      "x": 19,
-      "y": 78,
+      "x": 24,
+      "y": 77,
       "elevation": 0,
       "dest_map": "MAP_AVALANCHE_MOUNTAIN_UGTUNNEL_EXIT",
       "dest_warp_id": 2

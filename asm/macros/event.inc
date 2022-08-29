@@ -2183,4 +2183,3 @@
 	callnative ScriptMenu_ScrollingMultichoice
 	waitstate
 	.endm
-	

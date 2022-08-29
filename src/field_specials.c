@@ -12,6 +12,7 @@
 #include "field_camera.h"
 #include "field_effect.h"
 #include "field_message_box.h"
+#include "field_control_avatar.h"
 #include "field_player_avatar.h"
 #include "field_screen_effect.h"
 #include "field_specials.h"
@@ -25,6 +26,7 @@
 #include "mystery_gift.h"
 #include "match_call.h"
 #include "menu.h"
+#include "metatile_behavior.h"
 #include "overworld.h"
 #include "party_menu.h"
 #include "pokeblock.h"
@@ -499,6 +501,14 @@ bool32 ShouldDoRivalRayquazaCall(void)
     }
 
     return TRUE;
+}
+
+bool8 IsLavaSurfable(void) {
+    struct MapPosition position;
+    u16 metatileBehavior;
+    GetInFrontOfPlayerPosition(&position);
+    metatileBehavior = MapGridGetMetatileBehaviorAt(position.x, position.y);
+    return MetatileBehavior_IsLavaSurf(metatileBehavior);
 }
 
 u8 GetLinkPartnerNames(void)
@@ -1218,6 +1228,27 @@ void IsGrassTypeInParty(void)
         {
             species = GetMonData(pokemon, MON_DATA_SPECIES);
             if (gBaseStats[species].type1 == TYPE_GRASS || gBaseStats[species].type2 == TYPE_GRASS)
+            {
+                gSpecialVar_Result = TRUE;
+                return;
+            }
+        }
+    }
+    gSpecialVar_Result = FALSE;
+}
+
+void IsFireTypeInParty(void)
+{
+    u8 i;
+    u16 species;
+    struct Pokemon *pokemon;
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        pokemon = &gPlayerParty[i];
+        if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(pokemon, MON_DATA_IS_EGG))
+        {
+            species = GetMonData(pokemon, MON_DATA_SPECIES);
+            if (gBaseStats[species].type1 == TYPE_FIRE || gBaseStats[species].type2 == TYPE_FIRE)
             {
                 gSpecialVar_Result = TRUE;
                 return;

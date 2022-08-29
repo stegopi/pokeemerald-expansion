@@ -1567,3 +1567,11 @@ bool8 MetatileBehavior_IsDirectionalStairWarp(u8 metatileBehavior)
     else
         return FALSE;
 }
+
+bool8 MetatileBehavior_IsLavaSurf(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_LAVA_SURF)
+        return TRUE;
+    else
+        return FALSE;
+}

@@ -51,7 +51,7 @@ u8 gSelectedObjectEvent;
 #define SIGNPOST_NA             255
 
 static void GetPlayerPosition(struct MapPosition *);
-static void GetInFrontOfPlayerPosition(struct MapPosition *);
+void GetInFrontOfPlayerPosition(struct MapPosition *);
 static u16 GetPlayerCurMetatileBehavior(int);
 static bool8 TryStartInteractionScript(struct MapPosition *, u16, u8);
 static const u8 *GetInteractionScript(struct MapPosition *, u8, u8);
@@ -233,7 +233,7 @@ static void GetPlayerPosition(struct MapPosition *position)
     position->elevation = PlayerGetElevation();
 }
 
-static void GetInFrontOfPlayerPosition(struct MapPosition *position)
+void GetInFrontOfPlayerPosition(struct MapPosition *position)
 {
     s16 x, y;
 
