@@ -5,7 +5,7 @@ Kasaan_Indoor_2_Small_House_MapScripts::
 Kasaan_Old_Man_With_GSlowpoke::
 	lock
 	faceplayer
-	goto_if_unset FLAG_UNUSED_0x020, Kasaan_Old_Man_With_GSlowpoke_2
+	goto_if_unset FLAG_KASAAN_OLD_MAN_GSLOWPOKE, Kasaan_Old_Man_With_GSlowpoke_2
 	msgbox Kasaan_Old_Man_With_GSlowpoke_Text_4
 Kasaan_Old_Man_With_GSlowpoke_1:
 	release
@@ -32,7 +32,7 @@ Kasaan_Old_Man_With_GSlowpoke_8:
 	setflag FLAG_FORCED_SHINY
 	givemon SPECIES_SLOWPOKE_GALARIAN, 22, ITEM_KINGS_ROCK
 	removeobject 3
-	setflag FLAG_UNUSED_0x020
+	setflag FLAG_KASAAN_OLD_MAN_GSLOWPOKE
 	goto Kasaan_Old_Man_With_GSlowpoke_1
 
 

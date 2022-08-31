@@ -51,7 +51,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Kasaan_GSlowpoke",
-      "flag": "FLAG_UNUSED_0x020"
+      "flag": "FLAG_KASAAN_OLD_MAN_GSLOWPOKE"
     }
   ],
   "warp_events": [
