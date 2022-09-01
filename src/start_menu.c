@@ -675,7 +675,7 @@ static bool8 StartMenuPCCallback(void)
     {
         PlayRainStoppingSoundEffect();
         RemoveExtraStartMenuWindows();
-        EnterPokeStorage(2); // 2 is the menu for move
+        EnterPokeStorage(0);
         return TRUE;
     }
 

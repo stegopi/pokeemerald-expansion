@@ -10449,9 +10449,9 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly2[] = {
     {
     .iv = 255,
     .lvl = 25,
-    //.ability = 2,
+    .ability = 2,
     //.nature = NATURE_JOLLY,
-    ////.evs = {0, 100, 0, 0, 4, 100},
+    .evs = {0, 100, 0, 0, 4, 100},
     .species = SPECIES_SANDSLASH_ALOLAN,
     .heldItem = ITEM_SHUCA_BERRY,
     .moves = {MOVE_ICICLE_CRASH, MOVE_IRON_HEAD, MOVE_SWORDS_DANCE, MOVE_RAPID_SPIN}
@@ -10459,18 +10459,18 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly2[] = {
     {
     .iv = 255,
     .lvl = 25,
-    ////.evs = {0, 100, 0, 0, 4, 100},
+    .evs = {0, 100, 0, 0, 4, 100},
     .species = SPECIES_ARCTOZOLT,
     //.nature = NATURE_JOLLY,
-    //.ability = 2,
+    .ability = 2,
     .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_THUNDER_PUNCH, MOVE_ICE_FANG, MOVE_PLUCK, MOVE_SUBSTITUTE}
     },
     {
     .iv = 255,
     .lvl = 24,
-    ////.evs = {20, 120, 0, 40, 8, 80},
-    //.ability = 1,
+    .evs = {20, 120, 0, 40, 8, 80},
+    .ability = 1,
     .species = SPECIES_GLALIE,
     //.nature = NATURE_TIMID,
     .heldItem = ITEM_GLALITITE,
