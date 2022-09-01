@@ -22709,6 +22709,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
         .flags = FLAG_LEGENDARY,
     },
+
     [SPECIES_WYRDEER] =
     {
         .baseHP        = 103,

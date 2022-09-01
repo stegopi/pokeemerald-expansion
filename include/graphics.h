@@ -2166,7 +2166,6 @@ extern const u32 gMonBackPic_Regidrago[];
 extern const u32 gMonBackPic_Glastrier[];
 extern const u32 gMonBackPic_Spectrier[];
 extern const u32 gMonBackPic_Calyrex[];
-
 extern const u32 gMonBackPic_Stego[];
 
 //extern const u32 gMonBackPic_Wyrdeer[];
@@ -4554,7 +4553,6 @@ extern const u32 gMonShinyPalette_Spectrier[];
 extern const u32 gMonShinyPalette_Calyrex[];
 
 extern const u32 gMonShinyPalette_Stego[];
-
 //extern const u32 gMonShinyPalette_Wyrdeer[];
 extern const u32 gMonShinyPalette_Kleavor[];
 extern const u32 gMonShinyPalette_Ursaluna[];
@@ -5748,7 +5746,6 @@ extern const u8 gMonIcon_Regidrago[];
 extern const u8 gMonIcon_Glastrier[];
 extern const u8 gMonIcon_Spectrier[];
 extern const u8 gMonIcon_Stego[];
-
 extern const u8 gMonIcon_Calyrex[];
 extern const u8 gMonIcon_Wyrdeer[];
 extern const u8 gMonIcon_Kleavor[];

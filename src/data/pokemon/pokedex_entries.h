@@ -10788,7 +10788,8 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
-    
+
+
     [NATIONAL_DEX_WYRDEER] =
     {
         .categoryName = _("Big Horn"),
@@ -10883,6 +10884,5 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 520,
         .trainerOffset = 2,
     },
-
 #endif
 };
