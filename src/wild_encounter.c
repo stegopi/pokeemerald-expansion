@@ -282,7 +282,7 @@ static u8 ChooseWildMonLevel(const struct WildPokemon *wildPokemon)
         u8 fixedLVL = 0;
         while (count-- > 0)
         {
-            if (GetMonData(&gPlayerParty[count], MON_DATA_SPECIES) != SPECIES_NONE){
+            if (GetMonData(&gPlayerParty[count], MON_DATA_SPECIES2) != SPECIES_NONE && GetMonData(&gPlayerParty[count], MON_DATA_SPECIES2) != SPECIES_EGG) {
                 fixedLVL += GetMonData(&gPlayerParty[count], MON_DATA_LEVEL);
             }
         }
