@@ -19,6 +19,16 @@ jobs:
       MODERN: 0
       COMPARE: 0
     steps:
+      - name: Setup Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: '1.14.0'
+      
+      - name: Install Go dependencies
+        run: |
+          go version
+          go get -u golang.org/x/lint/golint
+
       - name: Checkout
         uses: actions/checkout@v2
 
@@ -27,6 +37,12 @@ jobs:
         with:
           path: agbcc
           repository: pret/agbcc
+
+      - name: Checkout poryscript
+        uses: actions/checkout@v2
+        with:
+          path: poryscript
+          repository: huderlem/poryscript
 
       - name: Install binutils
         run: sudo apt install gcc-arm-none-eabi binutils-arm-none-eabi
@@ -39,6 +55,12 @@ jobs:
           ./build.sh
           ./install.sh ../
         working-directory: agbcc
+
+      - name: Install poryscript
+        run: |
+          go build
+          ./install.sh ../
+        working-directory: poryscript
 
       - name: Agbcc
         run: make -j${nproc} all
