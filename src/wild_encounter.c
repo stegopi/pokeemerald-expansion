@@ -203,7 +203,11 @@ static u8 ChooseWildMonIndex_Land(void)
         return 8;
     else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_8 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_9)
         return 9;
+    #ifndef BUGFIX
+    else if (rand == ENCOUNTER_CHANCE_LAND_MONS_SLOT_9)
+    #else
     else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_9 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_10)
+    #endif
         return 10;
     else
         return 11;
@@ -267,22 +271,56 @@ static u8 ChooseWildMonIndex_Fishing(u8 rod)
 
 static u8 ChooseWildMonLevel(const struct WildPokemon *wildPokemon)
 {
+
     u8 min;
     u8 max;
     u8 range;
     u8 rand;
 
-    // Make sure minimum level is less than maximum level
-    if (wildPokemon->maxLevel >= wildPokemon->minLevel)
-    {
-        min = wildPokemon->minLevel;
-        max = wildPokemon->maxLevel;
+    if (gSaveBlock2Ptr->optionsWildLvScale == FALSE) {
+        u8 count = gPlayerPartyCount;
+        u8 fixedLVL = 0;
+        while (count-- > 0)
+        {
+            if (GetMonData(&gPlayerParty[count], MON_DATA_SPECIES) != SPECIES_NONE){
+                fixedLVL += GetMonData(&gPlayerParty[count], MON_DATA_LEVEL);
+            }
+        }
+        fixedLVL = fixedLVL / gPlayerPartyCount;
+
+        // Make sure minimum level is less than maximum level
+        {
+            min = fixedLVL - (fixedLVL / 5) + ((wildPokemon->maxLevel) / 4);
+            max = fixedLVL - (fixedLVL / 13) + ((wildPokemon->minLevel) / 4);
+            min = min - (min / 5);
+            max = max - (max / 5);
+        }
+        if (min <= 0)
+            min = 1;
+
+        else if (min > 100)
+            min = 100;
+
+        if (max <= 0)
+            max = 1;
+
+        else if (max > 100)
+            max = 100;
     }
-    else
-    {
-        min = wildPokemon->maxLevel;
-        max = wildPokemon->minLevel;
+    else {
+        // Make sure minimum level is less than maximum level
+        if (wildPokemon->maxLevel >= wildPokemon->minLevel)
+        {
+            min = wildPokemon->minLevel;
+            max = wildPokemon->maxLevel;
+        }
+        else
+        {
+            min = wildPokemon->maxLevel;
+            max = wildPokemon->minLevel;
+        }
     }
+
     range = max - min + 1;
     rand = Random() % range;
 
