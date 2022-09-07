@@ -33,6 +33,7 @@ struct TrainerMonNoItemDefaultMoves
     u8 evs[NUM_STATS];
     u8 ivs[NUM_STATS];
     u8 ability;
+    u8 nature;
 };
 
 struct TrainerMonItemDefaultMoves
@@ -44,6 +45,7 @@ struct TrainerMonItemDefaultMoves
     u8 evs[NUM_STATS];
     u8 ivs[NUM_STATS];
     u8 ability;
+    u8 nature;
 };
 
 struct TrainerMonNoItemCustomMoves
@@ -55,6 +57,7 @@ struct TrainerMonNoItemCustomMoves
     u8 evs[NUM_STATS];
     u8 ivs[NUM_STATS];
     u8 ability;
+    u8 nature;
 };
 
 struct TrainerMonItemCustomMoves
@@ -67,6 +70,7 @@ struct TrainerMonItemCustomMoves
     u8 evs[NUM_STATS];
     u8 ivs[NUM_STATS];
     u8 ability;
+    u8 nature;
 };
 
 
