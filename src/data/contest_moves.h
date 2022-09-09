@@ -1,4 +1,5 @@
 // gen 4+ data from urpg's contest movedex
+
 const struct ContestMove gContestMoves[MOVES_COUNT] =
 {
     [MOVE_NONE] = {0},
