@@ -1682,13 +1682,21 @@ static void FieldTask_ReturnToPcMenu(void)
 {
     u8 taskId;
     MainCallback vblankCb = gMain.vblankCallback;
-    if (FlagGet(FLAG_POKEMONPCMENU)==TRUE)
+    if (FlagGet(FLAG_POKEMONPCMENU) == TRUE)
     {
         SetVBlankCallback(NULL);
-        taskId = CreateTask(Task_PCMainMenu, 80);
-        gTasks[taskId].tState = 0;
-        gTasks[taskId].tSelectedOption = sPreviousBoxOption;
-        Task_PCMainMenu(taskId);
+        if (!FlagGet(DEBUG_FLAG_PC_FROM_DEBUG_MENU))
+        {
+            taskId = CreateTask(Task_PCMainMenu, 80);
+            gTasks[taskId].tState = 0;
+            gTasks[taskId].tSelectedOption = sPreviousBoxOption;
+            Task_PCMainMenu(taskId);
+        }
+        else
+        {
+            FlagClear(DEBUG_FLAG_PC_FROM_DEBUG_MENU);
+            ScriptContext_Enable();
+        }
         SetVBlankCallback(vblankCb);
         FadeInFromBlack();
     }
