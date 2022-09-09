@@ -70,3 +70,9 @@ jobs:
           MODERN: 1
           COMPARE: 0
         run: make -j${nproc} all
+
+      - name: Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: pokeemerald
+          path: pokeemerald.gba # or path/to/artifact

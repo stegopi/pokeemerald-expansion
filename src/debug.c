@@ -1838,7 +1838,7 @@ static void DebugAction_Give_AllTMs(u8 taskId)
     PlayFanfare(MUS_OBTAIN_TMHM);
     for (i = ITEM_TM01; i <= ITEM_HM08; i++)
     {
-        if (ItemIdToBattleMoveId(i) != MOVE_NONE && !CheckBagHasItem(i, 1))
+        if (ItemIdToBattleMoveId(i) != MOVE_NONE && !CheckBagHasItem(i, 1) && !CheckPCHasItem(i, 1))
             AddBagItem(i, 1);
     }
     Debug_DestroyMenu(taskId);

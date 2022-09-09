@@ -1871,15 +1871,11 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                     nameHash += gSpeciesNames[partyData[i].species][j];
 
                 personalityValue += nameHash << 8;
-                if (partyData[i].nature > 0) {
-                    do
-                    {
-                        personalityValue = Random32();
-                    }
-                    while (partyData[i].nature != GetNatureFromPersonality(personalityValue));
-                }
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
-                CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                if (partyData[i].nature > 0)
+                    CreateMonWithGenderNatureLetter(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, GetGenderFromSpeciesAndPersonality(partyData[i].species, personalityValue), partyData[i].nature, 0, OT_ID_RANDOM_NO_SHINY);
+                else
+                    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 for (j = 0; j < NUM_STATS; j++)
                 {
                     SetMonData(&party[i], MON_DATA_HP_EV + j, &partyData[i].evs[j]);
@@ -1896,15 +1892,11 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                     nameHash += gSpeciesNames[partyData[i].species][j];
 
                 personalityValue += nameHash << 8;
-                if (partyData[i].nature > 0) {
-                    do
-                    {
-                        personalityValue = Random32();
-                    }
-                    while (partyData[i].nature != GetNatureFromPersonality(personalityValue));
-                }
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
-                CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                if (partyData[i].nature > 0)
+                    CreateMonWithGenderNatureLetter(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, GetGenderFromSpeciesAndPersonality(partyData[i].species, personalityValue), partyData[i].nature, 0, OT_ID_RANDOM_NO_SHINY);
+                else
+                    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
 
                 for (j = 0; j < MAX_MON_MOVES; j++)
                 {
@@ -1924,15 +1916,11 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
             {
                 const struct TrainerMonItemDefaultMoves *partyData = gTrainers[trainerNum].party.ItemDefaultMoves;
                 personalityValue += nameHash << 8;
-                if (partyData[i].nature > 0) {
-                    do
-                    {
-                        personalityValue = Random32();
-                    }
-                    while (partyData[i].nature != GetNatureFromPersonality(personalityValue));
-                }
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
-                CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                if (partyData[i].nature > 0)
+                    CreateMonWithGenderNatureLetter(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, GetGenderFromSpeciesAndPersonality(partyData[i].species, personalityValue), partyData[i].nature, 0, OT_ID_RANDOM_NO_SHINY);
+                else
+                    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
 
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
                 for (j = 0; j < NUM_STATS; j++)
@@ -1951,15 +1939,11 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                     nameHash += gSpeciesNames[partyData[i].species][j];
 
                 personalityValue += nameHash << 8;
-                if (partyData[i].nature > 0) {
-                    do
-                    {
-                        personalityValue = Random32();
-                    }
-                    while (partyData[i].nature != GetNatureFromPersonality(personalityValue));
-                }
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
-                CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                if (partyData[i].nature > 0)
+                    CreateMonWithGenderNatureLetter(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, GetGenderFromSpeciesAndPersonality(partyData[i].species, personalityValue), partyData[i].nature, 0, OT_ID_RANDOM_NO_SHINY);
+                else
+                    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
 
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
 

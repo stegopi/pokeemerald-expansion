@@ -802,25 +802,37 @@ static const union AnimCmd sAnim_HoOhStayStill[] =
 
 static const union AnimCmd sAnim_PkmnOWFaceSouth[] =
 {
-    ANIMCMD_FRAME(2, 16),
+    ANIMCMD_FRAME(2, 14),
+    ANIMCMD_FRAME(2, 14),
+    ANIMCMD_FRAME(3, 14),
+    ANIMCMD_FRAME(3, 14),
     ANIMCMD_JUMP(0),
 };
 
 static const union AnimCmd sAnim_PkmnOWFaceNorth[] =
 {
-    ANIMCMD_FRAME(0, 16),
+    ANIMCMD_FRAME(0, 14),
+    ANIMCMD_FRAME(0, 14),
+    ANIMCMD_FRAME(1, 14),
+    ANIMCMD_FRAME(1, 14),
     ANIMCMD_JUMP(0),
 };
 
 static const union AnimCmd sAnim_PkmnOWFaceWest[] =
 {
-    ANIMCMD_FRAME(4, 16),
+    ANIMCMD_FRAME(4, 14),
+    ANIMCMD_FRAME(4, 14),
+    ANIMCMD_FRAME(5, 14),
+    ANIMCMD_FRAME(5, 14),
     ANIMCMD_JUMP(0),
 };
 
 static const union AnimCmd sAnim_PkmnOWFaceEast[] =
 {
-    ANIMCMD_FRAME(4, 16, .hFlip = TRUE),
+    ANIMCMD_FRAME(4, 14, .hFlip = TRUE),
+    ANIMCMD_FRAME(4, 14, .hFlip = TRUE),
+    ANIMCMD_FRAME(5, 14, .hFlip = TRUE),
+    ANIMCMD_FRAME(5, 14, .hFlip = TRUE),
     ANIMCMD_JUMP(0),
 };
 
@@ -1371,10 +1383,6 @@ static const struct StepAnimTable sStepAnimTables[] = {
     },
     {
         .anims = sAnimTable_Fishing,
-        .animPos = {1, 3, 0, 2},
-    },
-    {
-        .anims = sAnimTable_PkmnOW,
         .animPos = {1, 3, 0, 2},
     },
     {},
