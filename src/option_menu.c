@@ -308,8 +308,8 @@ static const u8 sText_Desc_SurfOn[]             = _("Enables the Surf theme\nwhe
 static const u8 sText_Desc_BikeOff[]            = _("Disables the Bike theme when\nusing the Bike.");
 static const u8 sText_Desc_BikeOn[]             = _("Enables the Bike theme when\nusing the Bike.");
 static const u8 sText_Desc_FontType[]           = _("Choose the font design.");
-static const u8 sText_Desc_OverworldCallsOn[]   = _("Wild battles will not be scaled to the\nparty level.");
-static const u8 sText_Desc_OverworldCallsOff[]  = _("Wild battles will be scaled to the\nparty level.");
+static const u8 sText_Desc_OverworldCallsOn[]   = _("Wild battles will be scaled to the\nparty level.");
+static const u8 sText_Desc_OverworldCallsOff[]  = _("Wild battles will not be scaled to the\nparty level.");
 static const u8 *const sOptionMenuItemDescriptionsCustom[MENUITEM_CUSTOM_COUNT][2] =
 {
     [MENUITEM_CUSTOM_FONT]        = {sText_Desc_FontType,           sText_Desc_FontType},
