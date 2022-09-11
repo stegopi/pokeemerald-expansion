@@ -539,5 +539,4 @@ gSpecials::
 	def_special SetBurn
 	def_special TrySpecialOverworldEvo
 	def_special BufferUnitSystemText
-	def_special IsLavaSurfable
 	def_special IsFireTypeInParty

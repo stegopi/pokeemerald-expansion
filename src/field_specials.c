@@ -505,7 +505,7 @@ bool32 ShouldDoRivalRayquazaCall(void)
 
 bool8 IsLavaSurfable(void) {
     struct MapPosition position;
-    u16 metatileBehavior;
+    u8 metatileBehavior;
     GetInFrontOfPlayerPosition(&position);
     metatileBehavior = MapGridGetMetatileBehaviorAt(position.x, position.y);
     return MetatileBehavior_IsLavaSurf(metatileBehavior);
@@ -1237,7 +1237,7 @@ void IsGrassTypeInParty(void)
     gSpecialVar_Result = FALSE;
 }
 
-void IsFireTypeInParty(void)
+bool8 IsFireTypeInParty(void)
 {
     u8 i;
     u16 species;
@@ -1250,12 +1250,11 @@ void IsFireTypeInParty(void)
             species = GetMonData(pokemon, MON_DATA_SPECIES);
             if (gBaseStats[species].type1 == TYPE_FIRE || gBaseStats[species].type2 == TYPE_FIRE)
             {
-                gSpecialVar_Result = TRUE;
-                return;
+                return TRUE;
             }
         }
     }
-    gSpecialVar_Result = FALSE;
+    return FALSE;
 }
 
 void SpawnCameraObject(void)

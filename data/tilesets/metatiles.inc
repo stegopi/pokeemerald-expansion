@@ -636,4 +636,3 @@ gMetatiles_Speakeasy2::
 	.align 1
 gMetatileAttributes_Speakeasy2::
 	.incbin "data/tilesets/secondary/speakeasy2/metatile_attributes.bin"
-	

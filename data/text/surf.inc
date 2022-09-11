@@ -6,5 +6,5 @@ gText_PlayerUsedSurf::
 	.string "{STR_VAR_1} used Surf!$"
 
 gText_WantToUseLavaSurf::
-	.string "The water is a molten red…\n"
+	.string "The lava is a glistening crimson…\n"
 	.string "Would you like to Surf?$"
