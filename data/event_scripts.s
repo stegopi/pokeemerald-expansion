@@ -103,7 +103,6 @@ gStdScripts::
 	.4byte Std_MsgboxGetPoints         @ MSGBOX_GETPOINTS
 	.4byte Std_MsgboxPokenav           @ MSGBOX_POKENAV
 gStdScripts_End::
-	.include "data/scripts/surf_lava.inc"
 	.include "data/maps/PetalburgCity/scripts.inc"
 	.include "data/maps/SlateportCity/scripts.inc"
 	.include "data/maps/MauvilleCity/scripts.inc"
@@ -705,6 +704,7 @@ EventScript_BackupMrBrineyLocation::
 	return
 
 	.include "data/scripts/surf.inc"
+	.include "data/scripts/surf_lava.inc"
 	.include "data/scripts/rival_graphics.inc"
 	.include "data/scripts/set_gym_trainers.inc"
 

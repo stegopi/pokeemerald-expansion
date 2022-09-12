@@ -622,6 +622,5 @@ extern const u8 EventScript_StegoTriggerNtA[];
 extern const u8 EventScript_StegoTriggerAtN[];
 extern const u8 EventScript_CancelMessageBox[];
 extern const u8 EventScript_UseLavaSurf[];
-extern const u8 EventScript_EndUseSurf[];
 
 #endif // GUARD_EVENT_SCRIPTS_H
