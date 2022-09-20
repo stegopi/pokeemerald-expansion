@@ -16,7 +16,7 @@
     {
       "direction": "down",
       "offset": 19,
-      "map": "MAP_ALPHAPATHWAY"
+      "map": "MAP_ALPHA_PATHWAY"
     }
   ],
   "object_events": [

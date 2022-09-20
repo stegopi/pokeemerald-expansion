@@ -1092,7 +1092,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/The_Den/scripts.inc"
 
-	.include "data/maps/tileset_shit/scripts.inc"
+	.include "data/maps/Route3/scripts.inc"
 
 	.include "data/maps/Kasaan/scripts.inc"
 
