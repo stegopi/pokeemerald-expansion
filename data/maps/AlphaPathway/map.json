@@ -1,7 +1,7 @@
 {
-  "id": "MAP_ALPHAPATHWAY",
+  "id": "MAP_ALPHA_PATHWAY",
   "name": "AlphaPathway",
-  "layout": "LAYOUT_ALPHAPATHWAY",
+  "layout": "LAYOUT_ALPHA_PATHWAY",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,

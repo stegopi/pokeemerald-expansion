@@ -12099,7 +12099,7 @@
           }
         },
         {
-          "map": "MAP_PLEUTINTOWN",
+          "map": "MAP_PLEUTIN_TOWN",
           "base_label": "gPleutinTown0",
           "water_mons": {
             "encounter_rate": 13,

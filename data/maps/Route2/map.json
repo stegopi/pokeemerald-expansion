@@ -16,7 +16,7 @@
     {
       "direction": "down",
       "offset": -32,
-      "map": "MAP_PLEUTINTOWN"
+      "map": "MAP_PLEUTIN_TOWN"
     }
   ],
   "object_events": [

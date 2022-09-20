@@ -101,7 +101,7 @@ TestingFlags::
 	additem ITEM_SOOT_SACK
 	giveitem ITEM_POKE_BALL, 4
 	giveitem ITEM_GREAT_BALL, 4
-	warpsilent MAP_PLEUTINTOWN, 5, 8
+	warpsilent MAP_PLEUTIN_TOWN, 5, 8
 	release
 	end
 

@@ -5474,7 +5474,7 @@
       "blockdata_filepath": "data/layouts/Tilesettests/map.bin"
     },
     {
-      "id": "LAYOUT_PLEUTINTOWN",
+      "id": "LAYOUT_PLEUTIN_TOWN",
       "name": "PleutinTown_Layout",
       "width": 38,
       "height": 22,
@@ -5678,7 +5678,7 @@
       "blockdata_filepath": "data/layouts/AvalancheMountainUGTunnelExit/map.bin"
     },
     {
-      "id": "LAYOUT_ALPHAPATHWAY",
+      "id": "LAYOUT_ALPHA_PATHWAY",
       "name": "AlphaPathway_Layout",
       "width": 30,
       "height": 50,
