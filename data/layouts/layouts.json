@@ -5474,16 +5474,16 @@
       "blockdata_filepath": "data/layouts/Tilesettests/map.bin"
     },
     {
-      "id": "LAYOUT_STTOWN",
-      "name": "sttown_Layout",
+      "id": "LAYOUT_PLEUTINTOWN",
+      "name": "PleutinTown_Layout",
       "width": 38,
       "height": 22,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/sttown/border.bin",
-      "blockdata_filepath": "data/layouts/sttown/map.bin"
+      "border_filepath": "data/layouts/PleutinTown/border.bin",
+      "blockdata_filepath": "data/layouts/PleutinTown/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE2",
@@ -5676,6 +5676,30 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/AvalancheMountainUGTunnelExit/border.bin",
       "blockdata_filepath": "data/layouts/AvalancheMountainUGTunnelExit/map.bin"
+    },
+    {
+      "id": "LAYOUT_ALPHAPATHWAY",
+      "name": "AlphaPathway_Layout",
+      "width": 30,
+      "height": 50,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/AlphaPathway/border.bin",
+      "blockdata_filepath": "data/layouts/AlphaPathway/map.bin"
+    },
+    {
+      "id": "LAYOUT_HALLOW_SPARK",
+      "name": "HallowSpark_Layout",
+      "width": 40,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/HallowSpark/border.bin",
+      "blockdata_filepath": "data/layouts/HallowSpark/map.bin"
     }
   ]
 }

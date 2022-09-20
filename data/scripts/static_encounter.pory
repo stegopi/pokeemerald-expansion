@@ -6,7 +6,7 @@ script EventScript_StaticEncounter {
 	settotemboost(0, 0, 0, 0, 1, 0, 1)
 	setwildbattle(VAR_RESULT, 40)
 	dowildbattle
-	
+
 	release
 	end
 }

@@ -28,14 +28,14 @@ typedef unsigned Long ULong;
 typedef __uint32_t ULong;
 #endif
 
-struct _glue 
+struct _glue
 {
   struct _glue *_next;
   int _niobs;
   struct __sFILE *_iobs;
 };
 
-struct _Bigint 
+struct _Bigint
 {
   struct _Bigint *_next;
   int _k, _maxwds, _sign, _wds;
@@ -155,7 +155,7 @@ struct _reent
 
   int  _inc;			/* used by tmpnam */
   char _emergency[25];
- 
+
   int _current_category;	/* used by setlocale */
   _CONST char *_current_locale;
 
@@ -185,7 +185,7 @@ struct _reent
         } _reent;
   /* Two next two fields were once used by malloc.  They are no longer
      used. They are used to preserve the space used before so as to
-     allow addition of new reent fields and keep binary compatibility.   */ 
+     allow addition of new reent fields and keep binary compatibility.   */
       struct
         {
 #define _N_LISTS 30

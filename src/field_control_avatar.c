@@ -162,7 +162,7 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
 
     gSpecialVar_LastTalked = 0;
     gSelectedObjectEvent = 0;
-    
+
     ResetFacingNpcOrSignPostVars();
     playerDirection = GetPlayerFacingDirection();
     GetPlayerPosition(&position);
@@ -183,7 +183,7 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
         if (TryStartStepBasedScript(&position, metatileBehavior, playerDirection) == TRUE)
             return TRUE;
     }
-    
+
     if (input->checkStandardWildEncounter)
     {
         if (input->dpadDirection == 0 || input->dpadDirection == playerDirection)
@@ -196,7 +196,7 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
             metatileBehavior = MapGridGetMetatileBehaviorAt(position.x, position.y);
         }
     }
-    
+
     if (input->checkStandardWildEncounter && CheckStandardWildEncounter(metatileBehavior) == TRUE)
         return TRUE;
     if (input->heldDirection && input->dpadDirection == playerDirection)
@@ -207,13 +207,13 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
 
     GetInFrontOfPlayerPosition(&position);
     metatileBehavior = MapGridGetMetatileBehaviorAt(position.x, position.y);
-    
+
     if (input->heldDirection && input->dpadDirection == playerDirection)
     {
         if (TrySetUpWalkIntoSignpostScript(&position, metatileBehavior, playerDirection) == TRUE)
             return TRUE;
     }
-    
+
     if (input->pressedAButton && TryStartInteractionScript(&position, metatileBehavior, playerDirection) == TRUE)
         return TRUE;
 
@@ -345,7 +345,7 @@ static const u8 *GetInteractedObjectEventScript(struct MapPosition *position, u8
     s16 currX = gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.x;
     s16 currY = gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.y;
     u8 currBehavior = MapGridGetMetatileBehaviorAt(currX, currY);
-        
+
     switch (direction)
     {
     case DIR_EAST:
@@ -374,7 +374,7 @@ static const u8 *GetInteractedObjectEventScript(struct MapPosition *position, u8
         objectEventId = GetObjectEventIdByPosition(position->x, position->y, position->elevation);
         break;
     }
-    
+
     if (objectEventId == OBJECT_EVENTS_COUNT || gObjectEvents[objectEventId].localId == OBJ_EVENT_ID_PLAYER)
     {
         if (MetatileBehavior_IsCounter(metatileBehavior) != TRUE)
@@ -500,7 +500,7 @@ static const u8 *GetInteractedMetatileScript(struct MapPosition *position, u8 me
         return EventScript_Headbutt;
     if (MetatileBehavior_IsRockClimbable(metatileBehavior) == TRUE && !IsRockClimbActive())
         return EventScript_UseRockClimb;
-    
+
     elevation = position->elevation;
     if (elevation == MapGridGetElevationAt(position->x, position->y))
     {
@@ -558,7 +558,7 @@ static bool32 TrySetupDiveDownScript(void)
 {
     if (!CheckFollowerFlag(FOLLOWER_FLAG_CAN_DIVE))
         return FALSE;
-    
+
     if (FlagGet(FLAG_BADGE07_GET) && TrySetDiveWarp() == 2)
     {
         ScriptContext_SetupScript(EventScript_UseDive);
@@ -571,7 +571,7 @@ static bool32 TrySetupDiveEmergeScript(void)
 {
     if (!CheckFollowerFlag(FOLLOWER_FLAG_CAN_DIVE))
         return FALSE;
-    
+
     if (FlagGet(FLAG_BADGE07_GET) && gMapHeader.mapType == MAP_TYPE_UNDERWATER && TrySetDiveWarp() == 1)
     {
         ScriptContext_SetupScript(EventScript_UseDiveUnderwater);

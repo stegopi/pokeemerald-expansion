@@ -3590,7 +3590,7 @@ static void BufferLeftColumnStats(void)
     u8 *attackString = Alloc(20);
     u8 *defenseString = Alloc(20);
     const s8 *natureMod = gNatureStatTable[sMonSummaryScreen->summary.nature];
-    
+
     /*ConvertIntToDecimalStringN(currentHPString, sMonSummaryScreen->summary.currentHP, STR_CONV_MODE_RIGHT_ALIGN, 3);
     ConvertIntToDecimalStringN(maxHPString, sMonSummaryScreen->summary.maxHP, STR_CONV_MODE_RIGHT_ALIGN, 3);
     ConvertIntToDecimalStringN(attackString, sMonSummaryScreen->summary.atk, STR_CONV_MODE_RIGHT_ALIGN, 7);
@@ -3628,14 +3628,14 @@ static void BufferRightColumnStats(void)
     ConvertIntToDecimalStringN(gStringVar3, sMonSummaryScreen->summary.speed, STR_CONV_MODE_RIGHT_ALIGN, 3);
     */
     const s8 *natureMod = gNatureStatTable[sMonSummaryScreen->summary.nature];
-    
+
     DynamicPlaceholderTextUtil_Reset();
-    
+
     /*DynamicPlaceholderTextUtil_SetPlaceholderPtr(0, gStringVar1);
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(1, gStringVar2);
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(2, gStringVar3);
     */
-    
+
     BufferStat(gStringVar1, natureMod[STAT_SPATK - 1], sMonSummaryScreen->summary.spatk, 0, 3);
     BufferStat(gStringVar2, natureMod[STAT_SPDEF - 1], sMonSummaryScreen->summary.spdef, 1, 3);
     BufferStat(gStringVar3, natureMod[STAT_SPEED - 1], sMonSummaryScreen->summary.speed, 2, 3);

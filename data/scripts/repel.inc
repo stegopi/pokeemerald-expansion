@@ -9,7 +9,7 @@ EventScript_RepelWoreOff::
 	checkitem ITEM_MAX_REPEL, 1
 	compare VAR_RESULT, FALSE
 	goto_if_eq EventScript_RepelWoreOff_End
-	
+
 EventScript_RepelWoreOff_AskAnother:
 	msgbox Text_RepelAskAnother, MSGBOX_YESNO
 	closemessage

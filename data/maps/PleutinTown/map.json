@@ -1,7 +1,7 @@
 {
-  "id": "MAP_STTOWN",
-  "name": "sttown",
-  "layout": "LAYOUT_STTOWN",
+  "id": "MAP_PLEUTINTOWN",
+  "name": "PleutinTown",
+  "layout": "LAYOUT_PLEUTINTOWN",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,

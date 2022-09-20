@@ -104,11 +104,13 @@
     "Kasaan",
     "NewMap1",
     "Tilesettests",
-    "sttown",
+    "PleutinTown",
     "Route2",
     "Route1",
     "PineconeCity",
-    "Frost_Canyon"
+    "Frost_Canyon",
+    "AlphaPathway",
+    "HallowSpark"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

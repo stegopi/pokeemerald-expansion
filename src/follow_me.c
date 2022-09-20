@@ -79,7 +79,7 @@ static const struct FollowerSpriteGraphics gFollowerAlternateSprites[] =
 {
     //FORMAT:
     //{WALKING/RUNNING SPRITE ID, MACH BIKE SPRITE ID, ACRO BIKE SPRITE ID, SURFING SPRITE ID},
-    [0] = 
+    [0] =
     {
         .normalId = OBJ_EVENT_GFX_RIVAL_MAY_NORMAL,
         .machBikeId = OBJ_EVENT_GFX_RIVAL_MAY_MACH_BIKE,
@@ -87,7 +87,7 @@ static const struct FollowerSpriteGraphics gFollowerAlternateSprites[] =
         .surfId = OBJ_EVENT_GFX_RIVAL_MAY_SURFING,
         .underwaterId = OBJ_EVENT_GFX_MAY_UNDERWATER,
     },
-    
+
 };
 
 // Functions
@@ -172,7 +172,7 @@ u8 GetFollowerMapObjId(void)
 static u16 GetFollowerSprite(void)
 {
     u32 i;
-    
+
     switch (gSaveBlock2Ptr->follower.currentSprite)
     {
     case FOLLOWER_SPRITE_INDEX_MACH_BIKE:
@@ -235,15 +235,15 @@ void FollowMe(struct ObjectEvent* npc, u8 state, bool8 ignoreScriptActive)
         return;
     else if (ArePlayerFieldControlsLocked() && !ignoreScriptActive)
         return; //Don't follow during a script
-                
-    
+
+
     // fix post-surf jump
     if ((gSaveBlock2Ptr->follower.currentSprite == FOLLOWER_SPRITE_INDEX_SURF) && !(gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_SURFING) && follower->fieldEffectSpriteId == 0)
     {
         SetFollowerSprite(FOLLOWER_SPRITE_INDEX_NORMAL);
         gSaveBlock2Ptr->follower.createSurfBlob = 0;
     }
-    
+
     //Check if state would cause hidden follower to reappear
     if (IsStateMovement(state) && gSaveBlock2Ptr->follower.warpEnd)
     {
@@ -262,7 +262,7 @@ void FollowMe(struct ObjectEvent* npc, u8 state, bool8 ignoreScriptActive)
         {
             gSaveBlock2Ptr->follower.comeOutDoorStairs = 0;
         }
-        
+
         follower->invisible = FALSE;
         MoveObjectEventToMapCoords(follower, player->currentCoords.x, player->currentCoords.y);
         ObjectEventTurn(follower, player->facingDirection); //The follower should be facing the same direction as the player when it comes out of hiding
@@ -283,7 +283,7 @@ void FollowMe(struct ObjectEvent* npc, u8 state, bool8 ignoreScriptActive)
 
     if (dir == DIR_NONE)
         goto RESET;
-        
+
     newState = DetermineFollowerState(follower, state, dir);
     if (newState == MOVEMENT_INVALID)
         goto RESET;
@@ -307,7 +307,7 @@ void FollowMe(struct ObjectEvent* npc, u8 state, bool8 ignoreScriptActive)
     ObjectEventSetHeldMovement(follower, newState);
     PlayerLogCoordinates(player);
 
-    switch (newState) 
+    switch (newState)
     {
     case MOVEMENT_ACTION_JUMP_2_DOWN ... MOVEMENT_ACTION_JUMP_2_RIGHT:
         CreateTask(Task_ReallowPlayerMovement, 1); //Synchronize movements on stairs and ledges
@@ -368,7 +368,7 @@ static u8 DetermineFollowerState(struct ObjectEvent* follower, u8 state, u8 dire
         s16 followerY = follower->currentCoords.y;
         u8 currentBehavior = MapGridGetMetatileBehaviorAt(followerX, followerY);
         u8 nextBehavior;
-        
+
         MoveCoords(direction, &followerX, &followerY);
         nextBehavior = MapGridGetMetatileBehaviorAt(followerX, followerY);
     #endif
@@ -378,11 +378,11 @@ static u8 DetermineFollowerState(struct ObjectEvent* follower, u8 state, u8 dire
 
     //Clear ice tile stuff
     follower->disableAnim = FALSE; //follower->field1 &= 0xFB;
-    
+
     #if SIDEWAYS_STAIRS_IMPLEMENTED == TRUE
         // clear overwrite movement
         follower->directionOverwrite = DIR_NONE;
-        
+
         //sideways stairs checks
         collision = GetSidewaysStairsCollision(follower, direction, currentBehavior, nextBehavior, collision);
         switch (collision)
@@ -395,8 +395,8 @@ static u8 DetermineFollowerState(struct ObjectEvent* follower, u8 state, u8 dire
             break;
         }
     #endif
-    
-    switch (state) 
+
+    switch (state)
     {
     case MOVEMENT_ACTION_WALK_SLOW_DOWN ... MOVEMENT_ACTION_WALK_SLOW_RIGHT:
         // Slow walk
@@ -422,27 +422,27 @@ static u8 DetermineFollowerState(struct ObjectEvent* follower, u8 state, u8 dire
         // Handle player on waterfall
         if (PlayerIsUnderWaterfall(&gObjectEvents[gPlayerAvatar.objectEventId]) && (state == MOVEMENT_ACTION_WALK_FAST_UP))
             return MOVEMENT_INVALID;
-        
+
         //Handle ice tile (some walking animation) -  Set a bit to freeze the follower's animation
         if (MetatileBehavior_IsIce(follower->currentMetatileBehavior) || MetatileBehavior_IsTrickHouseSlipperyFloor(follower->currentMetatileBehavior))
             follower->disableAnim = TRUE;
-        
+
         RETURN_STATE(MOVEMENT_ACTION_WALK_FAST_DOWN, direction);
-    
+
     case MOVEMENT_ACTION_WALK_FASTER_DOWN ... MOVEMENT_ACTION_WALK_FASTER_RIGHT:
         // mach bike
         if (MetatileBehavior_IsIce(follower->currentMetatileBehavior) || MetatileBehavior_IsTrickHouseSlipperyFloor(follower->currentMetatileBehavior))
             follower->disableAnim = TRUE;
-        
+
         RETURN_STATE(MOVEMENT_ACTION_WALK_FASTER_DOWN, direction);
-        
+
     // acro bike
     case MOVEMENT_ACTION_RIDE_WATER_CURRENT_DOWN ... MOVEMENT_ACTION_RIDE_WATER_CURRENT_RIGHT:
         // Handle player on waterfall
         if (PlayerIsUnderWaterfall(&gObjectEvents[gPlayerAvatar.objectEventId]) && IsPlayerSurfingNorth())
         //if (PlayerIsUnderWaterfall(&gObjectEvents[gPlayerAvatar.objectEventId]) && (state == MOVEMENT_ACTION_RIDE_WATER_CURRENT_DOWN))
             return MOVEMENT_INVALID;
-        
+
         RETURN_STATE(MOVEMENT_ACTION_RIDE_WATER_CURRENT_DOWN, direction);  //regular movement
     case MOVEMENT_ACTION_ACRO_WHEELIE_FACE_DOWN ... MOVEMENT_ACTION_ACRO_WHEELIE_FACE_RIGHT:
         RETURN_STATE(MOVEMENT_ACTION_ACRO_WHEELIE_FACE_DOWN, direction);
@@ -464,7 +464,7 @@ static u8 DetermineFollowerState(struct ObjectEvent* follower, u8 state, u8 dire
         RETURN_STATE(MOVEMENT_ACTION_ACRO_WHEELIE_MOVE_DOWN, direction);
     case MOVEMENT_ACTION_ACRO_END_WHEELIE_MOVE_DOWN ... MOVEMENT_ACTION_ACRO_END_WHEELIE_MOVE_RIGHT:
         RETURN_STATE(MOVEMENT_ACTION_ACRO_END_WHEELIE_MOVE_DOWN, direction);
-        
+
     // Sliding
     case MOVEMENT_ACTION_SLIDE_DOWN ... MOVEMENT_ACTION_SLIDE_RIGHT:
         RETURN_STATE(MOVEMENT_ACTION_SLIDE_DOWN, direction);
@@ -480,7 +480,7 @@ static u8 DetermineFollowerState(struct ObjectEvent* follower, u8 state, u8 dire
     case MOVEMENT_ACTION_JUMP_DOWN ... MOVEMENT_ACTION_JUMP_RIGHT:
         gSaveBlock2Ptr->follower.delayedState = MOVEMENT_ACTION_JUMP_DOWN;
         RETURN_STATE(MOVEMENT_ACTION_WALK_NORMAL_DOWN, direction);
-    
+
     // run slow
     #ifdef MOVEMENT_ACTION_RUN_DOWN_SLOW
     case MOVEMENT_ACTION_RUN_DOWN_SLOW ... MOVEMENT_ACTION_RUN_RIGHT_SLOW:
@@ -489,7 +489,7 @@ static u8 DetermineFollowerState(struct ObjectEvent* follower, u8 state, u8 dire
 
         RETURN_STATE(MOVEMENT_ACTION_WALK_NORMAL_DOWN, direction);
     #endif
-        
+
     default:
         return MOVEMENT_INVALID;
     }
@@ -499,7 +499,7 @@ static u8 DetermineFollowerState(struct ObjectEvent* follower, u8 state, u8 dire
 
 static bool8 IsStateMovement(u8 state)
 {
-    switch (state) 
+    switch (state)
     {
     case MOVEMENT_ACTION_FACE_DOWN:
     case MOVEMENT_ACTION_FACE_UP:
@@ -556,10 +556,10 @@ static u8 ReturnFollowerDelayedState(u8 direction)
 {
     u8 newState = gSaveBlock2Ptr->follower.delayedState;
     gSaveBlock2Ptr->follower.delayedState = 0;
-    
+
     /*
     #ifdef MOVEMENT_ACTION_WALK_STAIRS_DIAGONAL_UP_LEFT
-    switch (newState) 
+    switch (newState)
     {
     case MOVEMENT_ACTION_WALK_STAIRS_DIAGONAL_UP_LEFT ... MOVEMENT_ACTION_WALK_STAIRS_DIAGONAL_DOWN_RIGHT:
     case MOVEMENT_ACTION_WALK_STAIRS_DIAGONAL_UP_LEFT_RUNNING ... MOVEMENT_ACTION_WALK_STAIRS_DIAGONAL_DOWN_RIGHT_RUNNING:
@@ -582,7 +582,7 @@ void FollowMe_Ledges(struct ObjectEvent* npc, struct Sprite* sprite, u16* ledgeF
     u16 frameCount;
     u8 currentFrame;
     struct ObjectEvent* follower = &gObjectEvents[GetFollowerMapObjId()];
-    
+
     if (!gSaveBlock2Ptr->follower.inProgress)
         return;
 
@@ -605,7 +605,7 @@ bool8 FollowMe_IsCollisionExempt(struct ObjectEvent* obstacle, struct ObjectEven
 {
     struct ObjectEvent* follower = &gObjectEvents[GetFollowerMapObjId()];
     struct ObjectEvent* player = &gObjectEvents[gPlayerAvatar.objectEventId];
-    
+
     if (!gSaveBlock2Ptr->follower.inProgress)
         return FALSE;
 
@@ -629,10 +629,10 @@ void FollowMe_FollowerToWater(void)
 void FollowMe_BindToSurbBlobOnReloadScreen(void)
 {
     struct ObjectEvent* follower;
-    
+
     if (!gSaveBlock2Ptr->follower.inProgress)
         return;
-    
+
     follower = &gObjectEvents[GetFollowerMapObjId()];
     TryUpdateFollowerSpriteUnderwater();
 
@@ -660,7 +660,7 @@ static void SetSurfJump(void)
     SetUpSurfBlobFieldEffect(follower);
 
     //Adjust surf head spawn location infront of follower
-    switch (direction) 
+    switch (direction)
     {
     case DIR_SOUTH:
         gFieldEffectArguments[1]++; //effect_y
@@ -722,7 +722,7 @@ static void SetSurfDismount(void)
     u8 direction;
     u8 jumpState;
     u8 task;
-    
+
     ObjectEventClearHeldMovement(follower);
 
     //Jump animation according to direction
@@ -744,15 +744,15 @@ static void Task_FinishSurfDismount(u8 taskId)
 {
     struct ObjectEvent* npc = &gObjectEvents[GetFollowerMapObjId()];
     bool8 animStatus = ObjectEventClearHeldMovementIfFinished(npc); //Wait animation
-        
+
     if (animStatus == 0)
     {
         if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_DASH) && ObjectEventClearHeldMovementIfFinished(&gObjectEvents[gPlayerAvatar.objectEventId]))
             SetPlayerAvatarTransitionFlags(PLAYER_AVATAR_FLAG_ON_FOOT); //Temporarily stop running
-        
+
         return;
     }
-    
+
     DestroySprite(&gSprites[gTasks[taskId].data[0]]);
     UnfreezeObjectEvents();
     DestroyTask(taskId);
@@ -854,7 +854,7 @@ static void Task_FollowerOutOfDoor(u8 taskId)
     struct Task *task = &gTasks[taskId];
     s16 *x = &task->data[2];
     s16 *y = &task->data[3];
-    
+
     //if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_DASH) && ObjectEventClearHeldMovementIfFinished(player))
         //SetPlayerAvatarTransitionFlags(PLAYER_AVATAR_FLAG_ON_FOOT); //Temporarily stop running
 
@@ -868,7 +868,7 @@ static void Task_FollowerOutOfDoor(u8 taskId)
         task->data[1] = FieldAnimateDoorOpen(follower->currentCoords.x, follower->currentCoords.y);
         if (task->data[1] != -1)
             PlaySE(GetDoorSoundEffect(*x, *y)); //only play SE for animating doors
-        
+
         task->data[0] = 1;
         break;
     case 1:
@@ -941,7 +941,7 @@ static void Task_FollowerHandleIndoorStairs(u8 taskId)
 void EscalatorMoveFollower(u8 movementType)
 {
     u8 taskId;
-    
+
     if (!gSaveBlock2Ptr->follower.inProgress)
         return;
 
@@ -953,7 +953,7 @@ static void Task_FollowerHandleEscalator(u8 taskId)
 {
     struct ObjectEvent* follower = &gObjectEvents[GetFollowerMapObjId()];
     struct ObjectEvent* player = &gObjectEvents[gPlayerAvatar.objectEventId];
-    
+
     ObjectEventClearHeldMovementIfActive(follower);
     ObjectEventSetHeldMovement(follower, DetermineFollowerState(follower, MOVEMENT_ACTION_WALK_NORMAL_DOWN, DetermineFollowerDirection(player, follower)));
     DestroyTask(taskId);
@@ -1049,7 +1049,7 @@ static void Task_FollowerHandleEscalatorFinish(u8 taskId)
 static void CalculateFollowerEscalatorTrajectoryDown(struct Task *task)
 {
     struct Sprite* sprite = &gSprites[gObjectEvents[GetFollowerMapObjId()].spriteId];
-    
+
     sprite->x2 = Cos(0x84, task->data[1]);
     sprite->y2 = Sin(0x94, task->data[1]);
 }
@@ -1057,7 +1057,7 @@ static void CalculateFollowerEscalatorTrajectoryDown(struct Task *task)
 static void CalculateFollowerEscalatorTrajectoryUp(struct Task *task)
 {
     struct Sprite* sprite = &gSprites[gObjectEvents[GetFollowerMapObjId()].spriteId];
-    
+
     sprite->x2 = Cos(0x7c, task->data[1]);
     sprite->y2 = Sin(0x76, task->data[1]);
 }
@@ -1112,7 +1112,7 @@ void SetFollowerSprite(u8 spriteIndex)
     struct ObjectEventTemplate clone;
     struct ObjectEvent backupFollower;
     struct ObjectEvent *follower;
-    
+
     if (!gSaveBlock2Ptr->follower.inProgress)
         return;
 
@@ -1153,7 +1153,7 @@ void FollowMe_WarpSetEnd(void)
     struct ObjectEvent *player;
     struct ObjectEvent *follower;
     u8 toY;
-    
+
     if (!gSaveBlock2Ptr->follower.inProgress)
         return;
 
@@ -1165,7 +1165,7 @@ void FollowMe_WarpSetEnd(void)
 
     toY = gSaveBlock2Ptr->follower.comeOutDoorStairs == 1 ? (player->currentCoords.y - 1) : player->currentCoords.y;
     MoveObjectEventToMapCoords(follower, player->currentCoords.x, toY);
-    
+
     follower->facingDirection = player->facingDirection;
     follower->movementDirection = player->movementDirection;
 }
@@ -1217,7 +1217,7 @@ static void TurnNPCIntoFollower(u8 localId, u16 followerFlags)
     u8 eventObjId;
     const u8 *script;
     u16 flag;
-    
+
     if (gSaveBlock2Ptr->follower.inProgress)
         return; //Only 1 NPC following at a time
 
@@ -1236,7 +1236,7 @@ static void TurnNPCIntoFollower(u8 localId, u16 followerFlags)
                 script = (const u8 *)ReadWord(0);
             else
                 script = GetObjectEventScriptPointerByObjectEventId(eventObjId);
-            
+
             flag = GetObjectEventTemplateByLocalIdAndMap(follower->localId, follower->mapNum, follower->mapGroup)->flagId;
             gSaveBlock2Ptr->follower.inProgress = TRUE;
             gSaveBlock2Ptr->follower.objId = eventObjId;
@@ -1249,7 +1249,7 @@ static void TurnNPCIntoFollower(u8 localId, u16 followerFlags)
             gSaveBlock2Ptr->follower.flags = followerFlags;
             gSaveBlock2Ptr->follower.createSurfBlob = 0;
             gSaveBlock2Ptr->follower.comeOutDoorStairs = 0;
-            
+
             if (!(gSaveBlock2Ptr->follower.flags & FOLLOWER_FLAG_CAN_BIKE) //Follower can't bike
             &&  TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_BIKE)) //Player on bike
                 SetPlayerAvatarTransitionFlags(PLAYER_AVATAR_FLAG_ON_FOOT); //Dismmount Bike
@@ -1261,10 +1261,10 @@ bool8 CheckFollowerFlag(u16 flag)
 {
     if (!gSaveBlock2Ptr->follower.inProgress)
         return TRUE;
-    
+
     if (gSaveBlock2Ptr->follower.flags & flag)
         return TRUE;
-    
+
     return FALSE;
 }
 
@@ -1288,7 +1288,7 @@ void FollowerPositionFix(u8 offset)
     u16 playerY = gObjectEvents[playerObjId].currentCoords.y;
     u16 npcX = gObjectEvents[followerObjid].currentCoords.x;
     u16 npcY = gObjectEvents[followerObjid].currentCoords.y;
-    
+
     gSpecialVar_Result = 0xFFFF;
 
     if (!gSaveBlock2Ptr->follower.inProgress)
@@ -1369,10 +1369,10 @@ bool8 FollowerComingThroughDoor(void)
 {
     if (!PlayerHasFollower())
         return FALSE;
-    
+
     if (gSaveBlock2Ptr->follower.comeOutDoorStairs)
         return TRUE;
-    
+
     return FALSE;
 }
 
@@ -1403,14 +1403,14 @@ void PlayerFaceFollowerSprite(void)
     {
         u8 playerDirection, followerDirection;
         struct ObjectEvent* player, *follower;
-    
+
         player = &gObjectEvents[gPlayerAvatar.objectEventId];
         follower = &gObjectEvents[gSaveBlock2Ptr->follower.objId];
         playerDirection = DetermineFollowerDirection(player, follower);
         followerDirection = playerDirection;
-        
+
         //Flip direction
-        switch (playerDirection) 
+        switch (playerDirection)
         {
         case DIR_NORTH:
             playerDirection = DIR_SOUTH;

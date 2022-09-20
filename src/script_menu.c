@@ -841,7 +841,7 @@ struct
 {
     const struct ListMenuItem *set;
     int count;
-} 
+}
 static const sScrollingSets[] =
 {
     {sSet1, ARRAY_COUNT(sSet1)},

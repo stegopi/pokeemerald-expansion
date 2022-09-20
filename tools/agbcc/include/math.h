@@ -188,9 +188,9 @@ extern int signgam;
 /* The exception structure passed to the matherr routine.  */
 
 #ifdef __cplusplus
-struct __exception 
+struct __exception
 #else
-struct exception 
+struct exception
 #endif
 {
   int type;

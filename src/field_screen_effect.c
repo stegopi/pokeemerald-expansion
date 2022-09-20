@@ -365,7 +365,7 @@ static void Task_ExitDoor(u8 taskId)
         {
             FollowMe_SetIndicatorToComeOutDoor();
             FollowMe_WarpSetEnd();
-            
+
             UnfreezeObjectEvents();
             task->tState = 4;
         }
@@ -407,7 +407,7 @@ static void Task_ExitNonAnimDoor(u8 taskId)
         {
             FollowMe_SetIndicatorToComeOutDoor();
             FollowMe_WarpSetEnd();
-            
+
             UnfreezeObjectEvents();
             task->tState = 3;
         }
@@ -1031,7 +1031,7 @@ static void Task_SpinEnterWarp(u8 taskId)
         if (WaitForWeatherFadeIn() && IsPlayerSpinEntranceActive() != TRUE)
         {
             FollowMe_WarpSetEnd();
-            
+
             UnfreezeObjectEvents();
             UnlockPlayerFieldControls();
             DestroyTask(taskId);
@@ -1345,14 +1345,14 @@ static void ExitStairsMovement(s16 *a0, s16 *a1, s16 *a2, s16 *a3, s16 *a4)
     u8 behavior;
     s32 r1;
     struct Sprite *sprite;
-    
+
     PlayerGetDestCoords(&x, &y);
     behavior = MapGridGetMetatileBehaviorAt(x, y);
     if (MetatileBehavior_IsDirectionalDownRightStairWarp(behavior) || MetatileBehavior_IsDirectionalUpRightStairWarp(behavior))
         r1 = 3;
     else
         r1 = 4;
-    
+
     ObjectEventForceSetHeldMovement(&gObjectEvents[gPlayerAvatar.objectEventId], GetWalkInPlaceSlowMovementAction(r1));
     GetStairsMovementDirection(behavior, a0, a1);
     *a2 = *a0 * 16;
@@ -1422,10 +1422,10 @@ static void UpdateStairsMovement(s16 a0, s16 a1, s16 *a2, s16 *a3, s16 *a4)
 {
     struct Sprite *playerSpr = &gSprites[gPlayerAvatar.spriteId];
     struct ObjectEvent *playerObj = &gObjectEvents[gPlayerAvatar.objectEventId];
-    
+
     if (a1 > 0 || *a4 > 6)
         *a3 += a1;
-    
+
     *a2 += a0;
     (*a4)++;
     playerSpr->x2 = *a2 >> 5;
@@ -1439,7 +1439,7 @@ static void Task_StairWarp(u8 taskId)
     s16 * data = gTasks[taskId].data;
     struct ObjectEvent *playerObj = &gObjectEvents[gPlayerAvatar.objectEventId];
     struct Sprite *playerSpr = &gSprites[gPlayerAvatar.spriteId];
-    
+
     switch (data[0])
     {
     case 0:

@@ -4219,7 +4219,7 @@ static void PrintMonHeight(u16 height, u8 left, u8 top)
 
         buffer[i++] = EOS;
         buffer[2] = offset;
-        PrintInfoScreenText(buffer, left, top);   
+        PrintInfoScreenText(buffer, left, top);
     }
 }
 

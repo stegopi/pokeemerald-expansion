@@ -18,7 +18,7 @@ script Kasaan_Old_Man_With_GSlowpoke {
 			else {msgbox(format("Come back without a full party."))}
 		}
 		else {msgbox(format("Come back when you can help me."))}
-		
+
 	}
 	else {msgbox(format("Please take good care of my Slowpoke."))}
 	release

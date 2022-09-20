@@ -190,7 +190,7 @@ u8 SetBurn (void)
         }
 
     }
-    
+
 }
 
 u16 GetPlayerAvatarBike(void)

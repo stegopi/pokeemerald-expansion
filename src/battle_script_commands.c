@@ -9788,7 +9788,7 @@ static void Cmd_various(void)
     case VARIOUS_GIVE_DROPPED_ITEMS:
         {
         u8 i;
-        u8 battlers[] = {GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT), 
+        u8 battlers[] = {GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT),
                          GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)};
         for (i = 0; i < 1 + IsDoubleBattle(); i++)
         {

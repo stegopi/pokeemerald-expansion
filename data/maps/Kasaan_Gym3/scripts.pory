@@ -9,7 +9,7 @@ script KasaanGymKhione {
 		doweather
 		settotemboost(1, 1, 0, 0, 0, 1)
 	}
-	
+
 	trainerbattle_double(TRAINER_BRAWLY_2, Kasaan_Gym3_KhioneIntro, format("Screw You! Er, I mean Congrats! My Elsa Snow Powers couldn't do the trick?!"), format("YOU FREAKING IDIOT! I CAN'T FREAKING BATTLE YOU WHEN YOU ONLY HAVE ONE POKEMON! I ALWAYS KNEW HELICONIA WASN'T FIT FOR THE JOB!"), Kasaan_Gym3_KhioneDefeated)
 	if (flag(FLAG_RECEIVED_TM13)==FALSE) {
 		goto(KasaanGymGiveTM)

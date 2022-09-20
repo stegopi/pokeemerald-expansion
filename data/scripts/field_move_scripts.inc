@@ -368,26 +368,26 @@ EventScript_UseRockClimb::
 	dofieldeffect FLDEFF_USE_ROCK_CLIMB
 	waitstate
 	goto EventScript_EndRockClimb
-	
+
 EventScript_CantRockClimb::
 	msgbox Text_CantRockClimb, MSGBOX_DEFAULT
-	
+
 EventScript_EndRockClimb::
 	releaseall
 	end
-	
+
 Text_WantToRockClimb:
     .string "The cliff is steep.\n"
     .string "Would you like to use Rock Climb?$"
-    
+
 Text_MonUsedRockClimb:
     .string "{STR_VAR_1} used Rock Climb!$"
-    
+
 Text_CantRockClimb:
     .string "The cliff is steep.\n"
     .string "A Pokémon may be able to climb it.$"
 
-    
+
 FollowerPositionFixScript::
 	setvar 0x8000 0x0
 	callnative FollowerTrainerSightingPositionFix
@@ -398,7 +398,7 @@ FollowerPositionFixScript::
 	callnative FollowerTrainerSightingPositionFix
 FollowerPositionFixScriptReturn:
 	return
-    
+
 FollowerIntoPlayerScript::
 	setvar 0x8000 0x0
 	callnative FollowerIntoPlayer
@@ -409,7 +409,7 @@ FollowerIntoPlayerScript::
 	setvar 0x8000 0x1
 	callnative FollowerIntoPlayer
 	return
-    
+
 WalkCall:
 	compare VAR_RESULT 0x0
 	call_if_eq WalkDownCall
@@ -421,7 +421,7 @@ WalkCall:
 	call_if_eq WalkRightCall
 	waitmovement 0x8005
 	return
-	
+
 WalkDownCall:
 	applymovement 0x8005 WalkDown
 	return
@@ -437,10 +437,10 @@ WalkLeftCall:
 WalkRightCall:
 	applymovement 0x8005 WalkRight
 	return
-    
+
 WalkDown:
     walk_down
-    step_end 
+    step_end
 
 WalkUp:
     walk_up

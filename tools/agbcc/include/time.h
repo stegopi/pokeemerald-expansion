@@ -1,6 +1,6 @@
 /*
  * time.h
- * 
+ *
  * Struct and function declarations for dealing with time.
  */
 

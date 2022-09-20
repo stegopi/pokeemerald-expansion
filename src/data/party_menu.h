@@ -761,7 +761,7 @@ static const u16 sFieldMoves[FIELD_MOVES_COUNT + 1] =
     [FIELD_MOVE_MILK_DRINK]   = MOVE_MILK_DRINK,
     [FIELD_MOVE_SOFT_BOILED]  = MOVE_SOFT_BOILED,
     [FIELD_MOVE_SWEET_SCENT]  = MOVE_SWEET_SCENT,
-    [FIELD_MOVE_HEADBUTT]     = MOVE_HEADBUTT, 
+    [FIELD_MOVE_HEADBUTT]     = MOVE_HEADBUTT,
     [FIELD_MOVE_ROCK_CLIMB]   = MOVE_ROCK_CLIMB,
     // NOTE: This value is used as the terminal value for the table. There's no reason to do this, as the size of the table is known.
     //       Whichever move shares this value (MOVE_SWORDS_DANCE by default) if present will be treated as the end of the array rather than a field move.

@@ -612,7 +612,7 @@ static void PlayerNotOnBikeTurningInPlace(u8 direction, u16 heldKeys)
 static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
 {
     u8 collision = CheckForPlayerAvatarCollision(direction);
-    
+
     if (collision)
     {
         if (collision == COLLISION_LEDGE_JUMP)
@@ -637,7 +637,7 @@ static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
             return;
         }
     }
-    
+
     if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_SURFING)
     {
         // same speed as running
@@ -652,7 +652,7 @@ static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
             PlayerRunSlow(direction);
         else
             PlayerRun(direction);
-        
+
         gPlayerAvatar.flags |= PLAYER_AVATAR_FLAG_DASH;
         return;
     }
@@ -672,7 +672,7 @@ static u8 CheckForPlayerAvatarCollision(u8 direction)
 
     x = playerObjEvent->currentCoords.x;
     y = playerObjEvent->currentCoords.y;
-    
+
     if (IsDirectionalStairWarpMetatileBehavior(MapGridGetMetatileBehaviorAt(x, y), direction))
         return COLLISION_STAIR_WARP;
 
@@ -695,7 +695,7 @@ u8 CheckForObjectEventCollision(struct ObjectEvent *objectEvent, s16 x, s16 y, u
 {
     u8 collision = GetCollisionAtCoords(objectEvent, x, y, direction);
     u8 currentBehavior = MapGridGetMetatileBehaviorAt(objectEvent->currentCoords.x, objectEvent->currentCoords.y);
-    
+
     if (collision == COLLISION_ELEVATION_MISMATCH && CanStopSurfing(x, y, direction))
         return COLLISION_STOP_SURFING;
 
@@ -713,7 +713,7 @@ u8 CheckForObjectEventCollision(struct ObjectEvent *objectEvent, s16 x, s16 y, u
             return COLLISION_ROTATING_GATE;
         CheckAcroBikeCollision(x, y, metatileBehavior, &collision);
     }
-    
+
     //sideways stairs logic
     /*
     if (MetatileBehavior_IsSidewaysStairsLeftSideTop(metatileBehavior) && direction == DIR_EAST)
@@ -728,7 +728,7 @@ u8 CheckForObjectEventCollision(struct ObjectEvent *objectEvent, s16 x, s16 y, u
      && direction == DIR_NORTH && collision == COLLISION_NONE)
         return COLLISION_IMPASSABLE;    //trying to move north off of top-most tile onto same level doesn't work
     */
-        
+
     return collision;
 }
 
@@ -1694,7 +1694,7 @@ static void CreateStopSurfingTask(u8 direction)
     taskId = CreateTask(Task_StopSurfingInit, 0xFF);
     gTasks[taskId].data[0] = direction;
     Task_StopSurfingInit(taskId);
-    
+
     PrepareFollowerDismountSurf();
 }
 
@@ -2290,9 +2290,9 @@ u8 GetRightSideStairsDirection(u8 direction)
     default:
         if (direction > DIR_EAST)
             direction -= DIR_EAST;
-        
+
         return direction;
-    }           
+    }
 }
 
 u8 GetLeftSideStairsDirection(u8 direction)
@@ -2306,7 +2306,7 @@ u8 GetLeftSideStairsDirection(u8 direction)
     default:
         if (direction > DIR_EAST)
             direction -= DIR_EAST;
-        
+
         return direction;
     }
 }
@@ -2316,12 +2316,12 @@ bool8 ObjectMovingOnRockStairs(struct ObjectEvent *objectEvent, u8 direction)
     #if SLOW_MOVEMENT_ON_STAIRS
         s16 x = objectEvent->currentCoords.x;
         s16 y = objectEvent->currentCoords.y;
-        
+
         #if FOLLOW_ME_IMPLEMENTED
             if (PlayerHasFollower() && (objectEvent->isPlayer || objectEvent->localId == GetFollowerLocalId()))
                 return FALSE;
         #endif
-        
+
         switch (direction)
         {
         case DIR_NORTH:

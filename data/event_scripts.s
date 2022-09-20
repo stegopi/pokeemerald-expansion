@@ -1114,7 +1114,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Tilesettests/scripts.inc"
 
-	.include "data/maps/sttown/scripts.inc"
+	.include "data/maps/PleutinTown/scripts.inc"
 
 	.include "data/maps/Route2/scripts.inc"
 
@@ -1147,3 +1147,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Frost_Canyon/scripts.inc"
 
 	.include "data/maps/AvalancheMountainUGTunnelExit/scripts.inc"
+
+	.include "data/maps/AlphaPathway/scripts.inc"
+
+	.include "data/maps/HallowSpark/scripts.inc"

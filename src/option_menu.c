@@ -210,7 +210,7 @@ struct // MENU_CUSTOM
     int (*processInput)(int selection);
 } static const sItemFunctionsCustom[MENUITEM_CUSTOM_COUNT] =
 {
-    [MENUITEM_CUSTOM_FONT]         = {DrawChoices_Font,        ProcessInput_Options_Two}, 
+    [MENUITEM_CUSTOM_FONT]         = {DrawChoices_Font,        ProcessInput_Options_Two},
     [MENUITEM_CUSTOM_MATCHCALL]    = {DrawChoices_MatchCall,   ProcessInput_Options_Two},
     [MENUITEM_CUSTOM_CANCEL]       = {NULL, NULL},
 };
@@ -436,7 +436,7 @@ static void DrawDescriptionText(void)
     color_gray[0] = TEXT_COLOR_TRANSPARENT;
     color_gray[1] = TEXT_COLOR_OPTIONS_GRAY_FG;
     color_gray[2] = TEXT_COLOR_OPTIONS_GRAY_SHADOW;
-        
+
     FillWindowPixelBuffer(WIN_DESCRIPTION, PIXEL_FILL(1));
     AddTextPrinterParameterized4(WIN_DESCRIPTION, FONT_NORMAL, 8, 1, 0, 0, color_gray, TEXT_SKIP_DRAW, OptionTextDescription());
     CopyWindowToVram(WIN_DESCRIPTION, COPYWIN_FULL);
@@ -575,7 +575,7 @@ void CB2_InitOptionMenu(void)
         sOptions->sel[MENUITEM_MAIN_BUTTONMODE]  = gSaveBlock2Ptr->optionsButtonMode;
         sOptions->sel[MENUITEM_MAIN_UNIT_SYSTEM] = gSaveBlock2Ptr->optionsUnitSystem;
         sOptions->sel[MENUITEM_MAIN_FRAMETYPE]   = gSaveBlock2Ptr->optionsWindowFrameType;
-        
+
         sOptions->sel_custom[MENUITEM_CUSTOM_FONT]        = gSaveBlock2Ptr->optionsCurrentFont;
         sOptions->sel_custom[MENUITEM_CUSTOM_MATCHCALL]   = gSaveBlock2Ptr->optionsWildLvScale;
 
@@ -600,7 +600,7 @@ void CB2_InitOptionMenu(void)
         break;
     case 10:
         taskId = CreateTask(Task_OptionMenuFadeIn, 0);
-        
+
         sOptions->arrowTaskId = AddScrollIndicatorArrowPairParameterized(SCROLL_ARROW_UP, 240 / 2, 20, 110, MENUITEM_MAIN_COUNT - 1, 110, 110, 0);
 
         for (i = 0; i < min(OPTIONS_ON_SCREEN, MenuItemCount()); i++)
@@ -745,7 +745,7 @@ static void Task_OptionMenuProcessInput(u8 taskId)
     {
         if (sOptions->submenu != 0)
             sOptions->submenu--;
-        
+
         DrawTopBarText();
         ReDrawAll();
         HighlightOptionMenuItem();

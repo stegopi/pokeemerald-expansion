@@ -319,7 +319,7 @@ static void BuildNormalStartMenu(void)
     if (FlagGet(FLAG_PC_MENU_TRIGGER) == TRUE)
     {
         AddStartMenuAction(MENU_ACTION_PC);
-        
+
     }
     AddStartMenuAction(MENU_ACTION_BAG);
     if (FlagGet(FLAG_SYS_POKENAV_GET) == TRUE)

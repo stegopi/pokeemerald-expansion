@@ -27,7 +27,7 @@ struct mallinfo {
   int uordblks; /* total allocated space */
   int fordblks; /* total non-inuse space */
   int keepcost; /* top-most, releasable (via malloc_trim) space */
-};	
+};
 
 /* The routines.  */
 

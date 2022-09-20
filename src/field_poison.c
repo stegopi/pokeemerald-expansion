@@ -124,7 +124,7 @@ s32 DoPoisonFieldEffect(void)
 
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && GetAilmentFromStatus(GetMonData(pokemon, MON_DATA_STATUS)) == AILMENT_PSN 
+        if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && GetAilmentFromStatus(GetMonData(pokemon, MON_DATA_STATUS)) == AILMENT_PSN
             && GetMonAbility(&gPlayerParty[i]) != ABILITY_POISON_HEAL)
         {
             // Apply poison damage

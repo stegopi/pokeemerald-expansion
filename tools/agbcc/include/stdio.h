@@ -244,7 +244,7 @@ FILE	*_EXFUN(funopen,(const _PTR _cookie,
 #endif
 
 /*
- * The __sfoo macros are here so that we can 
+ * The __sfoo macros are here so that we can
  * define function versions in the C library.
  */
 #define	__sgetc(p) (--(p)->_r < 0 ? __srget(p) : (int)(*(p)->_p++))

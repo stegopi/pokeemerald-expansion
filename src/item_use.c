@@ -245,7 +245,7 @@ static void ItemUseOnFieldCB_Bike(u8 taskId)
         GetOnOffBike(PLAYER_AVATAR_FLAG_MACH_BIKE);
     else
         GetOnOffBike(PLAYER_AVATAR_FLAG_ACRO_BIKE);
-    
+
     FollowMe_HandleBike();
     ScriptUnfreezeObjectEvents();
     UnlockPlayerFieldControls();
@@ -712,7 +712,7 @@ void ItemUseOutOfBattle_SootSack(u8 taskId)
     {
         DisplayItemMessageOnField(taskId, gStringVar4, Task_CloseCantUseKeyItemMessage);
     }
-}       
+}
 
 u16 GetAshCount(void)
 {

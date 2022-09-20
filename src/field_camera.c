@@ -286,7 +286,7 @@ static void DrawMetatile(s32 metatileLayerType, u16 *tiles, u16 offset)
 
 
     }
-    
+
     ScheduleBgCopyTilemapToVram(1);
     ScheduleBgCopyTilemapToVram(2);
     ScheduleBgCopyTilemapToVram(3);

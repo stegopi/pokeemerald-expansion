@@ -11,7 +11,7 @@ script Kasaan_Bartender {
 	else {
 		faceplayer
 		msgbox(format("How did you get here?!"))
-		setvar(VAR_0x8004, 1) 
+		setvar(VAR_0x8004, 1)
 		setvar(VAR_0x8005, 1)
 		setvar(VAR_0x8006, 8)
 		setvar(VAR_0x8007, 5)
@@ -45,10 +45,10 @@ mart Kasaan_Limited_Menu_Drinks {
 }
 
 mart Kasaan_Limited_Menu_Food {
-	ITEM_PEWTER_CRUNCHIES 
-	ITEM_RAGE_CANDY_BAR 
-	ITEM_LAVA_COOKIE 
-	ITEM_OLD_GATEAU 
+	ITEM_PEWTER_CRUNCHIES
+	ITEM_RAGE_CANDY_BAR
+	ITEM_LAVA_COOKIE
+	ITEM_OLD_GATEAU
 	ITEM_CASTELIACONE
 	ITEM_LUMIOSE_GALETTE
 	ITEM_SHALOUR_SABLE
@@ -100,7 +100,7 @@ script Kasaan_Speakeasy_Test_Fonts {
 		msgbox("I Wuv Dwugs")
 	}
 	release
-	end 
+	end
 }
 
 movement Kasaan_LookLeftExclaim {

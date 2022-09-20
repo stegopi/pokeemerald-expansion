@@ -41,7 +41,7 @@
 #define FLAG_TEMP_1F     (TEMP_FLAGS_START + 0x1F)
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 
-#define FLAG_KASAAN_OLD_MAN_GSLOWPOKE    0x20 
+#define FLAG_KASAAN_OLD_MAN_GSLOWPOKE    0x20
 #define FLAG_PC_FROM_DEBUG_MENU    0x21 // Debug
 #define FLAG_NO_COLLISION    0x22 // Debug
 #define FLAG_NO_ENCOUNTER    0x23 // Debug

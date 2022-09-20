@@ -2796,7 +2796,7 @@ static void CursorCb_Nickname(u8 taskId)
     sPartyMenuInternal->exitCallback = ChangePokemonNicknamePartyScreen;
     Task_ClosePartyMenu(taskId);
 }
-    
+
 static void CB2_ShowPokemonSummaryScreen(void)
 {
     if (gPartyMenu.menuType == PARTY_MENU_TYPE_IN_BATTLE)
@@ -3882,7 +3882,7 @@ static bool8 SetUpFieldMove_Surf(void)
 {
     if (!CheckFollowerFlag(FOLLOWER_FLAG_CAN_SURF))
         return FALSE;
-    
+
     if (PartyHasMonWithSurf() == TRUE && IsPlayerFacingSurfableFishableWater() == TRUE)
     {
         gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu;
@@ -3904,7 +3904,7 @@ static bool8 SetUpFieldMove_Fly(void)
 {
     if (!CheckFollowerFlag(FOLLOWER_FLAG_CAN_LEAVE_ROUTE))
         return FALSE;
-    
+
     if (Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) == TRUE)
         return TRUE;
     else
@@ -3925,7 +3925,7 @@ static void FieldCallback_Waterfall(void)
 static bool8 SetUpFieldMove_Waterfall(void)
 {
     s16 x, y;
-    
+
     if (!CheckFollowerFlag(FOLLOWER_FLAG_CAN_WATERFALL))
         return FALSE;
 
@@ -3949,7 +3949,7 @@ static bool8 SetUpFieldMove_Dive(void)
 {
     if (!CheckFollowerFlag(FOLLOWER_FLAG_CAN_DIVE))
         return FALSE;
-    
+
     gFieldEffectArguments[1] = TrySetDiveWarp();
     if (gFieldEffectArguments[1] != 0)
     {
@@ -6889,6 +6889,6 @@ static bool8 SetUpFieldMove_RockClimb(void)
         gPostMenuFieldCallback = FieldCallback_RockClimb;
         return TRUE;
     }
-    
+
     return FALSE;
 }

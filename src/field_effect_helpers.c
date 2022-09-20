@@ -107,7 +107,7 @@ void LoadSpecialReflectionPalette(struct Sprite *sprite)
 	u16 color;
 	u16* pal;
 	struct SpritePalette reflectionPalette;
-	
+
 	CpuCopy16(&gPlttBufferUnfaded[0x100 + sprite->oam.paletteNum * 16], gReflectionPaletteBuffer, 32);
 	pal = gReflectionPaletteBuffer;
 	for (i = 0; i < 16; ++i)

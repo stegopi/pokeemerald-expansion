@@ -11,7 +11,7 @@ extern "C" {
 
 #ifndef __STRICT_ANSI__
 typedef unsigned long sigset_t;
-struct sigaction 
+struct sigaction
 {
 	void (*sa_handler)(int);
 	sigset_t sa_mask;
@@ -22,7 +22,7 @@ struct sigaction
 #define SIG_BLOCK 1	/* set of signals to block */
 #define SIG_UNBLOCK 2	/* set of signals to, well, unblock */
 
-/* These depend upon the type of sigset_t, which right now 
+/* These depend upon the type of sigset_t, which right now
    is always a long.. They're in the POSIX namespace, but
    are not ANSI. */
 #define sigaddset(what,sig) (*(what) |= (1<<(sig)))
@@ -152,7 +152,7 @@ int _EXFUN(sigpause, (int));
 #define	SIGCONT	25	/* continue a stopped process */
 #define	SIGTTIN	26	/* to readers pgrp upon background tty read */
 #define	SIGTTOU	27	/* like TTIN for output if (tp->t_local&LTOSTOP) */
-#define NSIG	28	
+#define NSIG	28
 #else
 #define	SIGURG	16	/* urgent condition on IO channel */
 #define	SIGSTOP	17	/* sendable stop signal not from tty */

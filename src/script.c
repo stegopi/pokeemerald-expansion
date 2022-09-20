@@ -504,6 +504,6 @@ bool32 CanWalkAwayToCancelMsgBox(void)
 u8* ReadWord(u8 index)
 {
     struct ScriptContext *ctx = &sGlobalScriptContext;
-    
+
     return (T1_READ_PTR(&ctx->data[index]));
 }

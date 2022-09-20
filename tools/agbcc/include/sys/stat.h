@@ -22,7 +22,7 @@ extern "C" {
    sizes of any of the basic types change (short, int, long) [via a compile
    time option].  */
 
-struct	stat 
+struct	stat
 {
   dev_t		st_dev;
   ino_t		st_ino;

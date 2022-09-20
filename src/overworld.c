@@ -421,7 +421,7 @@ static void Overworld_ResetStateAfterWhiteOut(void)
         VarSet(VAR_SHOULD_END_ABNORMAL_WEATHER, 0);
         VarSet(VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_NONE);
     }
-    
+
     FollowMe_TryRemoveFollowerOnWhiteOut();
 }
 
@@ -1458,7 +1458,7 @@ static void DoCB1_Overworld(u16 newKeys, u16 heldKeys)
             PlayerStep(inputStruct.dpadDirection, newKeys, heldKeys);
         }
     }
-    
+
     // if stop running but keep holding B -> fix follower frame
     if (PlayerHasFollower() && IsPlayerOnFoot() && IsPlayerStandingStill())
         ObjectEventSetHeldMovement(&gObjectEvents[GetFollowerObjectId()], GetFaceDirectionAnimNum(gObjectEvents[GetFollowerObjectId()].facingDirection));
@@ -2181,7 +2181,7 @@ static void InitObjectEventsLocal(void)
     ResetInitialPlayerAvatarState();
     TrySpawnObjectEvents(0, 0);
     TryRunOnWarpIntoMapScript();
-    
+
     FollowMe_HandleSprite();
 }
 
