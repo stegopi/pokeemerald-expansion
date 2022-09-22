@@ -326,58 +326,42 @@ struct BaseStats
             u8 noFlip : 1;
             u8 flags;
 };
-/*// Smogon Stats, Dunno when to use
-#include "smogon_stats.h"
-struct SmogonMoves {
+
+struct SmogonMoves 
+{
     u16 move;
     u16 usage;
 };
 
-struct SmogonItems {
+struct SmogonItems 
+{
     u16 item;
     u16 usage;
 };
 
-struct SmogonChecksAndCounters {
-    u16 species;
-    u16 weightedScore;
-    u16 KOd;
-    u16 switchedOut;
-};
-
-struct SmogonTeammates {
+struct SmogonChecksAndCounters 
+{
     u16 species;
     u16 usage;
 };
 
-struct __attribute__((packed, aligned(2))) SmogonMonSets {
-    u16 item;
-    u8 ability;
-    u16 moves[4];
-    u16 evs[NUM_STATS];
-    u8 nature;
-    u16 ivs[NUM_STATS];
-};
-
-struct __attribute__((packed, aligned(2))) SmogonMonTeams {
+struct SmogonTeammates
+{
     u16 species;
-    u16 item;
-    u8 ability;
-    u16 moves[4];
-    u16 evs[NUM_STATS];
-    u8 nature;
-    u16 ivs[NUM_STATS];
+    u16 usage;
 };
 
-struct SmogonStats {
+#include "constants/smogon_nat_dex.h"
+struct Smogon
+{
     const struct SmogonMoves *moves;
     const struct SmogonItems *items;
     const struct SmogonChecksAndCounters *checksAndCounters;
     const struct SmogonTeammates *teammates;
-    const struct SmogonMonTeams (*teams)[6];
-    const struct SmogonMonSets *sets;
-    u8 movesCount, itemsCount, cacCount, teammatesCount, teamsCount, setsCount;
-};*/
+    u16 usage, movesCount;
+    u8 itemsCount;
+    u16 cacCount, teammatesCount;
+};
 
 #include "constants/battle_config.h"
 struct BattleMove
