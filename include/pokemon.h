@@ -327,6 +327,7 @@ struct BaseStats
             u8 flags;
 };
 
+/*
 struct SmogonMoves 
 {
     u16 move;
@@ -362,6 +363,7 @@ struct Smogon
     u8 itemsCount;
     u16 cacCount, teammatesCount;
 };
+*/
 
 #include "constants/battle_config.h"
 struct BattleMove
