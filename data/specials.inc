@@ -541,3 +541,4 @@ gSpecials::
 	def_special TrySpecialOverworldEvo
 	def_special BufferUnitSystemText
 	def_special IsFireTypeInParty
+	def_special DoSlidingPuzzle
