@@ -23,7 +23,13 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 6,
+      "y": 35,
+      "elevation": 0,
+      "dest_map": "MAP_FROST_CANYON",
+      "dest_warp_id": 1
+    }
   ],
   "coord_events": [
 

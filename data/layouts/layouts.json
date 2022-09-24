@@ -5692,14 +5692,38 @@
     {
       "id": "LAYOUT_HALLOW_SPARK",
       "name": "HallowSpark_Layout",
-      "width": 40,
-      "height": 40,
+      "width": 48,
+      "height": 45,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/HallowSpark/border.bin",
       "blockdata_filepath": "data/layouts/HallowSpark/map.bin"
+    },
+    {
+      "id": "LAYOUT_INDOOR_HALLOW_SPARK1",
+      "name": "IndoorHallowSpark1_Layout",
+      "width": 10,
+      "height": 9,
+      "border_width": 1,
+      "border_height": 1,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/IndoorHallowSpark1/border.bin",
+      "blockdata_filepath": "data/layouts/IndoorHallowSpark1/map.bin"
+    },
+    {
+      "id": "LAYOUT_INDOOR_HALLOW_SPARK2",
+      "name": "IndoorHallowSpark2_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 1,
+      "border_height": 1,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/IndoorHallowSpark2/border.bin",
+      "blockdata_filepath": "data/layouts/IndoorHallowSpark2/map.bin"
     }
   ]
 }

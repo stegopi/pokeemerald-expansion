@@ -36,7 +36,8 @@
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124",
     "gMapGroup_IndoorKasaan",
-    "gMapGroup_AvalancheMountain"
+    "gMapGroup_AvalancheMountain",
+    "gMapGroup_IndoorHallowSpark"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -661,5 +662,10 @@
     "AvalancheMountainTunnelEntrance",
     "AvalancheMountain_Underground_Path",
     "AvalancheMountainUGTunnelExit"
+  ],
+  "gMapGroup_IndoorHallowSpark": [
+    "IndoorHallowSpark1",
+    "IndoorHallowSpark2",
+    "IndoorHallowSpark22"
   ]
 }
