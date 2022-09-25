@@ -505,14 +505,6 @@ bool32 ShouldDoRivalRayquazaCall(void)
     return TRUE;
 }
 
-bool8 IsLavaSurfable(void) {
-    struct MapPosition position;
-    u8 metatileBehavior;
-    GetInFrontOfPlayerPosition(&position);
-    metatileBehavior = MapGridGetMetatileBehaviorAt(position.x, position.y);
-    return MetatileBehavior_IsLavaSurf(metatileBehavior);
-}
-
 u8 GetLinkPartnerNames(void)
 {
     u8 i;

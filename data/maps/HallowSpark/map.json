@@ -36,7 +36,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Common_Pokemon_Reluctant_Move_Aside",
-      "flag": "0"
+      "flag": "FLAG_UNBLOCK_HALLOW_SPARK"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AZURILL",
@@ -49,7 +49,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Common_Pokemon_Reluctant_Move_Aside",
-      "flag": "0"
+      "flag": "FLAG_UNBLOCK_HALLOW_SPARK"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ZIGZAGOON_2",
@@ -62,7 +62,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Common_Pokemon_Reluctant_Move_Aside",
-      "flag": "0"
+      "flag": "FLAG_UNBLOCK_HALLOW_SPARK"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POOCHYENA",
@@ -75,7 +75,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Common_Pokemon_Reluctant_Move_Aside",
-      "flag": "0"
+      "flag": "FLAG_UNBLOCK_HALLOW_SPARK"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SKITTY",
@@ -88,7 +88,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Common_Pokemon_Reluctant_Move_Aside",
-      "flag": "0"
+      "flag": "FLAG_UNBLOCK_HALLOW_SPARK"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GSLOWPOKE",
@@ -101,7 +101,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Common_Pokemon_Reluctant_Move_Aside",
-      "flag": "0"
+      "flag": "FLAG_UNBLOCK_HALLOW_SPARK"
     }
   ],
   "warp_events": [

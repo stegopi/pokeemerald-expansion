@@ -46,7 +46,7 @@
 #define FLAG_NO_COLLISION    0x22 // Debug
 #define FLAG_NO_ENCOUNTER    0x23 // Debug
 #define FLAG_NO_TRAINER_SEE  0x24 // Debug
-#define FLAG_VISITED_UPPER_ALPHA_PATHWAY    0x25
+#define FLAG_UNBLOCK_HALLOW_SPARK    0x25
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag
 #define FLAG_UNUSED_0x028    0x28 // Unused Flag

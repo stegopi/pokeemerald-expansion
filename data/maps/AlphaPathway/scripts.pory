@@ -1,6 +1,6 @@
 mapscripts AlphaPathway_MapScripts {}
 script AlphaPathway_SetVisit {
-    // Figure this out
+    setflag(FLAG_UNBLOCK_HALLOW_SPARK)
     release
     end
 }

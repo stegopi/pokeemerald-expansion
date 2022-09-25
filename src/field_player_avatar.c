@@ -1364,6 +1364,20 @@ bool8 IsPlayerFacingSurfableFishableWater(void)
         return FALSE;
 }
 
+bool8 IsLavaSurfable(void) {
+    struct ObjectEvent *playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
+    s16 x = playerObjEvent->currentCoords.x;
+    s16 y = playerObjEvent->currentCoords.y;
+
+    MoveCoords(playerObjEvent->facingDirection, &x, &y);
+    if (GetCollisionAtCoords(playerObjEvent, x, y, playerObjEvent->facingDirection) == COLLISION_ELEVATION_MISMATCH
+     && PlayerGetElevation() == 3
+     && MetatileBehavior_IsLavaSurf(MapGridGetMetatileBehaviorAt(x, y)))
+        return TRUE;
+    else
+        return FALSE;
+}
+
 void ClearPlayerAvatarInfo(void)
 {
     memset(&gPlayerAvatar, 0, sizeof(struct PlayerAvatar));
