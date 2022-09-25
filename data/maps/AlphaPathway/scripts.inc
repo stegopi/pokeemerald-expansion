@@ -1,13 +1,14 @@
 AlphaPathway_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, AlphaPathway_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
-
-AlphaPathway_MapScripts_MAP_SCRIPT_ON_TRANSITION:
-	setvar VAR_TEMP_0, 0
-	return
 
 
 AlphaPathway_SetVisit::
-	setflag FLAG_VISITED_UPPER_ALPHA_PATHWAY
+	removeobject 1, MAP_HALLOW_SPARK
+	removeobject 2, MAP_HALLOW_SPARK
+	removeobject 3, MAP_HALLOW_SPARK
+	removeobject 4, MAP_HALLOW_SPARK
+	removeobject 5, MAP_HALLOW_SPARK
+	removeobject 6, MAP_HALLOW_SPARK
+	release
 	end
 

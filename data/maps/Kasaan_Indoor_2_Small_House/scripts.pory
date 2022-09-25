@@ -2,13 +2,13 @@ mapscripts Kasaan_Indoor_2_Small_House_MapScripts {}
 script Kasaan_Old_Man_With_GSlowpoke {
 	lock
 	faceplayer
-	if (flag(FLAG_KASAAN_OLD_MAN_GSLOWPOKE)==false) {
+	if (flag(FLAG_KASAAN_OLD_MAN_GSLOWPOKE) == false) {
 		showmonpic(SPECIES_SLOWPOKE_GALARIAN, 10, 3)
 		msgbox(format("My Galarian Slowpoke hasn't had a chance to meet fresh air for ages. Can you help me take it on journeys?"), MSGBOX_YESNO)
 		hidemonpic
-		if (var(VAR_RESULT)==1) {
+		if (var(VAR_RESULT) == 1) {
 			getpartysize
-			if (var(VAR_RESULT)<6) {
+			if (var(VAR_RESULT) < 6) {
 				msgbox("Thank you.")
 				setflag(FLAG_FORCED_SHINY)
 				givemon(SPECIES_SLOWPOKE_GALARIAN, 22, ITEM_KINGS_ROCK)
