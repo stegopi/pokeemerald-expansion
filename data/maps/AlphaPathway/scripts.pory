@@ -1,1 +1,9 @@
-mapscripts AlphaPathway_MapScripts {}
+mapscripts AlphaPathway_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setvar(VAR_TEMP_0, 0)
+    }
+}
+script AlphaPathway_SetVisit {
+    setflag(FLAG_VISITED_UPPER_ALPHA_PATHWAY)
+    end
+}

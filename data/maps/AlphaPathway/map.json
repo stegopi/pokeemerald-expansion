@@ -15,7 +15,7 @@
   "connections": [
     {
       "direction": "up",
-      "offset": -19,
+      "offset": -10,
       "map": "MAP_HALLOW_SPARK"
     }
   ],
@@ -32,7 +32,24 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "AlphaPathway_SetVisit"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "AlphaPathway_SetVisit"
+    }
   ],
   "bg_events": [
 

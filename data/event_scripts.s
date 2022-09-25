@@ -1158,3 +1158,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/IndoorHallowSpark2/scripts.inc"
 
 	.include "data/maps/IndoorHallowSpark22/scripts.inc"
+
+	.include "data/maps/Route4/scripts.inc"

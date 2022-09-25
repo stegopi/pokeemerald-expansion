@@ -78,6 +78,7 @@
 #define MAP_FROST_CANYON        (69 | (0 << 8))
 #define MAP_ALPHA_PATHWAY       (70 | (0 << 8))
 #define MAP_HALLOW_SPARK        (71 | (0 << 8))
+#define MAP_ROUTE4              (72 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

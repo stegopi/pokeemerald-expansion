@@ -1,1 +1,17 @@
-mapscripts HallowSpark_MapScripts {}
+mapscripts HallowSpark_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        if (flag(FLAG_VISITED_UPPER_ALPHA_PATHWAY) == TRUE) {
+            removeobject(1)
+            removeobject(2)
+            removeobject(3)
+            removeobject(4)
+            removeobject(5)
+            removeobject(6)
+        }
+    }
+    
+}
+script(global) Common_Pokemon_Reluctant_Move_Aside {
+    msgbox(format("This Pokémon is reluctant to moving aside…"))
+    end
+}
