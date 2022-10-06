@@ -23,7 +23,7 @@ text Kasaan_Gym3_KhioneIntro {
 }
 
 script Kasaan_Gym3_KhioneDefeated {
-	message(format("{PLAYER} received the SNOWFLAKE BADGE from Khione."))
+	message(format("{PLAYER} received the Snowflake Badge from Khione."))
 	waitmessage
 	call(Common_EventScript_PlayGymBadgeFanfare)
 	msgbox(format("The Snowflake Badge enables the owner to use the HM move () outside of battle. Please take this with you, too."))

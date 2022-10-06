@@ -83,7 +83,7 @@ u8 ScriptGiveMon(u16 species, u8 level, u16 item, u32 unused1, u32 unused2, u8 u
     sentToPc = GiveMonToPlayer(&mon);
     nationalDexNum = SpeciesToNationalPokedexNum(species);
 
-    // Don't set Pokédex flag for MON_CANT_GIVE
+    // Don't set PokéDex flag for MON_CANT_GIVE
     switch(sentToPc)
     {
     case MON_GIVEN_TO_PARTY:
