@@ -85,8 +85,8 @@ KasaanGymKhione_Text_3:
 	.string "THIS TIME WITH VENGEANCE!$"
 
 Kasaan_Gym3_KhioneDefeated_Text_0:
-	.string "{PLAYER} received the SNOWFLAKE\n"
-	.string "BADGE from Khione.$"
+	.string "{PLAYER} received the Snowflake\n"
+	.string "Badge from Khione.$"
 
 Kasaan_Gym3_KhioneDefeated_Text_1:
 	.string "The Snowflake Badge enables the owner\n"
