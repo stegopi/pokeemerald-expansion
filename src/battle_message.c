@@ -3955,9 +3955,9 @@ struct TrainerSlide
 };
 
 // sTrainerSlides Texts
-static const u8 sText_KhioneLowHealth[] = _("We're not done yet!");
-static const u8 sText_KhioneLastSwitch[] = _("My Elsa powers…\nThey shall prevail!");
-static const u8 sText_KhioneFirstDown[] = _("This is just the beginning!");
+static const u8 sText_KhioneLowHealth[] = _("We're not done yet! {PAUSE_UNTIL_PRESS}");
+static const u8 sText_KhioneLastSwitch[] = _("My Elsa powers…\nThey shall prevail! {PAUSE_UNTIL_PRESS}");
+static const u8 sText_KhioneFirstDown[] = _("This is just the beginning! {PAUSE_UNTIL_PRESS}");
 
 static const struct TrainerSlide sTrainerSlides[] =
 {
