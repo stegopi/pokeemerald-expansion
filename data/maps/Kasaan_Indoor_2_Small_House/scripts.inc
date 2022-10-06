@@ -32,7 +32,6 @@ Kasaan_Old_Man_With_GSlowpoke_8:
 	setflag FLAG_FORCED_SHINY
 	givemon SPECIES_SLOWPOKE_GALARIAN, 22, ITEM_KINGS_ROCK
 	removeobject 3
-	setflag FLAG_KASAAN_OLD_MAN_GSLOWPOKE
 	goto Kasaan_Old_Man_With_GSlowpoke_1
 
 

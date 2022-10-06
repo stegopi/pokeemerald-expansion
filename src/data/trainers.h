@@ -9289,7 +9289,7 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Roxanne5),
     },
 
-    [TRAINER_BRAWLY_2] =
+    [TRAINER_KHIONE] =
     {
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
