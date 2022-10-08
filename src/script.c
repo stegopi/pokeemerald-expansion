@@ -501,9 +501,15 @@ bool32 CanWalkAwayToCancelMsgBox(void)
 {
     return sMsgBoxIsCancelable;
 }
+
 u8* ReadWord(u8 index)
 {
     struct ScriptContext *ctx = &sGlobalScriptContext;
 
     return (T1_READ_PTR(&ctx->data[index]));
+}
+
+void GetObjectEventTrainerRangeFromTemplate(void)
+{
+    gSpecialVar_Result = gMapHeader.events->objectEvents[gSpecialVar_LastTalked - 1].trainerRange_berryTreeId;
 }

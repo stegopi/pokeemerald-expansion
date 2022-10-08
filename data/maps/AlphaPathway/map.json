@@ -52,6 +52,21 @@
     }
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 12,
+      "y": 13,
+      "elevation": 3,
+      "item": "ITEM_SUPER_POTION",
+      "flag": "FLAG_HIDDEN_ITEM_ALPHA_PATHWAY_SUPER_POTION"
+    },
+    {
+      "type": "hidden_item",
+      "x": 18,
+      "y": 29,
+      "elevation": 3,
+      "item": "ITEM_REPEL",
+      "flag": "FLAG_HIDDEN_ITEM_ALPHA_PATHWAY_REPEL"
+    }
   ]
 }
